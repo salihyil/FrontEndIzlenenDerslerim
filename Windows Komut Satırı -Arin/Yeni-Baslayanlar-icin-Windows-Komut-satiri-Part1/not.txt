@@ -1,0 +1,38 @@
+0:30 command prompt: windows işletim sisteminde bulunan ve komutları, otomatik scriptleri yada Batch(bat) dosyalarını çalıştırmamızı sağlayan text tabanlı bir arayüzdür.
+05:20 command prompt giriş
+6:30 cd(change directory):  1.current directory var olan dizini gösterir.  2. çalıştırma dizinini değiştirmede kullanılır.
+09:00 dir =içinde bulunduğumuz dizinin tüm dosyalarını görebiliriz.
+10:45 cd istenilen tam yolu yazılarak o dizine ulaşırız.
+12:00 tek nokta(.): var olan dizini referanslar çift nokta(..): bir üst dizini referanslar
+12:24 cls: tüm ekranı temizler
+13:20 help dir  =herhangi bir komut hakkında daha fazla bilgi almak için(burada dir'inkini aldık)
+14:55 dir /L tüm dosyaların isimlerini bize küçük harflerle gösterir.
+15:53 dir /AD Bu komut sadece klasörleri gösterir. A:parametre D:attributes oluyor.
+16:40 dir/? help'in aynısını verir.
+20:13 F:    F driverı içerisine girer.
+21:40 mkdir  =make directory klasör oluşturur.
+22:00 md: bunlada klasör oluştururabiliriz.
+23:35  mkdir a\b\c\d   iç içe klasör oluşturmak için
+25:00 mkdir a. b. c.  birden fazla klasör oluşturmak
+25:50 rmdir a  =a klasörünü siler.  rd  a =bu komutta  a klasörünü siler.
+28:00 rmdir /S a  = içi dolu olan a klasörünü silmek.
+29:45 move a.jpg test1  = a.jpg dosyasını test1 klasörü içerisine taşıdık. (aynı dizindeler)
+30:50 move a.jpg F:\temp  = a.jpg dosyasını farklı bir dizindeki klasöre taşıdık.
+32:00 copy a.jpg F:\temp  = a.jpg dosyasını farklı bir dizindeki klasöre kopyaladık.
+33:50 copy a.txt b.txt = a.txt dosyasını aynı dizinde b.txt olarak kopyasını oluşturduk.
+34:25 rename a.jpg b.jpg= a.jpg dosyasının ismini b.png olarak değiştik.   ren komutuda aynı işe yarar.
+36:20 del a.txt  = a.txt dosyasını siler.  erase komutuda siler.
+39:25 del Pandas7*  =içerisinde Pandas7 isimlerini içeren tüm dosyarları siler.
+40:20 dir *.psd =bütün .psd uzantılı dosyaları gösterir.
+41:25 echo "merhaba dünya"  =yazdığımız mesajı bize döndürür.
+42:20 echo "merhaba" > a.txt    =a.txt dosyasının içine merhaba yazar.
+43:30 type a.txt  =a.txt dosyası içinde yazanı gösterir.
+45:50 dir > directory.txt   = directory.txt dosyası içerisine bulunan dizinin ortadaki dir'leri yazar.
+47:20 "Visual Studio Code.lnk"  =Visual Studio Code uygulamasını çalıştırır.  Yada direk dosyanın yüklü olduğu yeri göstericen.
+52:40 path  = environment variables 
+56:20 path yeri belirleme
+58:20 find "System" sistem.txt   =sistem.txt dosyası içinde System kelimelerini bulur.
+59:10 find /N "22" directory.txt  =bulunanların satır numaralarını gösterir.
+1:01:15 color a1   =Burada 1.deger  background rengi,  2.deger  text rengi ifade eder.
+1:01:35 tasklist  =çalışan uygulamalar
+1:02:17 taskkill /IM notepad.exe  =notepad çalışmasını sonlandırdık.

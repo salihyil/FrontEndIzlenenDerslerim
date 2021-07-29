@@ -1,0 +1,5 @@
+1- https://rubyinstaller.org/ indir
+2- cmd içine gem install sass indiriyoz.
+3- cmd'de C:\Users\salih\Desktop\FrontEndIzlenenDersler\2-2-SASS\45DakikadaYeniBaslayanlarIcinSASS-Arin> içinde 
+( sass --watch . )yazdık. main.css dosyaları oluşur.
+

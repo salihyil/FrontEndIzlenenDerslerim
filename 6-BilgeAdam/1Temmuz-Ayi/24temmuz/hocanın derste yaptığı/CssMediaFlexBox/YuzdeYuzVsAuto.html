@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu1,
+        .kutu3 {
+            width: 400px;
+            height: 40px;
+            background-color: red;
+
+        }
+
+        .kutu2 {
+            height: 40px;
+            width: 100%;
+            background-color: yellow;
+            margin-left: 20px;
+        }
+
+        .kutu4 {
+            height: 40px;
+            width: auto;
+            background-color: yellow;
+            margin-left: 20px;
+        }
+        .kutu2,.kutu4{
+            color: rgb(31, 233, 149);
+            font-weight: bolder;
+            text-align: right;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="kutu1">
+        <div class="kutu2">
+            Selam
+
+        </div>
+    </div>
+
+    <div class="kutu3">
+        <div class="kutu4">
+            Selam
+        </div>
+    </div>
+    <div>
+
+        *** Anne içinde bulunan bir kutu eğer genişliğini 100% yapmışsa ve sağdan yada soldan margin varsa bu kutu annenın dısına cıkar.
+        Eğer width 100% değilde auto ise dışa çıkmaz yani margindan dolayı uzaklaşma işlemi cocuk kutunun genişliğinden cıkarılmıs olur.
+    </div>
+
+</body>
+
+</html>

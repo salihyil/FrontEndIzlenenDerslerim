@@ -1,0 +1,17 @@
+1) Mern stack: mongodb database express back-end framework .
+   you can olsa use react front end, php laravel or python django. Json data from your server and would make request from react to the server. get data, add data, update data delete.
+   doesnt have as much inclued as angular does like angular has a built-in routing system react doesnt you have to install an extra package called "react router dom"
+ 
+2) structure the "view" layer of your application so mvc model view controller is popular design pattern for software. the view is the ui the user interface the part of app.
+   react is basically the v in mvc. 
+   
+3) jsx(javascript syntax extension) dynnamic markup
+   Virtual DOM: Verileri direk dom üzerinden göstermek donmalara yavaşlamalara sebep olur. Virtual Dom oluşturularak bunun içinde gerekli düzenlemeler yapılıyor. Diff algorit
+   ması ile düzenleme oluyor. Gerekiyorsa gerçek DOM üzerinde bize ilgili yeri güncelliyor. 
+
+4)  we will be focusing functions with hooks.
+
+5) sometimes you end up having just a ton of app level state that gets really difficult to manage so in that case you have a few options 
+   you could use the "contextAPI" built in react or you could use a third-party state manager "redux" 
+
+6) npm(node package manager)

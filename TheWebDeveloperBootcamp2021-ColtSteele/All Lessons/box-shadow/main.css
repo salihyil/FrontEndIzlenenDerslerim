@@ -1,0 +1,44 @@
+/* responsive çalışmalar için px kullanma. Diğer kullanıcıların ekran çözünürlüğü farklı olabilir. px sorunu burda çıkar. */
+
+/* body {
+    min-width: 500px;
+
+}
+
+.box {
+    height: 100px;
+    width: 1520px;
+    box-shadow: 1px 1px 1px red;
+}
+
+.kutu {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.kutu1{
+    display:inline-block;
+    background-color:red;
+    width: 50%;
+    height: 50px;
+    
+}
+
+.kutu2 {
+    display:inline-block;
+    background-color: green;
+    width: 50%;
+    height: 50px;
+}

@@ -1,0 +1,24 @@
+    *-*Derste anlatılacaklar:*-*
+
+Bu dersleri serimizde JavaScript'in "karmaşık" konuları üzerine konuşacağız. Bu seriyi oluşturmamın iki nedeni var:
+
+1 - Javascript'in karmaşık görünen konularına Hoisting, Promise, Arrow Functions, First-Class functions, Sınıf - Nesne - Callback - Promise - Async Await gibi ... gibi konuları teorik olarak derinlemesine incelemek.
+
+2 - Javascrit çatı ve kütüphanelerine (Node, Express, Ember, React, Angular..) hızı geçiş yapmak isteyen arkadaşlara bu kütüphanlerde sıklıkla kulanılan konularda yardımcı olmak.
+
+
+1-js kütüphanelerini js kısımlarını daha iyi anlamak
+
+2-js tarihi: Tim Berners-Lee (https://tr.wikipedia.org/wiki/Tim_Berners-Lee) 
+ilk web tarayıcısı son kullanıcıda geniş bir kullanıcı kitlesi bulan bir tarayıcıydı.  1993 mosaic'dir.
+Brendan Eich js programlama dilinin oluşturan.
+
+3-https://en.wikipedia.org/wiki/ECMAScript#:~:text=ECMAScript%20(%2F%CB%88%C9%9Bkm,pages%20across%20different%20web%20browsers.
+  https://www.ecma-international.org/  
+Ecmascript(ES) javascript'in standartlaştırılmış halidir.
+ecma-262 nedir? Ecma şirketinin verdiği bir dosya ismi gibi birşey. Ecmascriptin standartlaştırılmış dosya ismi.
+
+4-ES.Next bir sonraki versiyon anlamında kullanılıyor.
+
+5- Takip edilecebilecekler
+ -https://sambat-tech.netlify.app/

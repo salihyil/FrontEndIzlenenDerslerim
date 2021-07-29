@@ -1,0 +1,38 @@
+Yeni Başlayanlar İçin 80 Dakikada GitHub:  https://www.youtube.com/watch?v=ihoPT325jyk
+timeline: 
+01:00 Github nedir? Bizim uzak repository. Yani projemize ait tüm dosya ve değişikliklerin bulunduğu uzak repository hizmet veren web tabanlı araçtır.
+1:20 Git vs GitHub?  git teknolojinin kendisi github bunun webtabanlı bir platformudur. Örnek gitlab, bitbucket, SourceForge
+02:10 Neden GitHub kullanırız? Bilgisayarın başına birşey mi geldi sorun yok github yanında. Kullanımı basit, herkes burda, community'si fena, static web sayfaları host edebilirsin.
+04:00 GitHub Hesabı Açmak  
+05:55 collaborator ne bakıcaz. 
+11:50 Yeni Repo Oluşturmak
+14:25 ls-al    =Bu komut aktif klasördeki tüm dosya ve klasörleri listeler.
+14:50 git init   =kendi bilgisayarımıza  yrni git repo initialize ediyoruz demek.
+15:55 git remote add origin https://github.com/salihyil/starter.git     =var olan kendi bilgisayarımızdaki git repoya dediğimiz şey, senin bağlanmak için gereken uzak remote repository adresin bu.  
+16:30 git push -u origin master
+20:05 git commit -am "Index.html oluşturuldu."               = index.html dosyasına hem add hemde commit işlemi yaptık
+21:50 git push   = başka branch olmadığı için sadece bunu yazsak olur.
+23:15 clone or downlaod
+27:15 git clone https://github.com/salihyil/starter.git
+27:51 download ile clone farkı colne yapınca git. dosyasınıda alır.
+30:10 git remote -v     =gidilen dosyayı uzaktaki origin'ı zaten kendisi biliyor.
+38:10 hata sebebi: sen zaten bir değişiklik yapıp bunu push etmek istiyorsun ama remote senin alamadığın bir değişiklik var zaten demek.
+39:00 git fetch    = biz herhangi bir değişiklik  yaptımızda ve aynı zamanda remote bir değişiklik varsa önce git fetch kullanıyoruz. 
+Kodun bize yaptığı şey: uzak bağlantıdaki değişikliği kopyalar fakat banch etmez ondan sonra merge etmeye izin verir
+40:30 git pull   =remote'da yapılan değişiklikleri alıyoruz.
+ufak özet:hem local dosyada hemde remote'da da değişiklik var ise önce -> git fetch sonra git merge ondan sonra kendi local dosyamızda yaptığımız değişikliği git push yapabiliriz.
+
+46:00 local ve remote'daki aynı dosyaların aynı satırlarıda değişirse ne olacak? Bu sorunu git fetch sonra git merge yapsanda merge conflict hatası alırdın.
+48:15 git pull' yaptıksan sonra merge conflict hatası
+48:40 merge conflict hatası sonrası değişiklik yaptığımız local dosyamıza gittiğimizde <<<<<HEAD     ====== kısımlarını görürüz. Sonra sen hangi kodun kalmasını istiyorsan onun düzenlemesini yapıp git add index.html -> git commit -m 'local değişiklik yapıldı' -> git push yapılabilir.
+
+52:10 Collaborator Nedir? İşbirlikçi,ortak projede işbirliği yaptığımız diğer geliştiriciler
+53:40git checkout -b cssfeature   =cssfeature  brachi oluşturduk.
+setting-> manage access -> invite a collaborator diyerek projeye işbirlikçi ekleyebilirsin.
+ Contributor Nedir? projede katkıda bulunanlar,  katkı sunanlar
+
+Projeleri fork yapma sebebi nedir? Projelere contributor olmak, projeyi kullanmak
+1:14:00 Projeyi fork ettik sonra bunu adamlar merge etsin diye new pull request etmek gerekir.
+ 1:16:20 GitHub Hosting:   GitHub'da web sayfalarımızı host edebiliriz. (yanlızca statik sayfalarımızı)
+1:17:05 repo oluşturuyoruz. repo isminde github.io olacak.
+1:20:25 Github Pages

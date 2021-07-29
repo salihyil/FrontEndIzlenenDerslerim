@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:disabled {
+
+            background-color: red;
+            color: white;
+        }
+
+        input[type="checkbox"] {
+
+            
+            width: 35px;
+            height: 23px;
+            border: 1px solid red;
+        }
+
+        input[type="checkbox"]:checked {
+
+            width: 40px;
+            height: 30px;
+        }
+
+        p::selection {
+            background-color: rgb(226, 38, 38);
+        }
+
+        input::placeholder {
+
+            color: green;
+        }
+
+
+      
+    </style>
+
+</head>
+
+<body>
+
+    <form action="">
+        <div>
+            <label for="tc">TC</label>
+            <input disabled type="text" name="tc" id="tc" value="485454525455545">
+
+        </div>
+        <div>
+            <label for="name">Ad</label>
+            <input type="text" name="name" id="name" placeholder="Ad giriniz">
+
+        </div>
+        <div>
+            <label for="surname">Soyad</label>
+            <input type="text" name="surname" id="surname" value="Ahmet">
+
+        </div>
+        <div>
+            <label for="dosya">Dosya alındı mı ?</label>
+            <input type="checkbox" name="dosya" id="dosya">
+        </div>
+        <div>
+            <input type="submit" value="Güncelle">
+
+
+        </div>
+
+
+    </form>
+    <p>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet convallis tincidunt. Duis ac urna
+        rhoncus enim feugiat ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis egestas. Vestibulum quis maximus eros. Aliquam viverra tortor orci, quis consequat enim aliquam sit amet.
+        In arcu sem, convallis tincidunt tempor sit amet, mollis sit amet ante. Orci varius natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Nulla viverra ante ac aliquet sagittis. Quisque nec leo velit.
+    </p>
+
+</body>
+
+</html>

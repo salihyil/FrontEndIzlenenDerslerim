@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  margin: 0 10%;
+  /* kısa yazımı altta
+  grid-template-rows: 150px 250px;
+  grid-template-columns: 100px 200px 300px; */
+
+  /* grid-template: 150px 250px / 100px 200px 300px; 
+  /* grid-template: 150px 250px / 100px auto 300px; */
+
+  /* fr kullanim */
+  /* grid-template: 150px 250px / 200px 3fr 1fr; */
+
+  /* açıklaması önce 1.column 100px geri kalan column'a 2.column 1fr ayırdı 3.columns 3fr.
+    Yani 3.column 2. column'un 3 katı genişliğinde olacak demek.'  
+  */
+
+  /* grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-gap: 10px 20px; */
+  gap: 20px; /* buda hem row'dan hemde column'dan boşluk ekler. */
+
+  /* repeat kullanımı: */
+  /* grid-template: 150px 250px 200px / repeat(3, 200px); */
+
+  grid-template: 150px 250px 200px / repeat(3, minmax(10vh, 50%));
+
+  /* minmax kullanımı: */
+  /* grid-template: 150px 250px / repeat(6, minmax(100px, 300px)); */
+
+  /* grid-template-areas: kullanımı: */
+  grid-template-areas:
+    "A A A"
+    "B C F"
+    "D E F";
+}
+
+.box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.box1 {
+  background-color: #2ecc71;
+  grid-area: A;
+}
+.box2 {
+  background-color: #3498db;
+  grid-area: B;
+}
+.box3 {
+  background-color: #9b59b6;
+  grid-area: C;
+
+  /*KUTULARIN YERİNİ TAŞIMA
+   grid-row: 1   / 2; 
+   grid-column: 1 / 2; 
+  
+  grid-area: 1 / 1 / 2 / 2; */
+}
+.box4 {
+  background-color: #e67e22;
+  grid-area: D;
+}
+.box5 {
+  background-color: #e743c3;
+  grid-area: E;
+}
+.box6 {
+  background-color: #16a085;
+  grid-area: F;
+}
+
+/* .box1 {
+    
+    grid-row-start: 2; 
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; 
+
+    kısa yazım altta
+    grid-row: 6 / 4;
+    grid-column: 4 / 4;
+  } */

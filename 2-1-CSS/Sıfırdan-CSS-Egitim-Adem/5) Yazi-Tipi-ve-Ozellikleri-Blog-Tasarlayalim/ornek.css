@@ -1,0 +1,70 @@
+img {
+    width: 100%;
+    /* kapsayıcının(yani burda figure) genişliği kaçsa img'da o kadar olacak demek burası*/
+}
+
+.mc {
+    font-style: italic;
+}
+
+.m {
+    height: 79px;
+    width: 79px;
+    float: left;
+    display: block;
+    margin-right: 12px;
+    position: relative;
+}
+.ms {
+    margin-top: 20px;
+    
+}
+
+h1,h2,h3, blockquote, .lh {
+    /* font-size'ın 1.5 katı demek. */
+    line-height: 1.6;
+}
+
+a{
+    color:black;
+}
+
+article {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+figure {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+h3 {
+  
+    font-weight: normal;
+}
+
+figcaption {
+    margin-top: 1em; /* em = font-size'ın px değerine eşit yani burda 1em=16px oluyor. Çünkü font-size: 16px; verilmiş.*/ 
+    text-align: center;
+    font-size: 16px;
+}
+
+/* ortak kod var ise utility class (yardımcı sınıf) kod tekrarını engellemek için*/
+.gray {
+    color: gray;
+}
+
+.ff-sans {
+    font-family: sans-serif;
+}
+
+blockquote {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.1em;
+}

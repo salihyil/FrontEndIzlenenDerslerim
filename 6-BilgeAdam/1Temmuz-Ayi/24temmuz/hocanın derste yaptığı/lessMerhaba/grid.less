@@ -1,0 +1,29 @@
+
+@col-count:16;
+@medium-width:768;
+@small-width:468;
+
+.create-cols(@name,@index:1) when (@index<=@col-count){
+
+    @yuzde:(100/@col-count *@index);
+    .size-@{name}-@{index}of@{col-count}
+    {
+        width:@yuzde;
+
+        
+    }
+    .create-cols(@name,(@index+1));
+
+}
+
+
+//mixin --> amacı media ana casını yazmak
+.make-grid(@wdth,@name){
+
+    @media screen and (max-width:@wdth) {
+        .create-cols(@name);
+    }
+}
+
+.make-grid(@medium-width,md);
+.make-grid(@small-width,sm);

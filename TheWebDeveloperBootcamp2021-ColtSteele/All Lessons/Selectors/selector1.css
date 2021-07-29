@@ -1,0 +1,45 @@
+div > p {
+  color: red;
+}
+
+div ~ p {
+  color: blue;
+}
+
+h4,
+input {
+  color: green;
+  font-family: "Brush Script MT";
+}
+
+footer * a {
+  color: aqua;
+}
+
+footer > h3 {
+  color: darkorange;
+}
+
+a[class*="me"] {
+  /* Attribute value contains this value somewhere in it */
+  /* classınların içerisinde lo geçse yeter  */
+  background-color: rgb(237, 100, 237);
+}
+
+a[class~="sas"] {
+  /* Attribute has this value in a space-separated list somewhere */
+  /* class attribute'de 2 tane class ismi varsa 2'sinden 1'ini yazsanda olur.  */
+  background-color: rgb(255, 0, 0);
+}
+
+a[class^="con"] {
+  /* /* Attribute value starts with this */
+  /* attribute değeri bununla başlar.  */
+  background-color: rgb(17, 0, 255);
+}
+
+a[class$="le"] {
+  /* Attribute value ends with this */
+  /* attribute değeri bununla biter */
+  background-color: rgb(255, 174, 0);
+}

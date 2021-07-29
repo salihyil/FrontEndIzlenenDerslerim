@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Media ile eklediğimiz bu css width 600 ve ondan küçük oldugunda çalışacaktır!!!*/
+        @media only screen and (max-width: 600px) {
+            body {
+               font-size: 20px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-size: 40px;">
+
+    <p style="font-size: 2em;">
+        Merhaba ben 1 em yim
+    </p>
+
+    <p style="font-size: 0.8em;">
+        Merhaba ben 0.8 em yim
+    </p>
+
+    <p style="font-size: 1.2em;">
+        Merhaba ben 1.2 em yim
+    </p>
+
+    <div>
+        em birimi body nin fontsize ını kendine baz alır. Örneğin body 20px ise 1 em=20px olur.
+
+    </div>
+    <div style="color: red;">
+        Özellikle responsive tasarımlarda em kullanarak sadece body nin fontuyla oynayıp tüm sistemin font size ını
+        değiştirme şansımız olur.
+    </div>
+
+</body>
+
+</html>

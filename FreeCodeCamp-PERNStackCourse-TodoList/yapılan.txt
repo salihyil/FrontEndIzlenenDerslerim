@@ -1,0 +1,78 @@
+1- restful api is going to take our HTTP request(get,post,put,delete)
+
+2-(3:40 )build our server: restfull api
+   *server klasör oluşturduk ve npm init yaptık. "npm init" is going to keep track of all our packages inside our application
+   *terminale "npm i express pg cors" express allows us to quickly create a server in nodejs and then we have course which allows different domain
+	applications to interact with each other
+   *terminalde server içinde ni index.js yazarak (powershell'de) index.js dosyası oluşturduk.
+	const express = require('express');
+	const app = express();
+	const cors = require('cors');
+
+	app.use(cors())
+	app.use(express.json());
+
+	app.listen(5000,()=>{
+    	console.log();("server has started on port 5000");
+	})
+
+3- (7:11)create our postgres database and table
+   *
+
+4-Connect Our Postgres Database and Server
+   *server klasör içinde db.js oluştu.
+	const Pool = require('pg').Pool;
+
+	const pool = new Pool({
+    	user: "postgres",
+    	password: "password",
+    	host: "localhost",
+    	port: 5432,
+    	database: "perntodo"
+	})
+
+	module.exports = pool; 
+    *Sonra server içindeki index.js'e const pool = require('./db'); ekledik.
+
+5-(15:30)Şimdi sıra yönelendirme işlemleri Build Routes with Postgres Queries
+
+6-(32:44) Restful API Overview Şuana kadar yapılan gelinen herşeyin özeti yapılıyor.	
+
+7- (37:56) SET UP Client Side
+
+8- (41:00) Building the Input Todo Component
+   *useState kullanım: react'ın state özelliğini class component çağırmadan kullanmamızı sağlıyor. useState bir fonksiyondur.
+	const [count, setCount] = useState(0);  Burda default value 0 belirledik. 2 değişken dönüyor. count=0 atanmış oluyor. setCountda fonk.
+	<button onClick={() => setCount(count + 1)}>
+
+9-Build the ListTodos component
+    https://www.youtube.com/watch?v=XIJL0r7I3kk	 	
+   *useEffect kullanım: function componentler'de Lifecycle sağlıyo. Bu sadece component'in mounted,update,unmount işlemlerini yakalayabiliyoruz.
+	useEffect 2 parametre alıyor. İlki bir fonksiyon, bu fonksiyon sayfa her render veya update edildiğinde çalışır. 2.parametre array burayada çalışmasını istemediklermiz.
+	Nerede kullanırız? Sayfayı optimize etmek ve Sayfanın render edilmesinden emin olmak istediğimiz işlemlerde de useEffect kullanmalıyız.
+
+10-Build the Delete Button
+   *   const deleteTodo = async(id) => {
+        try {
+            const deleteTodos = await fetch(`http://localhost:5000/todos/${id}`, {
+            method: "DELETE"
+        });
+        //console.log(deleteTodo);//Çıktı: Response {type: "cors", url: "http://localhost:5000/todos/3", redirected: false, status: 200, ok: true, …}
+
+        //Buradaki kod filter kullanma sebebi delete bastıktan delete edilenin ekrandan kalkıp geri kalanların gösterilmesi için
+        setTodos(todos.filter((todo) => todo.todo_id !== id)); //örnek 1 !== 1 false döner. yani ekranda göstermez.
+
+        } catch (err) {
+            console.error(err.message);
+        }
+    }
+
+11-Build the EditTodos Component 
+
+
+
+
+
+
+
+

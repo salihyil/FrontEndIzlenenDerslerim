@@ -1,0 +1,35 @@
+1) display: inline yükseklik ve genişliş verilmez. inline-block yapınca yükseklik ve genişlik kullanabiliriz.
+
+2) float: left; right; diyince block etkisini kırar. float etkisini kaldırmak için clear: left; right; both; kullanılabilir.
+
+3)position: relative; Göreceli olarak konumlandırılmış bir öğe normal konumuna göre konumlandırılmıştır. 
+
+4) position: absolute; position relative olanı bulana kadar devam eder. Parent'a gider bakar. ilk Relative'i bulana kadar devam
+eder. En son body'e kadar.
+
+-positionlar'da taglar üst üste kaçışabilir. 
+-Tek baına top, right, left, bottom css özellikleri positionlarda çalışır.
+
+-eğer bir absolute parent'ında fixed varsa ona göre posizyonlanır fixed'den önce position: relative; varsa o zaman ona göre 
+pozisyonlanır.
+
+-margin: 0 auto; sayfada ortalama
+
+-position:fixed; veriyor işek height ve width vermek gerekir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

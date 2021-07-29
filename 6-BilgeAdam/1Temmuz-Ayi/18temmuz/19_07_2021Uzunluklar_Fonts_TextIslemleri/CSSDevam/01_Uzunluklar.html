@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>Cm,mm gibi gerçek uzunluk birimleri css içinde de kullanılabilir. Fakat bunları web sayfalarında kullanmak çok doğru değildir.
+    Herkesin ekranı farklı boyutta. Mobile kullanıcılarımız.
+    <br>
+    Bu birimlerin baskı sırısında kullanılması çok daha uygundur.
+
+    </div>
+    <div style="width: 2cm;background-color: red;height: 1cm;">
+
+    </div>
+    <div style="width: 500px;height: 500px;background-color: yellow;">
+        500px/500px
+    </div>
+
+    <div>2 divi ekranıma yarı yarı oranında koymak istiyorsam. Kendi ekranımın 1500px ise bu divlere 750px boyut vererek ortalamam 
+     doğru değildir. Başkasının ekranı 1500 den buyuk yada kucuk olabilir. Bu durumlar için css bize % birimi vermiştir.
+     <br>
+     Ekranımın %50 sini kaplasın dersem başka ekranlarda da %50 sini kapsar ve hedefime ulaşırım.    
+    
+    </div>
+
+    <div style="background-color: yellowgreen; height: 60px;">
+
+        <div style="width: 750px;background-color: tomato;height: 60px;float: left;">
+            Ben 750px im
+
+        </div>
+        <div style="width: 750px;background-color: rgb(100, 130, 185);height: 60px;float: left;">
+
+            Ben 750px im
+        </div>
+
+    </div>
+
+
+    <br><br>
+    <div style="background-color: yellowgreen; height: 60px;">
+
+        <div style="width: 50%;background-color: rgb(48, 34, 131);height: 60px;float: left;">
+            Ben 50%
+
+        </div>
+        <div style="width: 50%;background-color: rgb(73, 182, 22);height: 60px;float: left;">
+
+            Ben 50%
+        </div>
+
+    </div>
+
+</body>
+
+</html>

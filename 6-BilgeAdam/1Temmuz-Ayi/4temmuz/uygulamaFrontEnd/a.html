@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A sayfası</title>
+
+    <!--Heade bloğu sayfa hakkında çeşitli bilgileri verebildiğim alandır.-->
+    <!--Bu alana sayfanın gorünen kısmına gelecek span,a.... gibi elementler koyulmamalıdır.-->
+</head>
+
+<body>
+    <!--yorum yaparım-->
+    <div>
+        <b>B sayfasına git</b>
+        <!--target=_blank ile ilgili linkin farklı tabda acılmasını sağlarız. Default olarak bulunduğumuz sayfanın üstüne acılır-->
+        <a href="./b.html" target="_blank">
+            goto b
+        </a>
+
+        <!--Bir linke eğer daha önce gitmişsek bu linkin durumu visited dır.-->
+        <!--Bir linke tam tıkladığımız anda durumu active dir.-->
+        <!--Bir linkin üzerine geldiğimizde durumu hover dır.-->
+        <!--Bir linke daha önce gidilmemişse durumu unvisited dir.-->
+        <a href="https://www.google.com">google git</a>
+
+        <!--Html dökümanda elemenler iç içe yazılabilir. Bir div içinde başka bir div. -->
+        <!--Örneğin ağağıdaki span üstündeki div in cocuk elementidir. span için div anne elementir.-->
+        <!--Elementlerin anneleri ve cocukları bulunabilir.-->
+        <div>
+            <span>Ben bir spanım</span>
+            <div>
+                <h1>h1</h1>
+                <h2>h2</h2>
+            </div>
+        </div>
+
+     
+
+        <h1>Kullanıcı bilgileri</h1>
+        <div>
+            <!--Eğer kullanıcıdan bir veri alıp onu backend e göndereceksek bu veri kümesi bir form ile cavrelenmeli.-->
+            <div>
+                <label>Ad :</label>
+                <input type="text" />
+
+            </div>
+            <div>
+                <label>Soyad :</label>
+                <input type="text" />
+
+            </div>
+
+            <div>
+                <input type="button" value="Kaydet" />
+
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <form action="serversidedagidlecekmethodyolu" method="POST">
+            <!--Serverside a gidecek olan tüm elementler name attiribute une sahip olamalıdır.-->
+            <div>
+                <label for="name">Ad :</label>
+                <input type="text" name="name" placeholder="Adınızı giriniz" />
+
+            </div>
+            <div>
+                <label for="surname">Soyad :</label>
+                <input type="text" name="surname" />
+
+            </div>
+            <div>
+                <label for="egitimdurumu">Eğitim Durumu</label>
+                <select name="egitimdurumu">
+                    <option value="-1">Seçiniz</option>
+                    <option value="1">Lise</option>
+                    <option value="2">Üniversite</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="dagumyili">Doğum Yılı</label>
+                <select name="dagumyili">
+                    <option value="1984">1984</option>
+                    <option value="1985" selected>1985</option>
+                    <option value="1986">1986</option>
+                    <option value="1987">1987</option>
+                    <!--Optionlar value ve textlerden oluşan bir yapıdadır. İlgili formu backend e gönderdiğimizde seçili olan optionın value değeri gönderilir.-->
+                </select>
+
+            </div>
+            <div>
+
+                <label for="cinsiyet">Cinsiyet</label>
+
+                <label><input type="radio" value="1" name="cinsiyet" /> Bay</label>
+                <label><input type="radio" value="2" name="cinsiyet" /> Bayan</label>
+
+                <!--radio name attiribute une gore gruplanır. 2 side cinsiyet name ine sahip olduğundan sadece birinin seçili olması sağlanır-->
+            </div>
+            <div>
+                <label>Habiler</label>
+                <label><input type="checkbox" value="1" name="hobiler" /> Gitar çalmak
+                </label>
+
+
+                <input type="checkbox" value="2" name="hobiler" />
+                <label for="hobiler">
+                    Yüzmek
+                </label>
+            </div>
+           <div>
+
+            <label>Resim Yükle</label>
+             <input name="image" type="file" multiple accept=".xlsx,.docx" >
+
+           </div>
+
+
+            <div>
+                <label>Doğrum tarihi</label>
+
+                <input type="date" />
+
+            </div>
+
+            <div>
+                <label>Göz rengi</label>
+
+                <input type="color" />
+
+            </div>
+            <div>
+                <label>Duğum ayı</label>
+
+                <input type="month" />
+
+            </div>
+            <div>
+                <label>Şifre</label>
+
+                <input type="password" />
+
+            </div>
+            <div>
+                <label>Kaç yıldır kod yazıyorsun ?</label>
+
+                <input type="number" />
+
+            </div>
+            <div>
+                <!--Mobile cihazlarda keypad de @ işaretini görürüm-->
+                <label>Email adresi</label>
+                <input type="email" />
+
+            </div>
+
+            <div>
+                <!--Yazmaya başladığımızda x işaretiyle sıfırlama sansı sunar.-->
+                <label>Ara</label>
+                <input type="search" />
+
+            </div>
+
+
+            <div>
+                <input type="button" value="Kaydet" />
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

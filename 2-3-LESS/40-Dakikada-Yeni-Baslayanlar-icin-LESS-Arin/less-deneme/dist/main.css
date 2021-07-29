@@ -1,0 +1,103 @@
+.bordered {
+  border-top: dotted 2px #b10df1;
+  border-bottom: solid 2px #b10df1;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #34495e;
+}
+/* variable yapı */
+/* loop1-starts */
+/* loop1-ends */
+/* loop2-starts */
+/* loop2-ends */
+/* function yapısına örnek: */
+/* 400'ün karekökü yani 20px olacak. */
+/* değer olarak 70px'i alacak. */
+body {
+  background-color: #e7dde7;
+}
+h1 {
+  color: #b10df1;
+}
+/* nesting yapı */
+.blog h2.blog-title {
+  color: red;
+  font-size: 70px;
+}
+.blog p.blog-body {
+  color: blue;
+  font-size: 20px;
+  /*  */
+}
+.blog p.blog-body span.blog-span {
+  color: #b32ea1;
+}
+.blog p.blog-footer a {
+  color: blue;
+  /* ampersand isareti */
+}
+.blog p.blog-footer a:hover {
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  color: #b10df1;
+}
+.container {
+  color: #b10df1;
+}
+.container h3.container-title {
+  color: red;
+}
+.container p.container-body {
+  color: blue;
+  font-size: 1.5em;
+  border-top: dotted 2px #b10df1;
+  border-bottom: solid 2px #b10df1;
+}
+.box1 {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: #00ff00;
+}
+.box2 {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #ff0000;
+}
+.box3 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #0408ff;
+}
+.box4 {
+  color: blue;
+}
+/* loop1 -start */
+div {
+  width: 25px;
+  width: 50px;
+  width: 75px;
+  width: 100px;
+  width: 125px;
+  width: 150px;
+}
+/* loop1 -end */
+/* loop2 -start */
+div .border-1 {
+  border: 1px solid blue;
+}
+div .border-2 {
+  border: 2px solid blue;
+}
+div .border-3 {
+  border: 3px solid blue;
+}
+div .border-4 {
+  border: 4px solid blue;
+}
+/* loop2 -end */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+     #idx{
+         color: brown;
+     }
+
+     .cls1{
+         color: green  !important;
+         /*Css de bulunan  !important keyword ü öncelik sırasını değiştririr.Mesela cls1 den dolayı 
+         green normalde id den dolayı gelen brown ile ezilirken bu tam tersi olur.
+          */
+     }
+     .cls2{
+
+         color:rgb(182, 26, 122) !important ;
+     }
+
+    </style>
+</head>
+<body>
+    <div id="idx" class="cls1">
+      Divim
+    </div>
+    
+
+    <div class="cls2" style="color:red">
+        İnline olara color:red im
+      </div>
+</body>
+</html>

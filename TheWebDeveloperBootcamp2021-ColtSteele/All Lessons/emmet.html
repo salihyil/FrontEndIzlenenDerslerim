@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- main+header+footer start -->
+    <main></main>
+    <header></header>
+    <footer></footer>
+
+    <!-- header>nav^main+footer    diğer kullanımı: (header>nav)+main+footer  start 
+        ^ anlamı: ^ kullanmasaydık hepsi header içinde kalıcaktı bunu önlemek için ^ ile oradan kırıyoruz demek.-->
+    <header>
+        <nav></nav>
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <!-- header>nav>ul>li*5{Menu $}   { ile li içine yazı ve $ ile oto numara verme start  -->
+    <header>
+        <nav>
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- header>nav>ul>li.menu-$*5 start -->
+    <header>
+        <nav>
+            <ul>
+                <li class="menu-1"></li>
+                <li class="menu-2"></li>
+                <li class="menu-3"></li>
+                <li class="menu-4"></li>
+                <li class="menu-5"></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- header>nav>ul>li.menu-$*5{li-içinde} start-->
+    <header>
+        <nav>
+            <ul>
+                <li class="menu-1">li-içinde</li>
+                <li class="menu-2">li-içinde</li>
+                <li class="menu-3">li-içinde</li>
+                <li class="menu-4">li-içinde</li>
+                <li class="menu-5">li-içinde</li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

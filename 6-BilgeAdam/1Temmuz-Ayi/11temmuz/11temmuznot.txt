@@ -1,0 +1,7 @@
+1) unset: kalıtsal bir değer varsa ona döner. yoksa başlangıç değerine döner. unset normalde body içindeki değeride siler ama ?? 
+ body {font-size: 20px; } yazılırsa o değer olur browser değeri gibi kabul oluyor. body {} içine birşey yazmazsak 16 px olur.
+
+2) specificity sırası: inline style > id > class > element
+
+3) a:visited plusode class tek : olunca
+   a::after  plusode element :: olunca

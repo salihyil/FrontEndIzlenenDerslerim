@@ -1,0 +1,16 @@
+1- Önce props drilling sistemle başlıcak. Daha sonra bu yapıpan proje contextAPI uyarlanacak. CONTEXTAPI'a çevirmek 
+    için 2 yöntem kullanılabilir bunlar görülecek.
+
+2- uygulama veya sitede herhangi bir değişim olduğunda buna hızlı cevap verebilecek için tepki(react)'ın en önemli konusu.
+Bunu yaparken react'ın ihtiyac duyduğu şeylerden bir tanesi "State Management"dır.
+
+3- (1.png resime bak) Uygulamada props'lar artmaya başladığı zaman propslar yöntemi ile child component'lere iletip onun child'ına ilerlemek
+bu şekilde ilerlemek karışıkla yol açıyor. Bu nedenle CONTECTAPI sistemi kullanıyoruz.   
+
+4- CONTECTAPI  temel amacı: component'ler arası veri iletimini kolaylaştırmak.
+
+5- Peki CONTECTAPI ne zaman kullanılacak? Birbirinden çok farklı dallara ve componentlere ayrılıyorsa. Çünkü siz verinizi context'in 
+içerisinde tutar ve ihtiyacınız olan component'ı context içerisinden çağırırsınız.
+
+6- CONTECTAPI üzerine konuşurken component'ları class component oluşturacak. Gerektiğinde functional componentlere çevrilebilir. 
+Zaten Hooks'lar konuşunca functional component olacaklar.

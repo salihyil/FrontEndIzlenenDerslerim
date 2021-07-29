@@ -1,0 +1,159 @@
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ders2 World Wide Web Consortium (W3C) html belli bir standarta göre yazılmalı diyor.
+        https://validator.w3.org/ buradanda html standardına göre düzgün yazılıp yazılmadığını kontrol edebilirsin.
+    -->
+    <!-- HTML Dersleri -3 / Görüntü Seviyeleri (Div, Span)
+            div block seviye iken , span inline seviye 
+        <span>salih spanlı</span>
+        önceki yazı
+        <div>salih yılmaz divli</div>
+        sonraki yazı
+    -->
+    <!-- HTML Dersleri -4 / Başlık ve Paragraf Etiketleri
+        <p></p> paragraf  block seviyden element
+        h1,h2,h3,h4,h5,h6 başlıklar (hood)
+    -->
+    <!-- 5 / Metin Biçimlendirme Etiketleri
+        <b> etiketi yazıyı kalınlaştırır. 
+        <strong> buda kalınlaştırıyor ama önemli olduğunu belirtmek için 
+
+        <i> italik
+        <em> italik ve önemli olduğunu vurgulamak için
+            
+        <mark> yazının arka plan rengi sarı yaparak vurgu yapıyoruz.
+        <small> yazıyı küçültür
+        <s> etiketi yzının üzerini çiziyor.
+        <u> altçizgi ekler.
+        H<sub>2</sub>O  sub etiketi H2O'daki 2nin aşağıda yazılması
+        10<sup>2<sup> 10 üzeri 2 derken gibi
+        br etkieti yeni satıra geçiyor.(newline)
+    -->
+    <!-- -6 / Alıntılama Etiketleri
+        Web standartlarını <abbr title="World Wide Web Consortium">W3C</abbr> Kısaltmaların uzun halini göstermek istersen abbr kullanabilirsin.
+        <q> etiketi ile yazıya kesme işareti koyar
+        <blockquote> etiketi açıklamayı göstermede kullanılabilir.
+    -->
+    <!-- HTML Dersleri -7 / Link Etiketi 
+         <a href="https://www.google.com/" target="_blank"> Buraya tıkla </a>
+    -->
+    <!-- HTML Dersleri -8 / Resim Etiketi https://www.youtube.com/watch?v=nF9ME5hPZ9k
+        <img src="ads1x.jpg" alt="" srcset="ads2x.jpg 2x, ads3x.jpg 3x" >  srcset ile ekran durumuna göre  
+
+         <img src="" alt="resim yüklenmediği zaman ne olduğunu belirmek için çıkan yazı">
+        <br>
+        <a href="https://www.google.com/" target="_blank"> Buraya tıkla googla git </a> 
+    -->
+    <!-- HTML Dersleri -9 / Tablo Etiketi<table border="1">
+        <caption>
+            Tablo Başlığı için caption kullanılır.
+        </caption>
+        <thead> // Başlıkla ilgili kısımları thead içine 
+            <tr>
+                <th>Başlık Sütunu için th</th>
+                <th>2.Sutün Başlığı</th>
+            </tr>
+        </thead>
+        <tbody> // tbody geri kalan kısımları 
+            <tr> // satır için tr 
+                <td>1. sütun için tr içinde td// sütun için td </td>
+                <td rowspan="2">1.satır 2.sutün</td> //rowspan="2" ile satırları birleştirirsin. 
+            </tr>
+            <tr>
+                <td >2. sütun için tr içinde td</td>
+                <td>2.satır 2.sutün</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr> 
+                <td colspan="2">colspan="2"</td> //2.sutunu birleştirdik. 
+            </tr>
+        </tfoot>
+        
+       
+    </table>
+        
+    -->
+    <!-- HTML Dersleri -10 / Liste Etiketleri 
+            <ul>
+        <li>Düzensiz1</li>
+        <li>Düzensiz2</li>
+        <li>Düzensiz3</li>
+    </ul>
+    <ol start="3">
+        <li>Düzenli1</li>
+        <li>Düzenli2</li>
+        <li>Düzenli3</li>
+    </ol>
+    <dl>
+        <dt>Youtube</dt>
+        <dd>Video paylaşım platformu</dd>
+    </dl>
+    -->
+    <!-- HTML Dersleri -11 / Medya Etiketleri
+        <audio controls loop muted >
+        <source src="abc.mp3" type="audio/mpeg">
+        Your browser does not support the video tag.
+    </audio>
+
+    <br><br>
+
+    <video width="320" height="240" controls poster="resim.jpg">
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+    -->
+    <!-- HTML Dersleri -12 / Iframe Etiketi 
+        <a href="https://abc.com/" target="editorx">Abc.com git</a>
+        <a href="https://www.rcsb.org/" target="editorx">Rcsb.org git </a>
+        <a href="https://www.opwglobal.com/" target="editorx"> Opwglobal git</a>
+        <br><br>
+        <iframe name="editorx" src="https://www.editorx.com/shaping-design" width="300" height="400" frameborder="1"></iframe>
+    -->
+    <!-- HTML Dersleri -13 / Form Etiketleri (Bölüm 1-2)
+    -->
+    <form action="" method="GET">
+        <label for="kadi" >Kullanıcı Adı</label> <!-- Burda label içindeki Kullanıcı Adı yazıya bakınca id="kadi olan input'a fokus olur."  -->
+        <input id="kadi" type="text" maxlength="6"> <br>
+
+        <input type="password"><br>
+
+        <input type="file" name="" id=""><br>
+
+        <label > <!-- Kuralları kabul ediyorum basıncada checkbox çalışıyor. -->
+            <input type="checkbox">Kuralları kabul ediyorum
+        </label><br>
+
+        <label for="erkek"> <!-- name'lerini aynı yazınca radiolar ilişkilendiliyo  -->
+                <input type="radio" name="cinsyet" value="erkek" id="erkek">Erkek 
+        </label>
+        <label for="kadın">
+            <input type="radio" name="cinsyet" value="kadın" id="kadın">Kadın
+        </label><br>
+        <input type="submit" value="Gönder"><br>
+
+        <input id="kadi">
+
+        <input list="diller">
+        <datalist id="diller">
+            <option value="HTML"></option>
+            <option value="Css"></option>
+            <option value="Javascript"></option>
+        </datalist>
+
+    </form>
+    
+    
+    
+  
+
+</body>
+</html>

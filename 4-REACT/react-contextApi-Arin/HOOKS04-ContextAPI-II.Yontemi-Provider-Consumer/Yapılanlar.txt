@@ -1,0 +1,43 @@
+1- Veride zamanda değişiklik yapmak isteriz. Bu nedene genelde bu veriyi state içerisinde tanımlarız. Bu verileri provider ve
+consumer componentleri iletir veya yakalamaya çalışırız.
+***Bu derste provider -----> cursomer Yapılanların ÖZeti***
+1- Context içerisinde class component oluşturduk. Verimizi bu class component içindeki state'e yerleştirdik.
+2- Context'e ait provider ile statede bulanan veriyi aldık.
+3- Sonra bu veriyi parent olan App.js'e <BookContextProvider> diye gönderdik. child'ı olan <BookList>'e ilişkisinide 
+   {this.props.children} ile yaptık.
+4- Veriyi göndereceğimiz componenta-Burada BookList- Context import ediyoruz.
+5- BookList'in render(){} içerisinde Consumer ile Provider'dan gelen veriyi yakalıyoruz.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+1-const BookContext = React.createContext();
+console.log(BookContext ); //içinde provider ile consumerlara ulaşıyoruz.
+
+2-Provider'ı verileri çekiceğimiz component içine yazarız. //Örneğimizde BookContect.js verilerin çekilen yer.
+Consumer'ı da verileri alıcak olan component'in içine yazarız. //Örneğimizde BookList.js verileri alıcak component burası.
+
+
+3- BookContext.js'deki verileri class componentine alıp state içinde tutuyoruz.
+
+4-  render() {  //Render içinde neyi return edicez. BookContext içindeki provider ile döndürmek istiyoduk.
+    return ( 
+      <BookContext.Provider value={this.state}>
+        {this.props.children}  
+      </BookContext.Provider>
+    )
+  }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+

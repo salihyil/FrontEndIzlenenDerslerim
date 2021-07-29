@@ -1,0 +1,19 @@
+px: Ekranın çözünürlüğünde kaplayacağı alanı gösterir. 
+
+em: 1em font-size kaç ise ona eşittir. diyelim font-size 16px olsun. 2em o zaman 16*2=32px olur.
+
+rem: oda root em demek. html{font-size: 20px} olsun diyelim . rem html içindeki font-size'dan değer alcak. Yani 2rem burda 20*2= 40 px olcak.
+
+%: width: 30% diyebiliyorken height'de kapsayıcısında height tanımlı değeri yoksa height % değeri çalışmaz.!!!
+
+
+//Viewport'lar https://www.youtube.com/watch?v=9wlmK3r1NJk&list=PLadt0EaV4m3BX9JaZbKS9B8076bruv93Y&index=12 Dk 16
+
+vh(viewheight): 100vh yüksekliği tarayıcının yüzde yüzü olsun demek 
+
+vw(viewwidth): 100vw genişliği tarayıcının yüzde yüzü olsun demek 
+
+vmin: 
+
+vmax: 
+

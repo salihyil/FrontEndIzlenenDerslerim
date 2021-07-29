@@ -1,0 +1,44 @@
+1) Bugün less css önişlemcisinden bahsedicez. sitesi: lesscss.org  
+
+2) Neden önişlemcilere ihtiyaç duyarız? Populer önişlemcilere sass, less, stylus örnek verilebilir. 
+Bu önişlemcilerin farkını çok büyük projelerde görürüz. 
+
+3)Peki ne gibi faydaları olur? 
+-Less'de css'de olmayan değişken(variable) özellikleri vardır.
+Değişkenler oluşturarak sayfamızda tekrar tekrar kullanabiliriz. Onun haricinde matematiksel işlemlerde yapılabilir. Örnek color'ı bir değişkene 
+atarız onu isteğimiz yerde kulanırız. Mixins yapıları kullanılabilir. Özetle önişlemciler css'i daha güçlü ve daha kolay bir şekilde kullanabilmeyi sağlar.
+
+4) browser-usage kullanımı:  
+   -styles.less dosyası oluştur.
+   -html dosyasına <head> tagı içine alttaki kodları ekle: 
+   <link rel="stylesheet/less" type="text/css" href="styles.less" />
+   <script src="less.js" type="text/javascript"></script>
+
+5) Nesting yapılar: 
+   -ampersand işareti(&):
+
+6) Mixins yapıları: programlamadaki fonksiyonlara benzer.
+
+7) function yapısı: less tarafından hazırlanan hazır fonksiyonlar
+
+
+
+-kaynaklar:
+1- https://www.youtube.com/watch?v=8rw8Th1fWCM
+2- https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

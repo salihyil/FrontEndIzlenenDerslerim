@@ -1,0 +1,61 @@
+/*!Universal Selector 
+
+*{
+    color: green;
+    background-color: blue;
+}
+
+*/
+
+/*!Element Selector
+
+-Select all images
+img {
+    width: 100px;
+    height: 200x;
+}
+
+*/
+
+/*!Multiple Selector List
+
+h1,h2 {
+    color: magenta;
+}
+
+ */
+
+/* !id selector , class selector
+
+#idname {
+    color:red;
+}
+
+.classname {
+    color:red;
+}
+
+*/
+
+/* !Descendant Selector
+
+Acıklaması li'nin içindeki tüm <a>'ları seçer. li değişiklik yok sadece a'da olacak.
+li a {
+  color: red;
+}
+
+*/
+
+/* !The Adjacent & Direct-Descendent Selectors
+-select only the paragraph that are direct children of a <div> element
+-yalnızca bir <div> öğesinin doğrudan çocukları olan paragrafı seçin
+
+div > li {
+    color: white;
+}
+
+*/
+
+/* ! 
+
+ */

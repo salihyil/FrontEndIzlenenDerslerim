@@ -1,0 +1,126 @@
+body {
+  height: 20000px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.alinti {
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+}
+
+.deneme {
+  list-style: none;
+}
+.deneme1 {
+  list-style: none;
+}
+
+.alan {
+  display: inline;
+}
+
+.head1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a.b {
+  color: #0582ff;
+  color: #ff0000;
+}
+
+/* *attribute böyle ulaşabiliriz. */
+div[type="text"] {
+  color: rgb(21, 255, 0);
+}
+
+[data-my] {
+  color: royalblue;
+}
+
+div > p {
+  color: rgb(113, 40, 136);
+}
+
+/* div>p>* anlamı
+    <div>
+      <p>
+        <element> 
+*/
+div > p > * {
+  color: rgb(70, 131, 62);
+}
+
+/* *div ve spanları kapsayan demek */
+div,
+span {
+  box-shadow: 1px 1px 1px 1px;
+}
+
+.btn-sub:hover {
+  color: fuchsia;
+  cursor: wait;
+}
+
+.btn-sub:focus {
+  outline: none;
+  background-color: greenyellow;
+  border: 1px solid red; /* *border red yapabilmek için outline: none yaptık. */
+}
+
+ul li:nth-child(1) {
+  color: red;
+  font-size: large;
+}
+ul li:nth-child(2) {
+  color: red;
+  font-size: large;
+}
+
+ul li:nth-child(3) {
+  color: skyblue;
+  font-size: large;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+div ~ p {
+  /* *divden sonra gelen p tag */
+  color: red;
+}
+
+div + p {
+  /* *divden sonra ilk gelen p */
+  color: rgb(92, 35, 24);
+}
+
+/* figure - start */
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+img {
+  max-width: 220px;
+  max-height: 150px;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+/* *figure - end */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+
+            height:90px;
+            text-align: center;
+            border: 1px solid red;
+            min-width: 830px ;
+        }
+        .kutu{
+            height: 100%;
+            display: inline-block;
+        }
+
+
+         .kutu1{
+             width: 200px;
+             background-color: red;
+         }
+         .kutu2{
+             width: 300px;
+             background-color: yellow;
+         }
+         .kutu3{
+             width: 200px;
+             background-color: green;
+         }
+
+         .kutu4{
+             width: 100px;
+             background-color: grey;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="kutu1 kutu">Kutu1</div>
+        <div class="kutu2 kutu">Kutu2</div>
+
+        <div class="kutu3 kutu">Kutu3</div>
+        <div class="kutu4 kutu">Kutu4</div>
+
+    </div>
+
+    <div>
+
+        Kutularımızı kaplayan container classına sahip elemente max-width vererek en küçük boyutunu sınırladık.
+        <br>
+        830 px den daha küçük ekranlarda x ekseninde sitemiz sağa taşacaktır.
+
+    </div>
+    
+</body>
+</html>

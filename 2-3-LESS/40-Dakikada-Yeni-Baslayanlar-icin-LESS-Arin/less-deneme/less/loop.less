@@ -1,0 +1,16 @@
+/* loop1-starts */
+.cont(@count) when (@count > 0) {
+  .cont((@count - 1));
+  width: (25px * @count);
+}
+/* loop1-ends */
+
+/* loop2-starts */
+.loop(@counter) when (@counter > 0) {
+  .loop((@counter - 1));
+
+  .border-@{counter} {
+    border: 1px * @counter solid blue;
+  }
+}
+/* loop2-ends */

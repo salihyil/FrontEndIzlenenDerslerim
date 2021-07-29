@@ -1,0 +1,2 @@
+1) display: initial; bir <p>'nin özelliğini değiştiysen display: initial; dersen ilk init olduğu özelliğe ilk haline default geri döner.
+   display: inherit; kapsayıcı ne ise onun özellikleri ol gibi denilebilir.

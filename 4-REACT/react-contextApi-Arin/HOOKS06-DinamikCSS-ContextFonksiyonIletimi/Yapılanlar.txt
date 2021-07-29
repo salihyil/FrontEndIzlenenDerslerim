@@ -1,0 +1,21 @@
+1- Button yapıcak darkthemanın true veya false olmasına göre ekran değişcek. Önceki örnekt elimizle ayarlarken şimdi dinamik hale getiricez.
+
+2-themeContext.js içine ekliyoruz.
+changeTheme = () => {
+    this.setState({isDarkTheme: !this.state.isDarkTheme})
+  }
+
+return (
+      <ThemeContext.Provider value={{...this.state, changeTheme:this.changeTheme}}> 
+        {this.props.children}
+      </ThemeContext.Provider>  
+    )
+
+3- BookList.js ekle. 
+const {changeTheme, isDarkTheme, dark, light } = contextTheme;
+
+4- <button className="btn btn-sm btn-info mb-5" type="button" onClick={changeTheme}>Change Theme </button>
+
+
+****ContextAPI NERELERDE KULLANMALI?
+-dille ilgili değişiklik , thema ile ilgili değişklik , kullanıcı denetimi özellikleri ile ilgili paylaşcaksak 

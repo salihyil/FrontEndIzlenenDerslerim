@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Pizza Order Form</title>
+</head>
+
+<body>
+    <form action="/deneme" method="post">
+        <div>
+            <h1>Pizza Order Form</h1>
+            <hr>
+            <h3>Menu</h3>
+            <div class="box">
+
+                <div class="pizza11">
+                    <input type="checkbox" id="pizzas" name="pizzas">
+                </div>
+
+                <label class="pizzalabel" for="pizzas">
+                    <div class="pizza12">
+                        <img id="pizza1"
+                            src="https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/_SUCUKPI/NULL/434x404/TR?v=6b3482b8a8fafce4d578b8296226b77a-1625418240000"
+                            alt="pizza1" width="100" height="100">
+                    </div>
+    
+                    <div class="pizza13">
+    
+                        <div class="a">
+                            <div class="a1">
+                                
+                                <label for="pizzas"><b>Pizza Neapolitan</b></label>
+                                <p>Ingredients will be written here.</p>
+                            </div>
+    
+                            <div class="a2">
+                                <p>$15.00</p>
+                            </div>
+                        </div>
+    
+                        <div class="b">
+                            <div class="b1">
+                                <label>Quantity</label>
+                                <select name="item" id="item">
+                                    <option value="1">1</option>
+                                    <option value="1">2</option>
+                                    <option value="1">3</option>
+                                    <option value="1">4</option>
+                                    <option value="1">5</option>
+                                </select>
+                            </div>
+    
+                            <div class="b2">
+                                <label>Size</label>
+                                <select name="item" id="item">
+                                    <option value="small">small</option>
+                                    <option value="medium">medium</option>
+                                    <option value="large">large</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                    </div>
+                </label>
+
+            </div>
+            <div class="box">
+
+                <div class="pizza21">
+                    <input name="bas" type="checkbox">
+                </div>
+
+                <div class="pizza22">
+                    <img id="pizza2"
+                        src="https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/_SUCUKPI/NULL/434x404/TR?v=6b3482b8a8fafce4d578b8296226b77a-1625418240000"
+                        alt="pizza1" width="100" height="100">
+                </div>
+
+                <div class="pizza23">
+
+                    <div class="a">
+                        <div class="a1">
+                            <h3>Pizza Neapolitan</h3>
+                            <p>Ingredients will be written here.</p>
+                        </div>
+
+                        <div class="a2">
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+
+                    <div class="b">
+                        <div class="b1">
+                            <label>Quantity</label>
+                            <select name="item" id="item">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                                <option value="1">5</option>
+                            </select>
+                        </div>
+
+                        <div class="b2">
+                            <label>Size</label>
+                            <select name="item" id="item">
+                                <option value="small">small</option>
+                                <option value="medium">medium</option>
+                                <option value="large">large</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="total">
+                <div class="total1">Total</div>
+                <div class="total2">$30.00</div>
+            </div>
+            <br>
+
+            <div class="form-name">
+                <label>Name</label>
+                <div class="name1">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="ad" id="ad">
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="soyad" id="soyad">  
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-email">
+                
+                <label>Email</label>
+                <div class="email1">
+                    <div>
+                       
+                        <input type="text" name="email" id="email" placeholder="example@example.com">
+                    </div>
+                   
+                </div>
+
+            </div>
+
+            <div class="form-phone-number">
+                
+                <label>Phone Number</label>
+                <div class="phone-number1">
+                    <div>
+                        <input type="text" name="phone-number" id="phone-number" placeholder="(000) 000-0000">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="form-odeme">
+                <h3>Ödeme Şekli</h3>
+                <div class="onlinePayment">
+                    <b>ONLINE ODEME</b>
+                    <span>(Online ödeyin, zaman kazanın)</span>
+                </div>
+                <div class="payments">
+
+                    <div class="radio" >
+                        <label for="card">
+                            <input id="card" name="payment" type="radio" value="onlinekartodeme">
+                            <label for="card">Online Kredi/Banka Kartı</label>
+                            <img src="https://www.yemeksepeti.com/assets/images/mc_visa_icons.png" alt="card" width="108px" height:auto;>
+                        </label>
+                        
+                    </div>
+
+                    <div class="radio">
+                        <label >
+                            <input id="mobil" name="payment" type="radio" value="mobilodeme">
+                            <label for="mobil">Maximum Mobil ile Öde</label>
+                        </label>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="Order">
+        </div>
+    </form>
+</body>
+
+</html>

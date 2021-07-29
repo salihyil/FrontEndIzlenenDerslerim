@@ -1,0 +1,32 @@
+HTTP response status codes: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+
+HTTP Request Methods: https://www.w3schools.com/tags/ref_httpmethods.asp 
+
+1)GET:  is used to request data from a specified resource. 
+  GET, belirli bir kaynaktan veri istemek için kullanılır.
+
+2)POST:  is used to send data to a server to create/update a resource. 
+  POST, bir kaynağı oluşturmak/güncellemek için bir sunucuya veri göndermek için kullanılır.
+
+3)PUT: is used to send data to a server to create/update a resource.
+   The difference between POST and PUT is that PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result. 
+   In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+
+   POST ve PUT arasındaki fark, PUT isteklerinin önemsiz olmasıdır. Yani, aynı PUT isteğini birden çok kez çağırmak her zaman aynı sonucu verecektir. 
+   Buna karşılık, bir POST isteğini tekrar tekrar çağırmak, aynı kaynağı birden çok kez yaratmanın yan etkilerine sahiptir.
+   
+   POST sadece belirli bir kaynağa veri göndermek için kullanılır ve veri ile ne iş yapılacağı server'a bağlıdır. 
+   PUT ise aynı kaynağa aynı adres ile erişilir ve eğer içerik var ise gelen veriler ile değiştirilir , eğer içerik yok ise yeni içerik yaratılır. 
+   PUT ile daha çok server'a dosya bazlı içerikler göndermek için tercih edilir.
+
+4)HEAD: HEAD is almost identical to GET, but without the response body.   
+        GET ile hemen hemen aynıdır, ancak yanıt gövdesi yoktur.
+  Başka bir deyişle, GET /users bir kullanıcı listesi döndürürse, HEAD /users aynı isteği yapar ancak kullanıcı listesini döndürmez. 
+  HEAD istekleri, büyük bir dosya veya yanıt gövdesini indirmeden önce olduğu gibi, bir GET isteğinde bulunmadan önce bir GET isteğinin ne döndüreceğini kontrol etmek için kullanışlıdır.
+
+5)DELETE: DELETE yöntemi, belirtilen kaynağı siler.
+
+6)PATCH
+
+7)OPTIONS: OPTIONS yöntemi, hedef kaynak için iletişim seçeneklerini açıklar.

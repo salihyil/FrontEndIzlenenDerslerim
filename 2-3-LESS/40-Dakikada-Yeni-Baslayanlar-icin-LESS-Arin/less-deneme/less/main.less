@@ -1,0 +1,83 @@
+@import "mixins.less";
+@import "color.less";
+@import "loop.less";
+@import "maps.less";
+
+/* function yapısına örnek: */
+@font-size: sqrt(400px); /* 400'ün karekökü yani 20px olacak. */
+@font-size1: max(10px, 70px, 20px, 15px); /* değer olarak 70px'i alacak. */
+@span-color: rgb(179, 46, 161);
+
+body {
+  background-color: @background-color;
+}
+
+h1 {
+  color: @font-color;
+}
+
+/* nesting yapı */
+.blog {
+  h2.blog-title {
+    color: @h2-font-color;
+    font-size: @font-size1;
+  }
+  p.blog-body {
+    color: @p-font-color;
+    font-size: @font-size; /*  */
+    span.blog-span {
+      color: @span-color;
+    }
+  }
+  p.blog-footer {
+    a {
+      color: #colors[primary];
+      /* ampersand isareti */
+      &:hover {
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 2em;
+        color: @font-color;
+      }
+    }
+  }
+}
+
+.container {
+  color: @font-color;
+  h3.container-title {
+    color: @h2-font-color;
+  }
+  p.container-body {
+    color: @p-font-color;
+    font-size: 1.5em;
+    .bordered();
+  }
+}
+
+.box1 {
+  .mixins-box1(300px, 300px, rgb(0, 255, 0));
+}
+
+.box2 {
+  .mixins-box2(200px, 200px, rgb(255, 0, 0));
+}
+
+.box3 {
+  .mixins-box3(100px, 100px, rgb(4, 8, 255));
+}
+.box4 {
+  color: #colors[primary];
+}
+
+/* loop1 -start */
+div {
+  .cont(6);
+}
+/* loop1 -end */
+
+/* loop2 -start */
+div {
+  .loop(4);
+}
+/* loop2 -end */

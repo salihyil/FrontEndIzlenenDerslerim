@@ -1,0 +1,29 @@
+.container {
+    padding: 20px;
+    width: 400px;
+    border: 8px solid;
+    font-size: 18px;
+    color: rgba(165, 79, 219, 0.9);
+  }
+  
+  svg {
+    stroke: currentColor; /* currentColor kapsayıcısı hangi renk ise onu alır. svg kapsayıcı container burda */
+  }
+  
+  p {
+    padding: 30px;
+    color: white;
+    background-color: rgba(165, 79, 219, 0.9);
+  }
+  
+  
+  button {
+    border: 2px solid;
+    
+    padding: 10px;
+    color: inherit;
+    background-color: inherit; /* inherit kapsayıcısına git onun background-color'ını kullan demek.*/
+    
+    /*background-color: transparent;  
+    transparent, ışığı geçiren, arkasını gösteren, saydam.*/
+  }

@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=Eh51X3Iwsy0&list=PLadt0EaV4m3BX9JaZbKS9B8076bruv93Y&index=13
+
+color: #ff4455; söylede yazılabilir. #f45 gibi.  Başka örnek #ff1122; #f12 gibi kısaltılabilir. #
+
+

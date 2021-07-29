@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/test/deneme" method="POST"><!-- action anlamı bu form hangi server'a gideceğini belirtir. -->
+
+        <!-- method="get" ile yapınca http://127.0.0.1:5500/test/deneme?okul=-1 olarak gelir. GET, belirli bir kaynaktan veri istemek için kullanılır.   
+             method="post" ile yapınca POST, bir kaynağı oluşturmak/güncellemek için bir sunucuya veri göndermek için kullanılır.
+        -->
+
+        <!-- server kısmıma gidecek tüm elementlerin name attribute'ü olmak zorunda -->
+        <div>
+            <label>Adını gir: </label>
+            <input type="text">
+
+        </div>
+        <br>
+        <div>
+            <label>Soyadını gir:</label>
+            <input type="text">
+        </div>
+        
+        <div>
+            <!-- select tagları: name içermeli  optionların value değeri olmalı. name olmazsa veriler gitmek server tarafa -->
+            <select name="okul">
+                <option value="-1">Seçiniz</option>
+                <option value="1">Lise</option>
+                <option value="2">Üniversite</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- NOT: Tip: Always use the <label> tag to define labels for <input type="text">, <input type="checkbox">, <input type="radio">, <input type="file">, and <input type="password">. -->
+
+            <!-- radio name attributeüne  göre gruplanır. 2side cinsiyet name olduğundan birinin seçili olmsdı gerekir. -->
+            <label>Cinsiyet</label>
+            <label><input type="radio" value="1" name="cinsiyet">Bay</label>  <!-- label içine alma sebebi Bay bayan yazıları label içine almak için -->
+            <label><input type="radio" value="2" name="cinsiyet">Bayan</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="bas">bas</label>
+            <label for="bas"></label>
+        </div>
+
+        <div>
+            <!-- mobilede @ işareti çıkacak. Kullanıcı için yararlı -->
+            <label for="email">email gir:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="dosya">dosya ekle:</label>
+            <input type="file" name="dosya" accept=".docx" >
+        </div>
+        <input type="submit" value="Kaydet">
+    </form>
+</body>
+
+</html>

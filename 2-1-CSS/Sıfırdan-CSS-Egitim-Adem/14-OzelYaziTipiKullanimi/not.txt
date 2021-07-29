@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=G6-5PHyBtbY&list=PLadt0EaV4m3BX9JaZbKS9B8076bruv93Y&index=14
+
+-Bize font uzantılı dosyasını vermediyse .otf veya .ttf sadece bilgisayarda kullanabileceğimiz font dosyasını verdiyse 
+öncelikle bunu dönüştürmemiz lazım.https://transfonter.org/ bu sitede önemli olanlar WOFF ve WOFF2 uzantilari bunlar webde 
+kullanılan font uzantılar
+
+-tarayıcının destekleyip desteklemediğini https://caniuse.com/#home  .woff(web open font format) uzantılarını destekleyen 

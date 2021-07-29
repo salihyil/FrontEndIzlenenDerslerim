@@ -1,0 +1,73 @@
+body {
+    font-family: "Inter", sans-serif;
+    height: 1000px;
+}
+
+.box{
+    display: flex;
+    width: 100%
+}
+.pizzalabel{
+    display: flex;
+}
+
+.pizza1 {
+    padding: 10px;
+
+}
+
+#pizza1 {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.pizza11 {
+    align-self: center;
+    
+}
+.a {
+    display: flex; 
+}
+.a1 {
+    margin-right: 50px;
+}
+.a1 > h3 {
+    margin-bottom: 0px;
+}
+.a1 > p {
+    margin-top: 0px;
+}
+
+.b {
+    display: flex; 
+}
+
+.b1 {
+    margin-right: 10px;
+}
+
+.total{
+    display: flex;
+}
+.total1 {
+    margin-right: 10px;
+}
+
+.name1{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name{
+    margin-bottom: 10px;
+}
+.form-email{
+    margin-bottom: 10px;
+}
+.form-phone-number{
+    margin-bottom: 10px;
+}
+
+.card {
+    position: relative;
+    left: 50px;
+}

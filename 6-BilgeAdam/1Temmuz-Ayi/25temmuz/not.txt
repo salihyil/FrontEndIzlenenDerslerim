@@ -1,0 +1,33 @@
+1) gulp less'i css'e çeviriyor ve 
+
+gulpfile.js dosyası ekle
+
+2) vertical-align : The vertical-align CSS property sets vertical alignment of an inline, inline-block or table-cell box.
+	inline ve inline-blockta işe yarar.  sadece blockta işe yaramaz.
+	https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+
+3) ödev thy header kısımları less ile yap. sonra mobile ve table modlarını responsiveleri dene
+
+4) justify-content: x ekseni 
+   align-items: y ekseni
+
+
+5)flex-flow: This is a shorthand for the flex-direction(yön) and flex-wrap(aşağı kaydırma)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

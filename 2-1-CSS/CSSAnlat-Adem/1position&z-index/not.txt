@@ -1,0 +1,19 @@
+relative: hayali pozisyon (kendi kapsayıcısının içinde top,right.. ile uçurabilirsin)
+absolute: serbest pozisyon (tüm kapsayıcılarında(body dahil) taaki relative e kadar)
+fixed: sabit pozisyon (ekranın görünen kısmından pozisyon alır oraya çöker)
+static: sıfır pozisyon (tüm pozisyonlara res çekerek body den pozisyon alır)
+
+z-index ise alınmış pozisyonlarda üste çıkartmak,alta almak için
+
+Kendi Notum: 
+1) position: relative; ile top,right,bottom,left: -5px; gibi özellikleri etkin hale getirebiliriz.
+   -Gerçekte onun yeri konumlandığı sıfıra sıfır noktasıdır. Görsel açıdan onu tarayıcı yeri değişmiş olarak gösterir.
+
+2) position: absolute; ile sizin verdiğiniz öğede "position: absolute" varsa o öğe bir üst kapsayıcısına gider bakar relative; var mı diye 
+   -varsa ona göre pozisyonlanır. yoksa bir üst kapsayıcıya çıkar relative bulana kadar en son body olabilir.
+
+3) position: fixed; genelde header'da oluyor.
+
+4) position: static; verildiğinde ilk haline döner. Yani hiç left top değeri verilmemiş position: absolute; verilmemiş. Position değerini sıfırlar.
+
+5) z-index: 	değeri yüksek olan yukarda olur.  z-index çalışabilmesi için position KESİN OLMASI LAZIM. static hariç

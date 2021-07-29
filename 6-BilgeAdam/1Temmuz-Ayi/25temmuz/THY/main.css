@@ -1,0 +1,107 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Museo Sans 500";
+  src: url("./fonts/MuseoSans-500.eot");
+  src: url("./fonts/MuseoSans-500.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/MuseoSans-500.woff2") format("woff2"),
+    url("./fonts/MuseoSans-500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  min-width: 555px;
+  font-family: "Museo Sans 500", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+span {
+  color: #c3cbd7;
+  padding: 0 2px;
+}
+
+a:active {
+  outline: #4285f4 solid 2px !important;
+}
+
+span:hover {
+  color: #7dc5be;
+}
+
+header {
+  background-color: #232b38;
+}
+.header-top {
+  background-color: #2b3947;
+}
+
+.ul1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+
+ul li {
+  padding: 0px 5px;
+}
+
+#last {
+  border-right: none;
+}
+
+li {
+  border-right: 1px dashed red;
+  padding-right: 5px;
+  font-size: 0.8em;
+}
+
+i {
+  color: white;
+}
+
+.header-down {
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.logo-link {
+  height: 60px;
+  display: inline-block;
+  padding: 12px 5px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.ul2 {
+  display: flex;
+  list-style: none;
+  height: 50%;
+}
+
+.deneme span {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}

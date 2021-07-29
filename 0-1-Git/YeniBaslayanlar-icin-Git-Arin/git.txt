@@ -1,0 +1,70 @@
+0:32 Git Nedir? Açık kaynak kodlu versiyon sürüm kontrol sistemi. Belirli dönemler içerisinde  yapılan yazılım belirli versiyonları oluşturulur. Bu sebeple versiyon sürüm kontrol sistemi kullanılır.
+2:20 Neden Git Kullanırız? 3 temel özelliği var denilebilir. 1- geliştirme süreçlerini izlemek 2- işbirliği çalışmalar çakışmasın 3- projenin belirli bölümlere dallara ayrılmasını sağlar.
+07:13 git bash kurulumu
+11:05 site: git-github--workflow-fundamentals-5496
+-local git'te: 3 çalışma alanı var. 
+   1-working directory: üzerinde çalıştığımız dosyalar 
+   2-staging area(geçiş-index bölgesi): yaptığımız değişiklikleri bir görelim alanı 
+   3-localrepo:  Üzerinde çalışılan proje ile ilgili tüm dosyaları, değişiklikleri/dallandırmaları repository'de bulundururuz. Projenin zaman makinesis
+-remote repo: bu alan remote servis github anlatılırken bakılacak.
+not: local{ working directory -> git add  -> stating area -> git commit -> local repo } ->git push   <-git pull Remote{ remote repo }
+
+11:45 Repository Nedir? Üzerinde çalışılan proje ile ilgili tüm dosyaları, değişiklikleri/dallandırmaları repository'de bulundururuz. Projenin zaman makinesi
+14:05 gir commit: git içinde yaptığımız değişiklikleri kaydettiğimiz alan
+15:25 pwd(print-working-directory): nerde olduğumuzu görürüz.
+16:20 git config --list // git config --global user.name = "salih"  // git config --global user.email= "aaa@gmail.com"
+18:30 git init    =localrepo burasıdır.
+ 19:40 git status   =dosyaların statüsü ile ilgili bilgi aldığımız kısım
+21:30 git add .   =bu kodla staging area kısmına geçiş yapıyoruz demek.
+22:35 git commit -m 'Baslangic dosyalari gonderildi'   =yarın birgün commitlere baktığında ne yaptığını anlayasın diye kullanılır.
+
+Dosyalarda değişiklik yapıldı diyelim. 
+git status ->çıktı: modified: index.html (working directory'de) 
+git add index.html 
+git status ->çıktı: modified: index.html (staging area'da )
+git commit -m 'Index HTML Ana Baslik Değistirildi.' (local repo) 
+git status -> çıktı nothing to commit, working to clean. 
+Dosyada yeni bir değişiklik yapılana kadar böyle yazar.
+
+31:20  sadece git commit yazılınca nolur? karşımıza vim editörü çıkar.
+33:20  3 değişiklik birden yapılacak 1-yeni bir dosya oluşturulacak 2- var olan dosya silinecek 3- var olan dosya değiştirilecek
+34:00 touch text.txt   =Bu kod ile text.txt dosyası oluşturuldu.
+
+36:05 git add -A   =yapılan tüm değişikliklerin  staging area'ya gönderilmesini sağlar.
+38:30 mv text.txt readme.txt   =text.txt dosya ismini readme.txt'e yapar.     git status diyince text.txt silindi olarak algılar. readme.txt yeni dosya olarak tanır untracked olur. git add . yazdıktan sonra status renamed text.txt -> readme.txt olarka görür.
+40:10 git status -s    =R yazar renamed kısaltması yazar.
+44:15 git restore --staged index.html    =yaptığımız değişikliği geri almakda kullanılır.   staging area'dan -> working directory'e -> ordanda değişiklik yapılmamış kısıma çevrilebilir.
+
+46:05 commit ettiğimiz değişikleri geri almak isteriz asıl işe yararlı bu.
+46:50 git log  =bu komutla tüm commitlerimizi görürüz.  git show en son yapılan commiti gösterir.
+48:00 checkout  =önceki yazdığımız commitlere geri dönmek istiyebiliriz bu komutla yapıcaz.
+48:35 git log --oneline  =bu kod yapılan commit(değişiklikleri) daha basit sade sekilde gosterir.
+49:50 git log -p -2    =Anlamı son 2 committedeki değişikleri gösterir.
+51:05 git log --since=50minutes      =Bu kod minutes,hours, days weeks öncesine kadar yapılan commitleri gösterebilir.
+
+
+!!önemli 
+53:20 git checkout 16c9d7f    =Önce git log --oneline yazalım. Sonra gitmek istediğimiz commitin 16c9d7f gibi  7haneli adresini checkout'dan sonra yazılır.
+55:10 git checkout master    =Bu kod ile en sonuncu olan commite ulaşırız. 
+
+58:10 git  revert e2091aa
+1:01:10  revert: Yanlızca e2091aa olan commit'inde  yapılan değişiklikler kaldırıldı. Diğer commitlerde değişiklik olmuyor.
+
+1:03:55 3 tip reset var. soft, mixed, hard
+1:04:50 git reset --soft  e2091aa          =commitler'de en başlangıca gelir diğer commitleri siler. Ama working directory ve staging area kısımdaki dosyalara ellemez.
+1:06:50 git reset --mixed e2091aa        =commitler'de en başlangıca gelir diğer commitleri siler.  Ama bu sefer  değişiklikleri staging alandan da aldı yalnızlıkca working alanda değişiklik var.
+1:07:20 git reset --hard e2091aa      =Değişikleri committende staging'den de working'de geri döndürecek. Projenin başına dönmüş oldun.
+
+1:10:18 . gitignore    =repository tarafından takip edilmesini istemediğimiz dosyaları .gitignore üzerinde göstericez.
+1:13:10 log.txt .gitignore'da olmasına rağmen modified neden oluyor?  Normal de .gitignore ilk daha projenin başlarında gönderilecek dosyadır ki neyin takip edilip edilemeyeceğini bilsin. 
+.gitignore sonradan oluşturulan problemlerde;
+git rm -r --cached .     kodu yazılır.
+
+1:15:45 .gitignore içine yazılabilecekler *.txt yazarsak txt uzantılı dosyalar commit olmıcak.
+1:17:45  Branching Nedir? deep branching: üzerinde çalışılan projenin farklı  geliştirmeler için farklı dallara ayrılmasını sağlar.
+1:19:25 git branch cssbranch   =bir tane cssbranch   branchi oluştururuz.
+
+1:28:00Merging Nedir?  Şimdi css'ci cssbranch'in çalıştı, html'ci htmlbrach'inde çalıştı. Sıra geldi şimdi bunları master'da merging etmeye.
+master branch içinde;
+git merge cssbranch htmlbranch    kodunu yazarak diğer branchlerde yapılan düzenlemeler master'a geçer. 
+1:29:00  i basılır insert çıkmak için esc ve :x! yazılır.

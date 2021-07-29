@@ -1,0 +1,21 @@
+dir *.png > a.txt   Bu komut ile yaz˝ld˝.
+
+ Volume in drive C has no label.
+ Volume Serial Number is 5C8A-CCCA
+
+ Directory of C:\Users\salih\Desktop
+
+01 Mar 2021  17:13           201.306 123.PNG
+07 Nis 2021  21:01           811.490 12345.PNG
+07 Nis 2021  20:49           615.030 asasa.PNG
+30 Mar 2021  15:14            25.530 asdds.PNG
+07 Nis 2021  21:33           765.291 benimki.PNG
+22 Mar 2021  19:03             8.863 download.png
+01 Mar 2021  15:15            37.807 Ekran Alçntçsç.PNG
+08 May 2021  17:11           766.610 frontend.png
+22 Mar 2021  15:50           138.840 googleYaptim.PNG
+08 Nis 2021  01:35            16.485 nasilyapilir.png
+19 Nis 2021  17:59            25.590 sa.PNG
+03 Mar 2021  00:11            19.876 soru.PNG
+              12 File(s)      3.432.718 bytes
+               0 Dir(s)  193.536.167.936 bytes free

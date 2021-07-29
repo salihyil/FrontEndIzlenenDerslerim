@@ -1,0 +1,23 @@
+1- Önceki derslerde yapılan props drilling yöntemi ile önce bookList sonrada book componentine gönderildi.
+
+2- Simdi resimde söylenen ayri bir contextAPI oluşturuluyor. Provider ile sağlıyor. Consumer ile alıyor.
+
+3- İlk yapılacak context objesini oluşturmak. export const BookContext = React.createContext();
+BookContext napıcak, iletmek istediğimiz veri için bir karayolu olacak gibi düşün.
+Bu verileri iletmenin 2 yolu var. 1.'si Provider,Consumer yolu 2.'si Default Value, discontext yolu'dur.
+ - "Default Value" yolu: varsayılan bir değer tanımlanır nesne,array, yanlızca bir değişken bile olabilir ve sonra bu 
+   Default Value ilgili component'e "this.context" ile iletilecek. (Default Value ---> this.context)
+ - Provider,Consumer yolu: Parent component içerisinde provider component oluşturup sonra veriyi göndermek istediğimiz
+   component'da da comsumer oluşturmak. (Provider ---> Consumer )
+
+4- Bu derste Default Value yolu yapıldı. HOOKS04'deki derste provider,consumer yolu.
+Default Value aşamalar: 
+	1- contexts klasörü --> BookContext.js veriler buraya atıldı (yani başlangıç verileri). export default yapıldı.
+	2- Sonra verinin kullanılacağı component'e gelip BookContext import ettik 
+	3- Sonra static contextType = BookContext; oluşturduk.
+	4- this.context ile ilgili veriye ulaşabilir olduk artık.
+	
+
+
+
+

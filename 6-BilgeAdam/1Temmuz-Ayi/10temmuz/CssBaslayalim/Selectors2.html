@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[data-c="r"][data-d="g"].red.blue {
+
+            color: sienna;
+        }
+
+        /*data-x attiribute ü olsunda ne olursa olsun*/
+        [data-x] {
+            color: skyblue;
+
+        }
+
+        /*herhangi bir div elementinin içinde bulunan span elementlerini işaret eder*/
+        div span {
+
+            color: rgb(190, 35, 126);
+
+        }
+
+        /*Divin ilk dalında bulunan p ler*/
+        div>p {
+
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div data-c="r" data-d="g" class="red green blue">
+
+        Selectörleri kombine ederek kullanabilir.
+    </div>
+
+
+    <div data-x="y">
+        data-x="y"
+
+    </div>
+    <div data-x="z">
+        data-x="z"
+
+    </div>
+
+    <div>
+        <span>Ben div altındaki spanım</span>
+    </div>
+
+    <p>
+        <span> Ben p altındaki span</span>
+    </p>
+
+
+    <div>
+
+        <article>
+            <p>Ben article elementinin cocugu div elementinin torunuyum</p>
+
+        </article>
+
+        <p>Ben divin cocuguyum</p>
+    </div>
+
+    <div>
+
+     div >p[a="x"].clas1 .a ---> herhangi bir div elementinin ilk dalında bulunan p elementi olup [a="x"] bu attiribute <em>
+         sahip olan .clas1 classa sahip olan elementlerin içinde bulunan a classına sahip olan elementler.
+     </em>
+
+    </div>
+    <div>
+    div p >*---> herhangi bir div içinde olacak p elementinin ilk dalında bulunan tüm elementler
+
+
+    </div>
+
+
+</body>
+
+</html>

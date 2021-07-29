@@ -1,0 +1,59 @@
+/* Pseudo-classes:  */
+
+ul > li {
+  background-color: #dce3d7;
+  box-shadow: 1px 1px 1px 1px #dce3d7;
+}
+
+.example1:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+  cursor: help;
+  text-decoration: line-through;
+  color: rgb(217, 255, 0);
+}
+
+.example2:active {
+  color: gold;
+  font-family: fantasy;
+}
+
+.example3:checked {
+  height: 30px;
+  width: 30px;
+  box-shadow: 3px 3px 1px red;
+}
+
+ul > li:nth-of-type(4) { /* 3n yazsak 3'ün katı olanlar etkilenecek. */
+  background-color: rgb(75, 168, 47);
+}
+
+/* !------------------------------------------------------------------------------------------------------------------------------ */
+
+/*  Pseudo-Elements  https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index*/
+
+h2::first-letter { /* 'lk harf */
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+div > p::first-line { /* p tagindaki ilk satir */
+  color:red;
+}
+
+div p::selection { /* paraftaki seçili tuttuğun kısımı etkiler */
+  background-color: coral;
+}
+
+p::after { /* Paragraf içindeki yazı bittikten sonra anlamında content:"" sonra ekler. */
+  content: " Read this -";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+span::after { 
+  content: " Read this -";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}

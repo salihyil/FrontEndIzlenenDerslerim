@@ -1,0 +1,100 @@
+@media screen and (max-width: 768) {
+  .size-md-1of16 {
+    width: 6.25;
+  }
+  .size-md-2of16 {
+    width: 12.5;
+  }
+  .size-md-3of16 {
+    width: 18.75;
+  }
+  .size-md-4of16 {
+    width: 25;
+  }
+  .size-md-5of16 {
+    width: 31.25;
+  }
+  .size-md-6of16 {
+    width: 37.5;
+  }
+  .size-md-7of16 {
+    width: 43.75;
+  }
+  .size-md-8of16 {
+    width: 50;
+  }
+  .size-md-9of16 {
+    width: 56.25;
+  }
+  .size-md-10of16 {
+    width: 62.5;
+  }
+  .size-md-11of16 {
+    width: 68.75;
+  }
+  .size-md-12of16 {
+    width: 75;
+  }
+  .size-md-13of16 {
+    width: 81.25;
+  }
+  .size-md-14of16 {
+    width: 87.5;
+  }
+  .size-md-15of16 {
+    width: 93.75;
+  }
+  .size-md-16of16 {
+    width: 100;
+  }
+}
+@media screen and (max-width: 468) {
+  .size-sm-1of16 {
+    width: 6.25;
+  }
+  .size-sm-2of16 {
+    width: 12.5;
+  }
+  .size-sm-3of16 {
+    width: 18.75;
+  }
+  .size-sm-4of16 {
+    width: 25;
+  }
+  .size-sm-5of16 {
+    width: 31.25;
+  }
+  .size-sm-6of16 {
+    width: 37.5;
+  }
+  .size-sm-7of16 {
+    width: 43.75;
+  }
+  .size-sm-8of16 {
+    width: 50;
+  }
+  .size-sm-9of16 {
+    width: 56.25;
+  }
+  .size-sm-10of16 {
+    width: 62.5;
+  }
+  .size-sm-11of16 {
+    width: 68.75;
+  }
+  .size-sm-12of16 {
+    width: 75;
+  }
+  .size-sm-13of16 {
+    width: 81.25;
+  }
+  .size-sm-14of16 {
+    width: 87.5;
+  }
+  .size-sm-15of16 {
+    width: 93.75;
+  }
+  .size-sm-16of16 {
+    width: 100;
+  }
+}

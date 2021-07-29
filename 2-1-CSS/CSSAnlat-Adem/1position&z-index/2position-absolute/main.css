@@ -1,0 +1,24 @@
+.kutu {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.kapsayici-1 {
+    
+    background-color: #ddd;
+    height: 100px;
+    padding: 30px;
+}
+
+.kapsayici-2 {
+    position: relative;
+    background-color: yellow;
+    height: 100px;
+    padding: 30px;
+}
+
+

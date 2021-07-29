@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* FLEXBOX */
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* birden fazla satır olacak */
+    width: 500px;
+    height: 500px;
+    background-color: #1F222C;
+    padding: 30px;
+}
+
+.card {
+    margin: 10px;
+
+    position: relative;
+    width: calc(50% - 20px);/*margin 10 demiştik ordaki sağ ve soldan 20'yi çıkardık. */
+
+
+    height: 200px; /*height normalde elle girilmez. Bunun size'ı değişince genişliği yüksekliği ile orantılı olması gerekir.
+    aspect-ratio: konusuna bak.*/
+    border-radius: 10px;
+    background-color: #474C5A;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #85E6FA;
+}
+
+.icon {
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: currentColor;
+}
+
+.check {
+    position: absolute; /* absolute'da olay position: relative olanı bulana kadar gider. Bulunca oraya göre işlem yapar.*/ 
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+

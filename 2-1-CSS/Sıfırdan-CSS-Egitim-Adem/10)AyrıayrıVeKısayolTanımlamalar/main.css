@@ -1,0 +1,70 @@
+.container{
+    padding: 20px;
+    background-color: blue;
+  }
+  
+/*padding kısaltma */
+  .box {
+    /*https://www.youtube.com/watch?v=5YvEm2TLzT0*/
+
+    /*padding-top: 20px;
+    padding-left: 40px;
+    --padding-right: 10px;
+    padding-bottom: 50px;*/
+    padding: 20px 40px; /* 2'li kullanım*/
+    /*padding: 20px 40px 30px;  3'li kullanım*/
+    /*padding: 20px 40px 25px 15px;  4'li kullanım*/
+    background-color: red;
+  }
+
+/*Border kısaltma */
+.box1 {
+  width: 100px;
+  height:100px;
+  background-color:red;
+  border-width: 10px;
+  border-style: dashed;
+  border-color: yellow;
+  
+  /*border: 10px dashed yellow; width style color  */
+}
+
+/* The background property is a shorthand property for:
+background kısaltma sırası
+https://www.w3schools.com/cssref/css3_pr_background.asp
+https://codepen.io/ademilter/pen/MWaybOK?editors=1100
+
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-origin
+background-clip
+background-attachment 
+
+body {
+  height: 100vh;
+  background: red url('https://images.unsplash.com/photo-1586718520704-f7f9db04b8c0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ') center top no-repeat;
+}
+
+*/
+
+/*https://codepen.io/ademilter/pen/PoPNbOX
+https://www.w3schools.com/cssref/pr_font_font.asp
+
+Definition and Usage
+The font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+
+örnek:  font: italic small-caps bold 12px/30px Georgia, serif;
+*/
+
+body {
+  font: italic bold 20px/1.4 sans-serif; /*20px/1.4 font-size/line-height oluyor. */
+}

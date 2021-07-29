@@ -1,0 +1,48 @@
+<!-- 
+- user agent stylesheet: https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css
+- normalize.css: https://necolas.github.io/normalize.css/ 
+    npm install normalize.css
+
+- block elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
+- inline elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+
+-user agent stylesheet nedir?
+    Tarayicilarda html etiketlerinin on tanimli css kodlari getirir.
+    Tarayicilar tarafindan on tanimli olarak gelen css kodlari
+-normalize.css nedir?
+    Modern reset css.  Farkli olabilecek elementlerin hepsini standart hale getiriyor.
+    Butun tarayicilardaki birbirinden farkli olan elemntleri standartda getiren bir css kodu.
+-display?
+    Altsatıra geçmiyor ve yan yana sıralanıyorsa bu elementlerin hepsi inline'dır.
+    block elementler satır atlar.(blocklar genelde kapsayıcı birçok şeyi gruplamak için kullanılırken)
+    inline elemntler genelde text içerikli içerikli elementlerde kullanılıyor.yazıyı bold etmek için span içine alın renklerdirmek gib
+-Display Özellikler: 
+ 1-initial, inherit Nedir?
+    https://developer.mozilla.org/en-US/docs/Web/CSS/initial
+    initial(ilk): Bir p'nin özelliğini değiştirdiyseniz eğer daha sonra bu p display initial dediğinizde ilk init olduğu özeliğe ilk varsayılan haline geri döner.
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/inherit
+    inherit(miras almak): Diyelim p elementine display inline block ol dediniz daha sonradan buna display inherit dediğimizde kapsayıcısı gibi davranmasını söyleyebiliriz.
+    Mesela p içindeki span'e display inherit dersek p display block oldugu için spanda display block gibi davranır.
+2-none Nedir?
+    display none sayfada görünmez yapar içeriği
+3-inline, inline-block, block aralarındaki fark?
+    inline block: Normalde inline içindeki elemente height ve width verirken birşey fark etmez. Ama inline block yaparsan onu block özelliği kazanacağın değişikliği görürsün.
+4-list-item?
+    li elementi eklersen display'i list-item olarak gelir. inline-block'dur. Elamanın her bir li yanında simgesi olur. Yeni bir li alt alta gelir. 
+5- Aydınlanma: 
+    Aslında her element hiçbir display özelliği yok. Tarayıcının user agent'ından gelen ön tanımlı bilgiler sayesinde oluşuyor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display:initial">
+    
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*Tum elementler için geçerli olsun*/
+        * {
+
+            color: red;
+        }
+
+        /*Tüm spanlarıma etkilesin */
+        span {
+
+            font-size: 20px;
+        }
+
+        /*color-red classına saship olan elementler*/
+        .color-red {
+
+            font-weight: bold;
+            color: red;
+        }
+
+        .font-arial {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*hem color-red classına hemde font-arial classına sahip olanlar*/
+        .color-red.font-arial {
+
+            color: rgb(197, 170, 152);
+        }
+
+        #mydiv {
+            color: #9c9c41;
+
+        }
+
+        /*Köşeli parantezler arasında verdiiğimiz selectorler attiribute leri işaret eder*/
+        /*type attiribute u "password" olan elementleri işaret eder*/
+        [type="password"]
+        {
+
+            color: rgb(3, 0, 209);
+        }
+
+        [data-c="r"][data-d="g"]{
+
+            color: sienna;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div style="background-color:rgb(150, 107, 79) ;color: white;">
+        <b>(Inline style)</b> İlgili elementin style attiribute ünü kullanarak yazdığım css lerdir.
+
+    </div>
+    <div>
+        Merhaba CSS
+
+    </div>
+    <span>
+        Merhaba CSS
+    </span>
+    <span>
+        Merhaba CSS
+
+    </span>
+
+    <div class="color-red">
+        Ben red'im. Class: önemli bir attiribute dur. Özellikle css ve js tarafında etkin olarak kullanılır.(özel bir
+        selectorleri vardır. (Nokta))
+
+    </div>
+
+    <div class="color-red font-arial">
+        Ben red'im.
+    </div>
+
+    <div id="mydiv">
+        Ben # mydiv elementiyim. ** id attiribute 'ü önemli ve özeldir. Selectoru olarak (#) kullanılır.
+        ****Html dökümanı için id ler uniqe(eşsiz) olmalı
+    </div>
+
+
+
+    <form action="">
+
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+
+
+        <div>
+            <label for="password">Name</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+    </form>
+
+
+    <div data-c="r" data-d="g" >
+          Ben özel bir attiribute e sahibim. data-c="red"
+
+    </div>
+
+</body>
+
+</html>

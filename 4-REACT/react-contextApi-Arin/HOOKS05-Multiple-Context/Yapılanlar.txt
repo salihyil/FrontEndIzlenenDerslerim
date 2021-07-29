@@ -1,0 +1,11 @@
+1- ContextAPI genelde nasıl kullanırız? ContextAPI ile ilgili veri iletimi ya da bir temaya ait veri iletimi ya da kullanıcı bilgileri
+ile ilgili bir veri iletimidir.
+2- Bu derste temayla ilgili contextAPI görecez ve birden fazla context olursa bunu nasıl ileteceğimizi görecez.
+
+
+
+Dersten çıkarılacak Not: 
+**DefaultValue ile Provider,Consumer Fark olarak nedir?
+ 1- DefaultValue'de tek bir Context gönderebilir iken çoklu(birden fazla) context kullanmak için Provider,Consumer kullanmak gerekir.!!!
+ 2- Provider,Consumer yöntemi fonksiyonel componentlerde de kullanılabiliyor. Şimdiye kadar class component kullandık ilerde hookslara 
+    geldiğimizde class component functional component'lara çeviricez.

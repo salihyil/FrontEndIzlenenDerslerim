@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Salih Yılmaz">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="sas.png" type="image/png">
+    <title>Odev</title>
+</head>
+
+<iv>
+    <!--Bütün tagları deneyelim.-->
+    <div>1. Yorum tagı</div>
+
+    <!DOCTYPE html>
+    <div>2. Bütün html belgeleri !DOCTYPE ile başlamalıdır. </div>
+
+    <a href="www.google.com.tr">google</a>
+    <div>3. a tagı: link oluşturmak için kullanılır. </div>
+
+    <abbr title="Dünya Sağlık Örgütü">DSÖ</abbr>
+    <div>4. abbr tagı: kısaltma yapmak için kullanılır.</div>
+
+    <acronym title="United States of America">USA</acronym>
+    <div>5. acronym tagı: abbr ile aynı görevi görür. Fakat html5 desteklemiyor. html4de destekler.</div>
+
+    <address>
+        yazar: Salih Yılmaz <br>
+        Turkey
+    </address>
+    <div>6. address tagı, bir belgenin veya makalenin yazarı/sahibi için iletişim bilgilerini tanımlar. default css
+        ayarları display: block;
+        font-style: italic;'dir.
+    </div>
+
+    <applet></applet>
+    <div>7. applet tagı: HTML 4'te gömülü bir uygulamayı (Eklenti) tanımlamak için kullanıldı. html5 desteklemiyor.
+        applet tagı yerine video ve audio tagı kullanılır.
+    </div>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.google.com/search?q=computer"
+            target="_blank" alt="computer">
+        <area shape="rect" coords="290,172,333,250" href="https://www.google.com/search?q=iphone+5" target="_blank"
+            alt="phone">
+    </map>
+    <div>8. area tagı: resim içindeki belirtilen yerlere tıklanabilmeyi sağlar. map tagı içinde kullanılmalı.
+        img içindeki usemap attribute ile map tagı içindeki name attribute birbiri ile ilişkilidir.
+    </div>
+
+    <article>
+        <h2>Menu</h2>
+        <p>1. menu açıklama</p>
+        <p>2. menu açıklama</p>
+    </article>
+    <div>9. article tagı: sayfamızda yer alan içeriği gruplandırarak ve css ile şekillendirebildiğimiz bir bölümdür.
+        map tagı: bir görüntü haritasını tanımlamak için kullanılır. Görüntü haritası, tıklanabilir alanları olan bir
+        görüntüdür.
+    </div>
+
+    <p>Akşam üzeri arkadaşlarla Espark AVM'de turladık.</p>
+    <aside>
+        <h4>Espark AVM</h4>
+        <p>Espark AVM Eskişehir merkezinde bulunan alışveriş merkezidir.</p>
+    </aside>
+    <div>10. aside tagı: içerikte bulunan bir yerle ilgili açıklama yapmak için kullanılır.</div>
+
+    <audio controls="controls">
+        <source src="buff.ogg" type="audio/ogg">
+        <source src="buff.mp3" type="audio/mp3">
+        Tarayıcınız audio etiketini desteklememektedir.
+    </audio>
+    <div>11.audio tagı: ses, müzik veya diğer ses ortamları tanımlar.</div>
+
+    <b>Salih</b>
+    <div>12.b tagı: yazıyı kalınlaştırır.</div>
+
+    <!--   
+        <head>
+            <base href="https://www.google.com/">
+        </head>
+        <body>
+            <a href="doodles">HTML base tag</a>
+        </body>
+        <!-- www.google.com/resimler olarak çıktı verir. -->
+    <div>13. base tagı: Bir sayfadaki tüm bağlantılar için varsayılan bir URL ve varsayılan bir hedef belirtir.</div>
+
+    body {
+    font-family: courier, serif;
+    color: red;
+    } -->
+    <div>14. basefont tagı: metinlerin default text-color, font-size or font-family ayarlamak için kullanıldı. HTML5 ile
+        desteklenmemektedir.</div>
+
+    <ul>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <div>15. bdi tagı: Metin yönü farklı olan bir metni diğer metinlerden ayırır. örnek arapça</div>
+
+    <bdo dir="ltr">males</bdo>
+    <div>16.bdo tagı: metnin yönünü belirtir. ltr=lettoright rtl=righttoleft demektir.</div>
+
+    <big></big>
+    <div>17.big tagı: html5 desteklemiyor. HTML öğeleri için farklı yazı tipi boyutları sağlardı.</div>
+
+    <blockquote cite="https://tr.wikipedia.org/wiki/Anadolu_Sel%C3%A7uklu_Devleti">Selçuklulardan Kutalmış’ın oğlu
+        Süleyman Şah tarafından Anadolu’da 1077[1] yılında kurulmuş olan, Türk-İran geleneğine mensup bir Sünni İslam
+        devletidir.</blockquote>
+    <div>18. blockquote tagı: başka bir kaynakta alıntı yapıldığında bu tag kullanılır.</div>
+
+    <!-- <body>
+        <h1>Body</h1>
+    </body> -->
+    <div>19. body etiketi: belgenin gövdesini tanımlar. HTML belgesindeki içerikler; bağlantılar, resimler, tablolar vd.
+        bu etiket içerisinde bulunur.</div>
+
+    <br>
+    <div>20. br tagı: satır sonu belirtir.</div>
+
+    <button type="submit">Tıkla</button>
+    <div>21. button tagı: buton oluşturur. type'ına göre işlevi değişir.</div>
+
+    <canvas id="cizimAlani" width="100" height="100" style="border:1px solid #000000;"></canvas>
+    <div>22. canvas tagı: grafiksel çizim için kullanılır.</div>
+
+    <table style="border:1px solid #000000">
+        <caption>Tablo Başlığı</caption>
+        <tr>
+            <th>Tablo1</th>
+            <th>Tablo2</th>
+        </tr>
+        <tr>
+            <td>Veri1</td>
+            <td>Veri2</td>
+        </tr>
+    </table>
+    <div>23. caption tagı: tablo başlığı</div>
+
+    <center>METİN ORTALA</center>
+    <div>24. center tagı: mrtni ortaya hizalar. HTML5 desteklemiyor </div>
+
+    <p><cite>Veba</cite> by Albert Camus</p>
+    <div>25. cite tagı: defines the title of a creative work. örnek kitap, şiir, film, resim adı gibi</div>
+
+    <p><code>Kod parçası</code> tanımlar.</p>
+    <div>26. code tagı: Kod parçasını belirtir. </div>
+
+    <table border="1">
+        <colgroup>
+            <col style="background-color:red">
+            <col style="background-color:rgb(0, 255, 13)">
+        </colgroup>
+        <tr>
+            <th>Dersler</th>
+            <th>Notlar</th>
+        </tr>
+        <tr>
+            <td>İngilizce</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <div>27. col tagı: colgroup etiketi içinde kullanılır. Her sütun için sütun özelliklerini tanımlar. </div>
+
+
+    <div>28. colgroup tagı: 1 veya 1den fazla sütundan oluan bir grubu belrtir.</div>
+
+    <data value="1">Domates</data>
+    <div>29. data tagı: belirli bir içeriğin makine tarafından okunabilir bir çevirisini eklemek için kullanılır.</div>
+
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Kitap">
+        <option value="Gitar">
+        <option value="Keman">
+    </datalist>
+    <div>30. datalist tagı: bir input öğesi için önceden tanımlanmış seçeneklerin bir listesini belirtir. Önceden
+        tanımlanmış seçeneklerin bir açılır listesini görülecektir.</div>
+
+    <dl>
+        <!-- dl: description list  -->
+        <dt>Kahve</dt> <!-- dt: defines terms/names -->
+        <dd>Siyah sıcak içecek</dd> <!-- dd: Description Details -->
+        <dt>Süt</dt>
+        <dd>Beyaz soğuk içecek</dd>
+    </dl>
+    <div>31. dd tagı: açıklama listesindeki bir terimi/adı tanımlamak için kullanılır.
+        Bir dd etiketinin içine paragraflar, satır sonları, resimler, bağlantılar, listeler vb. koyabilirsiniz.
+    </div>
+
+    <p><ins>Eklenen</ins><del>silindi.</del></p>
+    <!-- <ins> altını çizer ve eklenen kısım anlamında,  del silinen kısım. -->
+    <div>32. del tagı: bir belgeden silinen metni tanımlar. Tarayıcılar genellikle silinen metin üzerinden bir çizgi
+        çizer.
+        ins tagı: eklenen kısım
+    </div>
+
+    <details>
+        <summary>Açıklamayı Gör</summary>
+        <p>Açıklamayı görüyorsun.</p>
+    </details>
+    <div>33. details tagı: kullanıcının istek üzerine açıp kapatabileceği ek ayrıntıları belirtir.</div>
+
+    <p><dfn>Su: </dfn> hidrojenle oksijenden oluşan, sıvı durumunda bulunan, renksiz, kokusuz, tatsız madde, ab.</p>
+    <div>34. dfn tagı: definition tanımlamadan gelir. </div>
+
+    <dialog open>İletişim kutusu</dialog>
+    <div>35. dialog tagı: yeni bir açılır iletişim kutusu oluşturmak için kullanılır. HTML dialog etiketi bir iletişim
+        kutusunu veya etkileşimli bir bileşeni temsil eder.</div>
+
+    <dir></dir>
+    <div>36. dir tagı: yerine ul etiketi kullanılır. html5 desteklemez. </div>
+
+    <div id="id" class="class">Div oluştu.</div>
+    <div>37.div tagı: bir HTML belgesindeki bir bölümü veya bölümü tanımlar. </div>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+    <div>38. dl, dt, dd tagı: dd(description details), dt(description terms) dl(description list)</div>
+
+    <em>Burası italik şekilde</em>
+    <div>39. em tagı: vurgulanan metni tanımlamak için kullanılır. İçindeki içerik genellikle italik olarak
+        görüntülenir.</div>
+
+    <embed src="" type="audio">
+    <div>40.embed tagı: web sayfası, resim, medya oynatıcı veya eklenti uygulaması gibi harici bir kaynak için bir
+        kapsayıcı tanımlar.
+        resim yerine img, sayfa için iframe, video için video tagı kullanması önerilir.
+    </div>
+
+    <form>
+        <fieldset style="height: 100px; width: 100px;">
+            <legend>İletişim Bilgileri</legend>
+            İsim: <input type="text"><br>
+            Soyisim <input type="text">
+        </fieldset>
+    </form>
+    <div>41. fieldset etiketi, bir formdaki ilgili öğeleri gruplamak için kullanılır. fieldset etiketi, ilgili öğelerin
+        etrafına bir kutu çizer.</div>
+
+    <figure>
+        <img src="resim.jpg" alt="resim">
+        <figcaption>Resime başlık tanımlar.</figcaption>
+    </figure>
+    <div>42. figcaption tagı: figure etiketi için bir başlık tanımlar.</div>
+
+    <footer>
+        <p>Tüm hakları saklıdır.</p>
+        <p>Kullanım koşullarını okumak için tıklayınız.</p>
+    </footer>
+    <div>43. footer tagı: sayfanın alt kısmındaki authorship information, copyright information,
+        contact information, sitemap, back to top links, related documents bilgileri içerir. </div>
+
+    <h1>Başlık</h1>
+    <h5>5. başlık</h5>
+    <div>44. h1 to h6 tagları: HTML başlıklarını tanımlamak için kullanılır. </div>
+
+    <div>45. head tagı: title, style, base, link, meta, script, noscriip etiketleri içerebilir.</div>
+
+    <header>
+        <p>Sitenin Başlığı veya logo</p>
+    </header>
+    <div>46. header tagı: Bu etiket taşıyıcı için navigasyon menüleri veya tanıtıcı içerik olarak kullanılmalıdır.
+    </div>
+
+    <p>konu1</p>
+    <hr>
+    <p>konu2</p>
+    <div>47. hr tagı: belgede bir konu sonu tanımlar. yatay bir çizgi.</div>
+
+    <html>
+
+    </html>
+    <div>48. html tagı: tarayıcıya belgenin HTML belgesi olduğunu söyler. </div>
+
+    <i>italik yazı burası</i>
+    <div>49.i tagı: Bu etiketin içeriği genellikle italik olarak görüntülenir. </div>
+
+    <iframe src="https://www.youtube.com/embed/JflsBihO_MQ" width="400px" height="150px"></iframe>
+    <div>50. iframe tagı: başka bir HTML belgesi yüklemenizi sağlar. Sayfada başka bir site açılır</div>
+
+    <a href="https://artnmoreizmir.com/wp-content/uploads/2016/11/portre.jpg"><img
+            src="https://artnmoreizmir.com/wp-content/uploads/2016/11/portre.jpg" alt="resim" width="150px"
+            height="200px"></a>
+    <div>51. img tagı: resim ekler </div>
+
+    <input type="submit" value="Gönder">
+    <div>52. input tagı: kullanıcının veri girebileceği bir giriş alanını belirtir. en önemli form elementidir.
+        type'ları vardır.
+    </div>
+
+    <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>esc</kbd> to open an task manager.</p>
+    <div>53. kbd tagı: keyboard input için kullanılır.</div>
+
+    <fieldset style="height: 40px; width: auto; display: inline">
+        <legend>checkbox</legend>
+        <input type="checkbox" name="deneme" id="deneme">
+    </fieldset>
+    <label for="deneme">
+        <fieldset style="height: 40px; width: 900px; display: inline">
+            <legend>Gizli label içi Burası</legend>
+            <input type="radio" name="1" value="1">bas
+            <input type="radio" name="1" value="2">bas
+            <input type="radio" name="1" value="3">bas
+            <p class="a" style="display: inline-block">Bu label içinde herhangi bir yere tıklayınca checkbox tetiklenir.
+                Input id ile label for isim aynı olmalı tetiklenme için</p>
+        </fieldset>
+    </label>
+    <div>54. label tagı:</div>
+    <div>55. legend tagı: fieldset tagı için bir başlık tanımlar. </div>
+
+    <ul type="circle">ul
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ol type="I">ol
+        <li value="21">value 21 yazıp liste numarasını 21den başlatırsın</li>
+        <li>22</li>
+        <li>23</li>
+    </ol>
+    <div>56. li tagı: (list item) liste öğesini tanımlar.</div>
+    <div>57. ol tagı: ordered list sıralı liste typleları: a, A, i, I gibi</div>
+    <div>58. ul tagı: unordered lists sırasız liste typleları: circle, disc, square gibi</div>
+
+    <div>59. link tagı: head tagı içinde yazılır. still(css) sayfalarının belgeye bağlanmasını sağlar.
+        Harici kaynak arasındaki ilişkiyi tanımlar.
+    </div>
+
+    <!--<main>
+        <h1>Most Popular Browsers</h1>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+      
+        <article>
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+    </main> -->
+    <div>60. main tagı: bir belgenin ana içeriğini belirtir.
+        Bir belgede birden fazla main öğesi olmamalıdır. main öğesi, bir article>, aside>, footer>, header> veya nav>
+        öğesinin alt öğesi OLMAMALIDIR.
+    </div>
+
+    <mark>Burası marklandı.</mark>
+    <div>61. mark etiketi, işaretlenmesi veya vurgulanması gereken metni tanımlar. </div>
+
+    <!-- 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    -->>
+    <div>62. meta tagı: head tagı içinde olur. </div>
+
+    <label for="ornek">Disk usage C:</label>
+    <meter id="ornek" value="30" min="0" max="100" low="33" high="66" optimum="80">3</meter>
+    <label for="ornek1">Disk usage D:</label>
+    <meter id="ornek1" value="70" min="0" max="100" low="33" high="66" optimum="80">3</meter>
+    <div>63. meter tagı: bilinen bir aralıktaki skaler bir ölçümü veya kesirli bir değeri tanımlar. Bu aynı zamanda bir
+        ölçü olarak da bilinir.
+        En iyi erişilebilirlik uygulamaları için her zaman "label" etiketini ekleyin!</div>
+
+    <nav class="crumbs">
+        <ol>
+            <li class="crumb"><a href="#">Bikes</a></li>
+            <li class="crumb"><a href="#">BMX</a></li>
+            <li class="crumb">Jump Bike 3000</li>
+        </ol>
+    </nav>
+    <div>64. nav tagı: bir dizi gezinme bağlantısını tanımlar.Bir belgenin tüm bağlantılarının bir nav öğesi içinde
+        OLMAMASI
+        gerektiğine dikkat edin. nav öğesi yalnızca ana gezinme bağlantıları bloğu için tasarlanmıştır.
+    </div>
+
+    <!--
+    <script>
+        document.write("Hello World!")
+    </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    -->
+    <div>65. noscript tagı: tarayıcılarında komut dosyalarını devre dışı bırakmış veya komut dosyasını desteklemeyen
+        bir tarayıcıya sahip kullanıcılara gösterilecek alternatif bir içeriği tanımlar. noscript> öğesi hem head  hem
+        de body içinde kullanılabilir. head içinde kullanıldığında, noscript öğesi yalnızca link, style ve meta öğelerini içerebilir.
+    </div>
+
+    <object data="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" width="300" height="300"></object>
+    <object data="https://upload.wikimedia.org"  width="400" height="300"></object>
+    <object data="https://www.youtube.com/embed/adgUBHH2qTI" type="video/mp4" width="300" height="300"></object>
+    
+    <div>66. object tagı: harici bir kaynak için bir kapsayıcı tanımlar. resimler için img, sayfa ekleme için iframe önerilir.</div>
+
+    <form action="deneme" method="POST">
+        <label for="cars">Choose a car</label>
+        <select name="cars" id="cars">
+
+            <optgroup label="Swedish Cars">
+                <option value="Volvo">Volvo</option>
+            </optgroup>
+
+            <optgroup label="German Cars">
+                <option value="Mercedes">Mercedes</option>
+                <option value="Bmw">Bmw</option>
+            </optgroup>
+
+        </select>
+        <input type="submit" value="Submit">
+    </form> 
+    <div>67. optgroup tagı: HTML öğesi, bir select öğesi içinde bir seçenekler grubu oluşturur.
+        optgroup içinde label attribute kullanılarak başlık isimi belirtilir.
+    </div>
+    <div>68. option tagı: select listesindeki bir seçeneği tanımlar. option öğeleri bir select, optgroup veya datalist öğesinin içine girer. </div>
+        option value eklenmeli server'a değer gönderilirken lazım.
+    </div>
+
+</body>
+
+</html>

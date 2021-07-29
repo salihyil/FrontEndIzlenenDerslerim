@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #3d405b;
+            border: 2px solid black;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        #middle {
+            background-color: #81b29a;
+        }
+
+        #static #middle {
+            position: static;
+            left: 100px;
+        }
+
+        #relative #middle {
+            position: relative;
+            left: 70px;
+        }
+
+        #absolute #middle {
+            position: absolute;
+            top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1)position: static; element , document'in normal akışına göre konumlandırılır. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+        2)position: relative; olduğu yere göre pozisyonlanması
+        3)position: absolute; 
+    
+    
+    -->
+    <h1>Position Property</h1>
+    <section id="static">
+        <h2>Static</h2>
+        <div></div>
+        <div id="middle"></div>
+        <div></div>
+    </section>
+    <section id="relative">
+        <h2>Relative</h2>
+        <div></div>
+        <div id="middle"></div>
+        <div></div>
+    </section>
+    <section id="absolute">
+        <h2>Absolute</h2>
+        <div></div>
+        <div id="middle"></div>
+        <div></div>
+    </section>
+</body>
+</html>

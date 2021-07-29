@@ -1,0 +1,61 @@
+1) ızgara sistemi grid.  https://960.gs/ 12col - 16col
+
+2) flexde içerikler direk satır şeklinde tanımlanır. Sonra onu değiştirilirsiniz.
+   css grid yapısında ise gem satıra hemde sütuna göre ızgara yapısını oluşturabilirsin.
+
+3)
+   display: grid;
+   grid-template-rows: 150px 250px; gibi satır oluşturulabilir.  
+   rows: y ekseninde satır verir.
+   column: x ekseninde kolon verir.
+
+4) kısa yazım:  önce rows sonra column 
+   grid-template: 150px 250px / 100px 200px 300px; 
+
+5) fr: ekrana tam yaslarken px auto yerine genelde bu değerleri kullanmak yerine "fr" değerleri kullanılır.
+   
+6) order ile diziliş sırasını değiştirebiliriz. default değeri 0.
+
+7) kutuların yerini taşıma diğer yolu. grid1.png bak.
+.box1 {
+   grid-row-start: 1; 
+   grid-row-end: 3;
+   grid-column-start: 2;
+   grid-column-end: 3; 
+
+   /* kısa yazımı:*/
+   grid-row: 1 / 3;  diğer yazımı: grid-row: 2 / span 2;  3-1=2 span aradaki fark ordan gelir.
+   grid-column: 2 / 3; diğer yazımı: grid-column: 2 / span 1; 3-2=1 span aradaki fark ordan gelir.
+ }
+
+8) grid-row-gap: 10px;  satırlar arası boşluk oluşturma yapar.
+    grid-column-gap: 20px; sütunlar arası boşluk yapar.
+    kısa yazımı: grid-gap: 10px 20px;
+
+9) repeat() kullanımı:
+grid-template: 150px 250px / repeat(3, 1fr)  3 tane ekrana yayılan birbirine esit sütunlar.
+
+10)minmax() kullanımı:
+grid-template: 150px 250px / repeat(6, minmax(100px, 300px)) sütunlar 6 tekrar etsin min 100px, max 300px olacak. 
+
+11)!önemli- grid area kullanımı:
+   1.özellik: Kutuları başka yere taşımada yarayabilir.
+   2.özellik: grid-template-areas:
+               "A B C"
+               "D E F"; 
+   Yazarak kutulara grid-area: A; gibi değerler verir. Sonra bunlarıda yerlerini taşımada/değiştirme'de kullanabiliriz.
+
+grid-row: 1 / 2; 
+grid-column: 3 / 4;
+
+grid-area: 1 / 3 / 2 / 4   
+
+grid-area: 1.satırın-başı / 1. sütunun başı / 2.satırın başı / 2.sütunun başı
+grid-area: 1.row-start / 1. column-start / 2.row-end / 2.column-end
+
+
+
+
+ 
+
+

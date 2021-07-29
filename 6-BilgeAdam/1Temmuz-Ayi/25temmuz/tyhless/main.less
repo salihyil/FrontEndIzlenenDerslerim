@@ -1,0 +1,16 @@
+@import url("./reset.less");
+@import url("./general.less");
+@import url("./fontimports.less");
+
+body {
+  font-family: "Museo Sans 500", sans-serif;
+  font-style: normal;
+}
+
+a {
+  cursor: pointer;
+  //& şuan bulunduğun selectörü ifade eder. yani burda aluyo
+  &:active {
+    outline: #4285f4 solid 2px !important;
+  }
+}

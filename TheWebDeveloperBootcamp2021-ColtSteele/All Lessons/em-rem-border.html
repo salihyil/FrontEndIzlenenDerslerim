@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            
+        }
+        html {
+            font-size: 10px;
+            color: red;
+        }
+
+        body {
+            position: relative;
+            font-size: 30px;
+            color: cornflowerblue;
+        }
+
+        .class1 {
+
+            font-size: 50px;
+            color: darkorchid;
+            border: 1px solid rgb(0, 0, 0);
+            height:500px;
+            width: 500px;
+        }
+
+        .p1 {
+            position: absolute;
+            font-size: 1em;
+            left: 50vw;
+            top: 50vh;
+        }
+
+        .p2 {
+            box-sizing: border-box;
+            font-size: 1em;
+            border: 2px solid red;
+            width: 100%;
+            padding:0px; /* border-box iken padding arttırsanda .class1'in sınırlarını aşmıcaktır. */
+            border-bottom-style: dashed;
+            border-bottom-width: 4px; /* px kullanmak kullanışlı burda */
+            border-bottom-color: blue;
+        }
+        .paragraf{
+            box-sizing: content-box; /* sınırın dışına çıkabilir. */
+            font-size: 1em;
+            border: 2px solid rgb(43, 255, 0);
+            width: 100%;
+            padding-left:40px; 
+            border-radius: 25px; /* yüzde kullanırsak kutunun genişlik ve yüksekliğinin yüzdei olacaktır. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="class1">
+        <p class="p1">Orta</p>
+        <p class="p2">Selam kardeş</p>
+        <div class="paragraf">
+            <p class="paragraf1">Deneme yazısı burası bakalım</p>
+        </div>
+    </div>
+</body>
+
+</html>

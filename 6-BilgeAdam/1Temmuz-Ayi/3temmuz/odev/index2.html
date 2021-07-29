@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" name="a" id="a" value="50"> +
+        <input type="number" name="b" id="b" value="10"> =
+        <output name="result" for="a b">60</output>
+    </form>
+    <div>69. output etiketi, bir hesaplamanın sonucunu temsil etmek için kullanılır (bir komut dosyası tarafından
+        gerçekleştirilen gibi).
+        Bir hesaplama yapın ve sonucu bir output öğesinde gösterin:
+    </div>
+
+    <p>Burası bir paragraf</p>
+    <div>70. p tagı: paragraf anlamına gelir. </div>
+
+    <object data="https://wavlist.com/wav/banjo.wav">
+        <param name="autoplay" value="true">
+    </object>
+    <div>71. param tagı: "Autoplay" parametresini "true" olarak ayarlayın, böylece sayfa yüklenir yüklenmez ses çalmaya
+        başlayacaktır.
+        param etiketi, bir object öğesi için parametreleri tanımlamak için kullanılır. Ses, videolarda kullanılabilir.
+    </div>
+
+    <picture>
+        <source media="(min-width:850px)"
+            srcset="https://interactive-examples.mdn.mozilla.net/media/cc0-images/painted-hand-298-332.jpg">
+        <img src="workplace.jpg" alt="#">
+    </picture>
+    <!-- Ekran genişliği 850px altına düşünce img resmi gözükecek. -->
+    <div>72. picture etiketi: web geliştiricilerine görüntü kaynaklarını belirlemede daha fazla esneklik sağlar.
+        picture> öğesi iki etiket içerir: bir veya daha fazla source> etiketi ve bir img> etiketi.
+        İpucu: picture> öğesi, video> ve audio> öğelerine "benzer" şekilde çalışır. Farklı kaynaklar kurarsınız ve
+        tercihlere uyan ilk kaynak kullanılandır.
+    </div>
+
+
+    <div>73. pre tagı:
+        <pre> öğesindeki metin sabit genişlikli bir yazı tipinde görüntülenir ve metin hem boşlukları hem de satır sonlarını korur. 
+        Metin tam olarak HTML kaynak kodunda yazıldığı gibi görüntülenecektir.
+        <!-- <code>	Defines a piece of computer code
+            <samp>	Defines sample output from a computer program
+            <kbd>	Defines keyboard input
+            <var>	Defines a variable -->
+    </div>
+
+    <pre>
+        Text in a pre element
+        is displayed in a fixed-width                          hj
+        font, and it preserves
+        both      spaces and
+        line breaks                                        <q>pre etiketinde nereye nasıl  yazıldıysa öyle  gösterir.</q>     
+    </pre>
+    <div>74. pre> etiketi, önceden biçimlendirilmiş metni tanımlar. pre> öğesindeki metin sabit genişlikli bir yazı
+        tipinde görüntülenir
+        ve metin hem boşlukları hem de satır sonlarını korur. Metin tam olarak HTML kaynak kodunda yazıldığı gibi
+        görüntülenecektir.
+    </div>
+
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100">%32</progress>
+    <div>75. progress tagı: bir görevin tamamlanma ilerlemesini temsil eder.
+        İpucu: En iyi erişilebilirlik uygulamaları için her zaman label> etiketini ekleyin!
+        Not: progress> etiketi, bir ölçüyü temsil etmek için uygun değildir (örneğin, disk alanı kullanımı veya bir
+        sorgu sonucunun alaka düzeyi).
+        Bir göstergeyi temsil etmek için bunun yerine meter> etiketini kullanın.
+    </div>
+
+    <p>Bu cümlenin açıklaması:
+        <q>Burası çift tırnak içine alınan kısım.</q>
+        We hope they succeed.
+    </p>
+    <div>76. q> etiketi kısa bir alıntıyı tanımlar. q tagı içindekiler çift tırnak içine alınır. Tarayıcılar
+        normalde alıntının etrafına tırnak işaretleri ekler.
+        İpucu: Uzun alıntılar için blockquote> kullanın.:
+    </div>
+
+    <ruby>
+        漢 <rp>(</rp>
+        <rt>ㄏㄢˋ</rt>
+        <rp>)</rp>
+    </ruby>
+    <div>77. rp etiketi: Ruby ek açıklamalarını desteklemeyen tarayıcılar tarafından gösterilecek bir Ruby metninin
+        etrafına parantez sağlamak için kullanılabilir.
+        rp> öğesini ruby> ve rt> ile birlikte kullanın: ruby> öğesi, bir açıklama/telaffuz gerektiren bir veya daha
+        fazla karakterden
+        ve bu bilgiyi veren bir rt> öğesinden ve isteğe bağlı bir rp> öğesinden oluşur. Ruby ek açıklamalarını
+        desteklemeyen tarayıcılar için ne gösterileceğini tanımlar.
+    </div>
+    <div>78. rt> etiketi, bir ruby ​​ek açıklamasındaki karakterlerin (Doğu Asya tipografisi için) açıklamasını veya
+        telaffuzunu tanımlar.</div>
+    <div>79. Ruby notu, karşılık gelen karakterlerin telaffuzunu veya anlamını belirtmek için ana metne eklenen
+        küçük bir ekstra metindir.
+        Bu tür açıklama genellikle Japon yayınlarında kullanılır.
+    </div>
+
+    <p></p><s>SON 50 BİLET KALDI.</s></p>
+    <p>SATILDI</p>
+    <div>80. s> etiketi, artık doğru, doğru veya alakalı olmayan metni belirtir. Metin, üzerinde bir çizgi ile
+        görüntülenecektir.
+        Bir belgede silinen metni tanımlamak için s> etiketi kullanılmamalıdır, bunun için del> etiketini kullanın.
+    </div>
+
+    <h1>The samp element</h1>
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+    <div>81. samp> etiketi, bir bilgisayar programından örnek çıktıyı tanımlamak için kullanılır. İçindeki içerik,
+        tarayıcının varsayılan monospace yazı tipinde görüntülenir.
+        İpucu: Bu etiket kullanımdan kaldırılmamıştır. Ancak CSS kullanarak daha zengin efekt elde etmek mümkündür.
+    </div>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Id'li Hello JavaScript!";
+    </script>
+
+    <p class="demo">s</p>
+
+    <script>
+        let x = document.getElementsByClassName("demo");
+        x[0].innerHTML = "Class'lı Hello JavaScript!";
+    </script>
+    <div>82. script tagı: <section> etiketi, bir belgedeki bir bölümü tanımlar.</div>
+
+    <section>
+        <h2>WWF History</h2>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF
+            was founded in 1961.</p>
+    </section>
+
+    <section>
+        <h2>WWF's Symbol</h2>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named
+            Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the
+            establishment of WWF.</p>
+    </section>
+    <div>83. section> etiketi, bir belgedeki bir bölümü tanımlar.</div>
+
+
+    <label for="arabalar">Choose a car:</label>
+    <select name="cars" id="arabalar">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    <div>84. select: açılır liste oluşturmak için kullanılır. select öğesi genellikle bir formda kullanıcı girdisini toplamak için kullanılır.
+        Form gönderildikten sonra form verilerine başvuruda bulunmak için name özniteliği gereklidir (name özniteliğini atlarsanız, açılır listeden hiçbir veri gönderilmez).
+        select> öğesinin içindeki <option> etiketleri, açılır listedeki kullanılabilir seçenekleri tanımlar.
+
+            İpucu: En iyi erişilebilirlik uygulamaları için her zaman <label> etiketini ekleyin!
+    </div>
+
+
+    <div>85.</div>
+
+
+    <div>86.</div>
+
+
+    <div>87</div>
+
+
+    <div>88</div>
+
+
+    <div>89</div>
+
+
+    <div>90</div>
+
+
+    <div>91</div>
+
+    <div>92</div>
+
+    <div>93</div>
+
+    <div>94</div>
+
+    <div>95</div>
+
+    <div>96</div>
+
+    <div>97</div>
+
+    <div>98</div>
+
+    <div>99</div>
+
+    <div>100</div>
+
+    <div>101</div>
+
+    <div>102</div>
+
+    <div>103</div>
+
+    <div>104</div>
+
+    <div>105</div>
+
+    <div>106</div>
+
+    <div>107</div>
+
+    <div>108</div>
+
+    <div>109</div>
+
+
+</body>
+
+</html>

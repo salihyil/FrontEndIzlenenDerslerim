@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0-1-Git/YeniBaslayanlar-icin-Git-Arin/resumewebsite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0-1-Git/yeni-baslayanlar-GitHub-Arin/githubprojects/starter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0-1-kodluyoruz-frontend-101-egitimi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0-1-kodluyoruz-frontend-101-egitimi/05-react-temel/Giriş - 11 Ders/4-5 Node.JS Kurulumu ve Temel Node.JS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0-1-kodluyoruz-frontend-101-egitimi/05-react-temel/Giriş - 11 Ders/odev1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0-1-kodluyoruz-frontend-101-egitimi/taskforce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3-JAVASCRIPT/Uygulamali-Javascript-Dersleri-Arin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/4-REACT/ReactJSCrashCourse2021-TraversyMedia/react-task-tracker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/4-REACT/react-contextApi-Arin/HOOKS04-ContextAPI-II.Yontemi-Provider-Consumer/books" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/4-REACT/react-contextApi-Arin/HOOKS05-Multiple-Context/books" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/4-REACT/react-contextApi-Arin/HOOKS06-DinamikCSS-ContextFonksiyonIletimi/books" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/4-REACT/react-contextApi-Arin/books1-2-3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FreeCodeCamp-PERNStackCourse-TodoList/client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/toDoManager/client" vcs="Git" />
+  </component>
+</project>

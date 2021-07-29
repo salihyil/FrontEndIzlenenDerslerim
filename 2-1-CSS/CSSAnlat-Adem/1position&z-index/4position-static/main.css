@@ -1,0 +1,14 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    left: 20px;
+    top: 120px;
+}
+
+.box-1 {
+    position: static;
+    background-color: blue;
+}
+

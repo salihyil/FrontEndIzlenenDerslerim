@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu {
+            border: 1px solid red;
+        }
+        .kutu5{
+
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kutu">
+        Kutu1(div)
+    </div>
+    <div class="kutu">
+        Kutu2(div)
+    </div>
+    <span class="kutu">Kutu3(span)</span>
+    <span class="kutu">Kutu4(span)</span>
+    <div class="kutu kutu5">
+        Kutu5(div)
+    </div>
+    <span class="kutu">Kutu6(span)</span>
+
+
+    <div>
+        <br>
+        <br>
+         Bazı elementler default olarak position block olarak gelir (Div) . Bulunduğu blogu bırakmaz. O block artık o elemente
+         aittir. 
+         <br>
+         Kutu5 200 px yer kaplıyor. Sağ tarıfında altında bulunan kutu6 için yer olmasına rağmen kutu6 kutu5 ın altında kalır.
+         <br>
+         Kutu5 block element oldugundan kutu6 nın sağına gelmesine izin vermez.
+    </div>
+
+    <span class="kutu" style="width: 500px;" >Kutu7(span)</span>
+    <br>
+    <br>
+    <div>Span default olarak display:"inline" : Sadece içinde bulunan content kadar yer kaplar. Bu tip elementlerin yüksekliğ<i>
+        ve genişliği ile oynayamayız.
+    </i> </div>
+
+    <br>
+    <br>
+    <span class="kutu" style="display: block;">Kutu8(span)</span>
+    <div class="kutu" style="display: inline;">Kutu 9 (div)</div>
+    <br>
+    <div style="color: red;">** Bir div default olarak block olmasına rağmen ben onu inline yaparak bir span gibi davranması sağlayabilir.
+    Tam terside geçerlidir.
+    </div>
+
+   <span class="kutu" style="display: inline-block; width: 400px;">Kutu 10 (span:inline-block)</span>
+
+   <div>inline-block olan element inline gibi davranır ek olarak boyutlarıyla oynabilir.</div>
+
+
+</body>
+
+</html>

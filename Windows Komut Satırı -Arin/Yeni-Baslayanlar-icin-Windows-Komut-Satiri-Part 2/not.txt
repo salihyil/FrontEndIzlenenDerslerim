@@ -1,0 +1,19 @@
+2:20 prompt  
+05:00 prompt $P$G  
+05:40 title  cmd başlık değişir.
+6:30 attrib  =dosyaları gösterir.    
+8:50 attrib  +H Python96.jpg     =dosyayı hidden yapar.
+10:20 doskey /history   =yazılan komut satırlarını listeleyerek gösterir.
+10:55 f7 tuşuna basıncada yazılan komut satırlarını görebiliriz.
+12:25 doskey /history > doskey.txt  =doskey.txt dosyası oluşturur ve geçmişde kullanılan komutları oraya yazar.
+doskey /history | clip  = görüntünün klibini alır txt dosyası oluştursak yapıştır desek doskey /history'ler oraya eklenir.
+13:30 date =tarihi time = saati değişirsin.
+13:36 assoc  =dosyları ve onunla ilintili olan dosyaları gösterir.
+ 14:20 driverquery  =bilgisayarımız yüklemiş olduğumuz driverları gösterir.
+15:10  komut satırı 
+17:50 default Gateway = modemin yerel adresi  subnet mask
+21:35 ipconfig /release  
+22:10 ipconfig /renew
+24:00 nslookup www.google.com   = google'ın ip adresini verir.
+24:50 tracert 8.8.8.8  
+26:40 diskpart

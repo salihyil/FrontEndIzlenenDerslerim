@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #idx {
+            background-color: red;
+        }
+
+        div {
+            background-color: green;
+        }
+        .cls1{
+
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <p>
+            Css de bir element için aynı özellik birden çok yerden gelmeiş olabilir. Örneğin hem class selectorle
+            hem id selectorle hemde inline olarak aynı özellik verilmiş olabilir.Bu tip durumlarda hangi selectorü
+            öncelik alacağının bir matematiği vardır.
+            </nav>
+        </p>
+    </header>
+
+    <ul>
+        <li>İnlile*1000</li>
+        <li>Id*100</li>
+        <li>Class*10</li>
+        <li>Element*1</li>
+        <li>Inheritance 0,5</li>
+    </ul>
+
+    <div id="idx">
+        Benim idim idx dir
+
+    </div>
+    <div>
+        Ben hiç bir id attiributune sahip değilim.
+    </div>
+    <div class="cls1">
+        Ben cls1 classına sahip elementim
+    </div>
+
+    <div class="cls1" style="color: chartreuse;">
+        Ben cls1 classına sahip elementim
+    </div>
+
+ 
+
+</body>
+
+</html>

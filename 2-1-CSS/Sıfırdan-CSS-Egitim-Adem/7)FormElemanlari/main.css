@@ -1,0 +1,105 @@
+/* https://www.youtube.com/watch?v=obFQ-GbjK2Q&list=PLadt0EaV4m3BX9JaZbKS9B8076bruv93Y&index=7 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /*İlk arial yoksa kullanıcı işletim sisteminde o font o zaman Helvetica o da yoksa ans-serif kullan demek burası*/
+    font-size: 16px;
+}
+
+form {
+    /* box-sizing konulara ileride bakılacak. Buna neden gerek duyduk. 
+    Çünkü width: 260px; dedik ama padding 40 ile 340px'e ulaşmak zorunda kalıcaz.
+     */
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    
+}
+
+.form-row > label {
+    /*label inline idi o yüzden margin-bottom etkisini göremedik o yüzden display: block; yaptık  */
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+button,
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    height: 42px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: inherit; /* normalde body içinde font-size 16px yazsak bile input[type="text"]'deki placeholder'ın default font-size'ı 
+    11px'idi. Ekranda 11px gözüküyordu. Fakat inherit yapınca bir üst kapsayıcı değeri ne ise sende ondan al demek oluyor. O da body oluyor. */
+    font-family: inherit;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,  
+textarea::placeholder {
+   color: rgb(175, 175, 175);
+}
+
+input[type="text"]:focus, 
+input[type="tel"]:focus, 
+input[type="email"]:focus, 
+select:focus,
+textarea:focus {
+    /* outline:0; yapmazsan border-color focusu gözükmüyor!!! */
+    outline:0;
+    border-color: rgb(68, 176, 255);
+}
+
+textarea{
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 42px;
+    max-height: 100px;
+    resize: vertical; /*vertical ile sadece dikeyde uzatabiliyoruz.*/
+}
+
+
+
+select {
+    -webkit-appearance: none; /*Select'deki ok işaretini kaldırıp kendi svg iconumuzu koyacağız.*/
+     background-image: url("angle-down-solid.svg");
+     background-repeat: no-repeat;
+     background-position: right 10px center ; /*x ekseni: right 10px  y ekseni: center */
+     background-size: 13px;
+     
+}
+
+.radio-container label { 
+    display:inline-block;
+}
+
+.radio-container label + label{  /* .radio-container label + label sonraki gelen label'lara etki etsin demek */
+
+    margin-left: 10px;
+}
+
+button {
+    display: inline-block;
+    width:auto;
+    border: 0;
+    background-color: #eee;
+}
+
+button[type="submit"] {
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(68, 176, 255);
+    
+}
+

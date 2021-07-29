@@ -1,0 +1,79 @@
+Bu linkten direk bakabilirsin.
+1- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2- https://codepen.io/enxaneta/full/adLPwv
+3- https://fatihhayrioglu.com/yenilenmis-flex-modulu/
+
+
+1) display: flex; belli bir container içindeki elemanları istediğimiz gibi yerleştirme imkanı sunuyor.
+   flex-wrap: wrap; birden fazla satır olsun mu veya tek satırda kalsın mı? Bunu belirlemeyi sağlar. 	
+
+2) display: flex; 2 farklı özellik var.
+   1.Sadece kapsayıcı da olan(Properties for the Parent(flex container)): 1-flex-direction 2-flex-wrap 3-justify-content 4-align-items 5-align-content 
+   2.Sadece alt elemanlar da çalışanlar((Properties for the Children(flex items)): 1-align-self 2-flex-grow 3-flex-shting 4-flex-basis 5-order  
+
+3) flex-direction: kullanırken dikkat row(yatay) ve column(dikey). Eğer flex-direction: column yaparsan align-items yatayda hizalar artık.
+   flex-direction: row; default olarak gelir. satır olarak demektir. soldan sağa dizer.
+   flex-direction: row-reverse; satır tersten sağdan sola dizer.
+   flex-direction: column; yukardan aşağıya
+	.container { 
+		flex-direction: row | row-reverse | column | column-reverse;
+	}	
+
+!!!!justify-content (yatayda) ile align-items: (dikeyde)
+
+4) justify-content: İçerdeki elemanların arasındaki boşlukları container'ın neresinde duracağını ayarlar.
+   justify-content: flex-start; sola yaslar.
+   justify-content: flex-end; sağa yaslar. !!!Fakat flex-direction: row-reverse; yaparsan flex-end kısmı sol taraf olacaktır.
+   justify-content: center; ortaya alır.
+   justify-content: space-around; aralar boşluk
+   justify-content: space-between; solu sağı sıfırla aralarda boşluk
+   justify-content: space-evenly; alardaki boşluklarda eşit uzunluk
+
+5) align-items: tek satırlar için geçerli iken align-content çok satırlı için geçerli
+   align-items: flex-start; justify-content'deki halin dikey şeklinde olması yukardan aşağıya doğru.
+   align-items: flex-end;
+   align-items: center;
+   align-items: stretch;
+
+.container {
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+}
+
+6) align-content çok satırlı için geçerli.
+.container {
+  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+}
+
+!!!!align-items (tek satırda) ile align-content: (çok satırda)
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+***Flexbox Properties for the flex items:***
+
+1) align-self:
+	.item {
+  		align-self: auto | flex-start | flex-end | center | baseline | stretch;
+	}
+
+2) flex-grow: 10; gibi değer verip o kutunun daha fazla yer kaplamasını sağlıyosun sayısını arttırarak.
+
+
+3)flex-shrink: flex-grow'un tam tersi. Sayısını arttırarak kapladığı alanı küçültürsün.
+
+
+4) order: 2; order: 1; 1 order default değerleri 0'dır. Diziliş sırasını değiştiriyosun.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        .anadiv {
+
+            border: 1px solid green;
+            color: red;
+        }
+
+        p {
+            border: inherit;
+            /*Border normalde anneden inheritance ile alınmaz. Ama biz istersek bunu sağlarız*/
+            font-size: initial;
+            /*Browserın default değerine döndürdü*/
+        }
+
+        span {
+            font-size: 30px;
+        }
+
+        #sp {
+            font-size: unset;
+            /*Eğer katılsal değerim varsa ona dönücem.Yoksa initial değeri*/
+        }
+
+        input {
+           outline: unset;
+           /*Developerın verdiği+browserdan dolayı gelen özellüği yok eder.Sonuc olara text elementimin içinde girdiğimde etrafı siyah olmaz*/
+        }
+
+
+        #sp2 {
+            font-size: revert;
+            /*geliştiricinin atamalarını sıfırlar*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="anadiv">
+        <span>Ben div in altındaki spanım</span>
+        <br>
+        <span id="sp">Ben spanım id sp</span>
+        <br>
+        <span id="sp2">Ben spanım id sp2</span>
+        <div>
+            ben div>p
+            <p>
+                Ben div>div>p yim
+            </p>
+
+
+        </div>
+        <p>
+            Ben div>div>p yim
+        </p>
+
+        <input type="text" value="merhaba">
+
+    </div>
+
+
+</body>
+
+</html>

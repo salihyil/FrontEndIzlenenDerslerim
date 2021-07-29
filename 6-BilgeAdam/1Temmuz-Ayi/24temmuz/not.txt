@@ -1,0 +1,9 @@
+1) svg ile çalışmak orantılı(vektörel) olarak büyür küçülür png'ye göre.
+
+2) cdn: CDN, bir web sitesinin içeriğini en düşük ağ ve işlem gecikmesi ile yani en hızlı bir şekilde kullanıcılara ulaştırmak üzere coğrafi olarak 
+farklı bölgelerde konumlandırılmış sunucu kümesine verilen isimdir.
+https://cdnjs.com/ cdn server'lar kullanma sebebi resimleri farklı yerden alsın diye bizim siteye fazla yüklenmesin.
+
+3) css media mobile için önemli.
+
+4) gulp less'i css'e çevirdi.
