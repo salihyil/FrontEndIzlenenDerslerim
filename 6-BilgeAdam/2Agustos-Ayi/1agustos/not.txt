@@ -1,0 +1,29 @@
+1) transition: https://www.w3schools.com/css/css3_transitions.asp 
+	       https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+
+ tanım: The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay.	
+	transition(Geçişler), bir öğenin iki durumu arasındaki geçişi tanımlamanıza olanak tanır. Farklı durumlar :hover veya :active gibi sözde 
+        sınıflar kullanılarak tanımlanabilir veya JavaScript kullanılarak dinamik olarak ayarlanabilir.
+
+2) transform: https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+              https://www.w3schools.com/css/css3_3dtransforms.asp
+ 
+  tanım: transform CSS özelliği, bir öğeyi döndürmenize, ölçeklemenize, eğmenize veya çevirmenize olanak tanır.
+         CSS görsel biçimlendirme modelinin koordinat alanını değiştirir.
+
+   -transfrom-style: preserve-3d elimizde 2 kart var diyelim diğer kartlarıda bunla gösteririr.
+
+3) transform-origin: right;
+   perspective: bakış açısı, görüş açısı değiştirme
+
+4) browser değiştikçe bakış açısı değişmesin  container'ı belli bir yükselik ve genişlik verince bakış acı değişmicek.
+
+5) backface-visibility: hidden; rotate() yaparken arka tarafta kalan kısım gözükmez.
+
+6) animation: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+	      https://www.w3schools.com/css/css3_animations.asp	
+   tanım: The animation shorthand CSS property applies an animation between styles. 
+   It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, 
+   animation-direction, animation-fill-mode, and animation-play-state.
+
+   

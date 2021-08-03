@@ -1,0 +1,8 @@
+1:20 transitions özelliği: css'in herhangi bir özelliğinin zamana bağlı olarak değişimidir. 
+özellik olarak: yazı karakterin rengi, background rengi olabilir. 
+2:13 transform: ccs3 ile herhangi bir web sayfası elementinin yerinin değiştirilmesi, dönüştürülmesi,  ölçeklenmesi, 
+eğiminin değiştirlmesi gibi özellikler.
+2:55 animation: js kullanmadan html elementlerine animasyonlar verilmesi
+3:40 caniuse sitesi:  web teknolojilerine ait herhangi bir özelliğin internet tarayıcıları tarafından desteklenip 
+desteklenmediğini görebiliriz.
+9:50 basit transition örneği

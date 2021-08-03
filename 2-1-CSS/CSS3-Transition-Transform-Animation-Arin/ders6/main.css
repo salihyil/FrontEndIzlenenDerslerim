@@ -1,0 +1,25 @@
+.box {
+  position: relative;
+  margin-top: 200px;
+  transform-style: preserve-3d; /* 3boyutlu görebilmek için tarayıcılar 2d görmeyi destekler. */
+  transform: rotateX(-20deg) rotateY(-40deg) perspective(500px);
+}
+.box1,
+.box2,
+.box3 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.box1 {
+  background: red;
+  transform: translate3d(100px, 50px, 0px);
+}
+.box2 {
+  background: blue;
+  transform: translateZ(-100px) scale3d(1.5, 0.75, 1);
+}
+.box3 {
+  background: yellow;
+  transform: translateZ(-200px) rotateY(90deg);
+}

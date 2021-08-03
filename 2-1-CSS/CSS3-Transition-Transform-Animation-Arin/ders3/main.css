@@ -1,0 +1,23 @@
+.imageArea {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+.imageTitle {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2.5s ease; 
+}
+.imageTitle h2 {
+  color: white;
+  background-color: rgba(255, 68, 0, 0.685);
+}
+.imageTitle:hover {
+  opacity: 0.8;
+}

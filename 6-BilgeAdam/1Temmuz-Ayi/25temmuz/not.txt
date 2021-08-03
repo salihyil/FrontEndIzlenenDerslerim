@@ -14,13 +14,18 @@ gulpfile.js dosyası ekle
 
 5)flex-flow: This is a shorthand for the flex-direction(yön) and flex-wrap(aşağı kaydırma)
 
+6) flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]    
 
+7)flex-basis:
+	mdn: Esnek temelli CSS özelliği, esnek bir öğenin ilk ana boyutunu ayarlar. Kutu boyutlandırma ile aksi ayarlanmadıkça, içerik kutusunun boyutunu ayarlar. 
+	-başlangıç oranı 
+	-Bu, kalan alan dağıtılmadan önce bir öğenin varsayılan boyutunu tanımlar. Bir uzunluk (ör. %20, 5rem vb.) veya bir anahtar kelime olabilir. 
+	auto anahtar sözcüğü "genişlik veya yükseklik özelliğime bak" anlamına gelir (geçici olarak ana-boyut anahtar sözcüğü tarafından kullanımdan kaldırılana 
+	kadar yapılmıştır). İçerik anahtar kelimesi "öğenin içeriğine göre boyutlandır" anlamına gelir - bu anahtar kelime henüz iyi desteklenmemektedir, 
+	bu nedenle test edilmesi zor ve kardeşlerinin maksimum içerik, minimum içerik ve uygun içeriğin ne yaptığını bilmek daha zordur.
+	https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg
 
-
-
-
-
-
+8)flex-shrink: küçülme oranı bu, esnek bir öğenin gerektiğinde küçülme yeteneğini tanımlar.
 
 
 

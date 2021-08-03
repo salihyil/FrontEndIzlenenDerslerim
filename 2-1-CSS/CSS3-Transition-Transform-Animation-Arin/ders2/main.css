@@ -1,0 +1,19 @@
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 3s ease 1s; /* /*transition-property / transition-duration / transition-timing-function / transition-delay */
+  /* burdaki all tüm .box:hover'daki özellikleri demek. */
+  /* transition active olabilmesi için :hover yada :active yada js kullanılır. */
+}
+.box:hover {
+  width: 300px;
+  background-color: green;
+}

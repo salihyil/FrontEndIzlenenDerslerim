@@ -1,0 +1,14 @@
+0:50 transition temelde 4 özelliği(property) vardır. 
+1:50 1.özellik transition-property: değişmesini istediğimiz özellik örnekte width bu.
+2:00 2.özellik transition-duration: yapılmak istenen transition'ın ne kadar sürede gelmesini isteriz.
+3:20 3.özellik transition-timing-function: bu geçişin nasıl olacağını gösterir. default değeri ease'dir. ease-out,  ease-in
+5:35 cubic-bezier(.17,.67,.83,.67):  4 parametre alır. 
+5:59 cubic-bezier sitesi
+7:45 4.özellik transition-delay: transition efektinin kaç sn'ye sonra gerçekleşmesini istediğimiz süredir.
+10:00 transition kısa yazım
+13:55 Animatable CSS properties
+14:55 Vendor Prefix'ler:   eksi tarayıcılarında bu browserlarda çalışabilmesi için eklenir.   
+           -webkit-transition : google chrome için kullanılır.
+           -moz-transition : mozilla için
+           -o-transition  : Opera için
+           -ms-transition : Microsoft Edge için

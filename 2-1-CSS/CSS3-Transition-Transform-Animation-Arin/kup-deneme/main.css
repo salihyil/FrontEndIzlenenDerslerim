@@ -1,0 +1,91 @@
+body {
+  background: #ddd;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  perspective: 1500px;
+}
+.box-area {
+  position: relative;
+  transform-style: preserve-3d;
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 360deg);
+    border-radius: 50%;
+  }
+}
+
+.box {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+.boxs {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.box-front {
+  transform: translate3d(-100px, -100px, 100px);
+  background-color: aquamarine;
+}
+.box1 {
+  transform: translate3d(-200px, -200px, 200px);
+  background-color: rgba(127, 255, 212, 0.3);
+}
+
+.box-back {
+  transform: translate3d(-100px, -100px, -100px);
+  background-color: rgb(127, 140, 255);
+}
+.box2 {
+  transform: translate3d(-200px, -200px, -200px);
+  background-color: rgba(127, 140, 255, 0.3);
+}
+.box-right {
+  transform: translateY(-100px) rotateY(90deg);
+  background-color: rgb(240, 127, 255);
+}
+.box3 {
+  transform: translateY(-200px) rotateY(90deg);
+  background-color: rgba(240, 127, 255, 0.3);
+}
+.box-left {
+  transform: translate(-200px, -100px) rotateY(90deg);
+  background-color: rgb(255, 232, 127);
+}
+.box4 {
+  transform: translate(-400px, -200px) rotateY(90deg);
+  background-color: rgba(255, 232, 127, 0.3);
+}
+
+.box-bottom {
+  transform: translateX(-100px) rotateX(90deg);
+  background-color: rgb(255, 127, 127);
+}
+.box5 {
+  transform: translateX(-200px) rotateX(90deg);
+  background-color: rgba(255, 127, 127, 0.3);
+}
+.box-top {
+  transform: translate(-100px, -200px) rotateX(90deg);
+  background-color: rgb(0, 0, 0);
+}
+.box6 {
+  transform: translate(-200px, -400px) rotateX(90deg);
+  background-color: rgba(0, 0, 0, 0.3);
+}

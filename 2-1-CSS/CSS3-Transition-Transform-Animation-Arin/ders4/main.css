@@ -1,0 +1,13 @@
+.imageArea {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.imageArea:hover {
+  /* transform: translate(40px, 40px); */
+  /* transform: scale(2, 2); */
+  transform: rotate(45deg);
+  transform-origin: bottom;
+}
+
+/* TRANSFORM : FONKSİYON (Parametre); */

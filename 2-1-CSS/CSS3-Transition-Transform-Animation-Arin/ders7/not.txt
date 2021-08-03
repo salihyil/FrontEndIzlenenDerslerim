@@ -1,0 +1,22 @@
+0:40 animation: css3 animation le biz sayfamızdaki elemetlerin durumlarını buldundukları konumları istediğimiz şekilde istediğimiz kadar değiştirebiliriz.
+2:10 @keyframe: animasyonumuzun herhangi bir anına denir. animasyonun değişim olan anları
+3:35 animation Özellikleri:
+
+1- @keyframes	
+
+2-animation-name: Animasyonun ana karelerini açıklayan @keyframes at-kuralının adını belirtir.
+
+3-animation-duration: Bir animasyonun bir döngüyü tamamlaması gereken süreyi yapılandırır.	
+
+4-animation-delay: Öğenin yüklendiği zaman ile animasyon dizisinin başlangıcı arasındaki gecikmeyi yapılandırır.	
+
+5-animation-iteration-count: Animasyonun kaç kez tekrarlanması gerektiğini yapılandırır; 
+  animasyonu süresiz olarak tekrarlamak için sonsuzu(infinite) belirtebilirsiniz. 
+    
+6-animation-direction: Dizi boyunca her çalıştırmada animasyonun yön değiştirip değiştirmeyeceğini veya başlangıç ​​noktasına sıfırlanıp kendini tekrar edip etmeyeceğini yapılandırır.	
+
+7-animation-timing-function: Animasyonun zamanlamasını yapılandırır; yani, ivme eğrileri oluşturarak animasyonun ana kareler arasında nasıl geçiş yaptığıdır.
+
+8-animation-fill-mode: Yürütülmesinden önce ve sonra animasyon tarafından hangi değerlerin uygulanacağını yapılandırır.	
+
+9-animation-play-state: Animasyon dizisini duraklatmanızı ve devam ettirmenizi sağlar.

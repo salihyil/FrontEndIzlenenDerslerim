@@ -1,0 +1,3 @@
+3:30 web tarayıcıları 3 boyut olarak değil 2 boyutlu(flat düz) boyutlu görür.
+3:50 transform-style: preserve-3d;
+5:40 perspective: bakış açısı

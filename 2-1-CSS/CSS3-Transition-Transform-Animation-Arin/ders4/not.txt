@@ -1,0 +1,7 @@
+1:10 4 fonksiyondan bahsedilecek. 1-translate 2-scale  3-rotate  4-skew  5-matrix:ilk 4gün karışımı
+1:25 transform: translate(40px, 40px);   translate: x,y ekseninde hareket ettirir.
+4:50 transform: scale(0.5, 0.5);  büyütür küçültür
+7:05 transform: rotate(50deg); default döndürme centerdan olur.
+8:30 transform-origin: bottom;  döndürme merkezi bottomdan olur.
+9:55 transform:skew(30deg); eğim verir.
+11:45 matrix 6 parametresi var. matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
