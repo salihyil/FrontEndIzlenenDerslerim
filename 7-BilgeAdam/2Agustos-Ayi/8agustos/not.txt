@@ -1,0 +1,9 @@
+1) "z" > "a" = true çıkar. String ifade karşılaştırma
+   "a" > "A" = true çıkar. ascii'deki değerlerinden dolayı a=97 A=65
+   String.fromCharCode(65) = "A" çıkar.
+
+2)if/else / switch/case
+
+3)HTMLCollection
+
+4-Object-Array

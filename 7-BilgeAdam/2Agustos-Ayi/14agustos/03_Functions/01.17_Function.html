@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //IIFE
+        let app = (function () {
+
+            let degisken = 23;
+
+            let fn = function () { //****xxx
+                return degisken;
+            }
+
+            //fonksiyon geriye bir object doner
+            return {
+                //objecnın memberının adı
+                fn: fn //bu member bir fonskyiondur oda yukarda bulunan fn dir.
+            }
+
+        })();
+
+        //****** içere bulunan ****xxx fonksiyonu cagırmıs oldum.
+        console.log(app.fn());
+
+
+        ////IIFE arrow fonksiyonda kullanımı;
+        let appss = (() => {
+            console.log("selam");
+        })();
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

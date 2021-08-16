@@ -1,0 +1,32 @@
+1) break döngülerde,  kesme işlemi işlemi gibi birşey olacaksa retrun if()'lerde kullanılabilir.
+
+2) fonksiyon(işlev) method(yöntem) 
+
+İşlev, adıyla çağrılan bir kod parçasıdır. Üzerinde çalışılacak veriler (yani parametreler) 
+iletilebilir ve isteğe bağlı olarak verileri (dönüş değeri) döndürebilir. Bir işleve iletilen tüm veriler açıkça iletilir.
+
+Yöntem, bir nesneyle ilişkilendirilmiş bir adla çağrılan bir kod parçasıdır. Çoğu bakımdan, iki temel fark dışında 
+bir işlevle aynıdır:
+
+Bir yöntem, çağrıldığı nesneden örtük olarak geçirilir.
+Bir yöntem, sınıf içinde bulunan veriler üzerinde çalışabilir (bir nesnenin bir sınıfın örneği olduğunu hatırlayarak - sınıf tanımdır, 
+    nesne o verinin bir örneğidir). 
+
+
+3) prototype: onun içindeki metotlarla işlemleri yapmaya yarar.
+
+Peki biz neden prototype yazarız? 
+
+prototype: iy == iy2 dersek true veriyor. Ramde aynı yeri işaret ettirmiş oluyoruz. prototype2.jpg bak.
+
+_proto_ ile 
+
+
+
+4) this => bağlı olan objeyi işaret eder. onu oluşturan objeyi belirtir.
+
+5) instance: aday fonksiyon'un objelerin
+
+6) static function: 
+   static method:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static?retiredLocale=tr

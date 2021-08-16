@@ -1,0 +1,572 @@
+@font-face {
+  font-family: "Museo Sans 100";
+  src: url("../../fonts/MuseoSans-100.eot");
+  src: url("../../fonts/MuseoSans-100.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSans-100.woff2") format("woff2"), url("../../fonts/MuseoSans-100.woff") format("woff"), url("../../fonts/MuseoSans-100.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Museo Sans 300";
+  src: url("../../fonts/MuseoSans-300.eot");
+  src: url("../../fonts/MuseoSans-300.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSans-300.woff2") format("woff2"), url("../../fonts/MuseoSans-300.woff") format("woff"), url("../../fonts/MuseoSans-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Museo Sans 500";
+  src: url("../../fonts/MuseoSans-500.eot");
+  src: url("../fonts/MuseoSans-500.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSans-500.woff2") format("woff2"), url("../../fonts/MuseoSans-500.woff") format("woff"), url("../../fonts/MuseoSans-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Museo Sans 700";
+  src: url("../../fonts/MuseoSans-700.eot");
+  src: url("../../fonts/MuseoSans-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSans-700.woff2") format("woff2"), url("../../fonts/MuseoSans-700.woff") format("woff"), url("../../fonts/MuseoSans-700.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Museo Sans 500";
+}
+.header-top {
+  background-color: #2b3947;
+}
+.header-top ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding: 0 15px 0 0;
+}
+.header-top li {
+  position: relative;
+  list-style: none;
+  padding: 5px 8px;
+  font-size: 11px;
+}
+.header-top li::after {
+  content: "";
+  border-right: 1px dotted #fff;
+  position: absolute;
+  left: -1px;
+  height: 50%;
+  top: 25%;
+}
+.header-top li a {
+  text-decoration: none;
+}
+.header-top li i {
+  color: white;
+  padding: 0 5px;
+}
+.header-top li span {
+  color: #c3cbd7;
+  padding: 0 2px;
+}
+.header-top li span:hover {
+  color: #7cc4bd;
+}
+.header-bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232b38;
+}
+.header-bottom .thy-logo img {
+  margin: 5px;
+  height: 50px;
+}
+.header-bottom .header-bottom-right-list ul {
+  display: flex;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.header-bottom .header-bottom-right-list ul li {
+  margin: 0 4px;
+  list-style: none;
+}
+.header-bottom .header-bottom-right-list ul li:not(:first-child(1)) {
+  border-right: none;
+  content: "";
+  height: 15px;
+  margin-top: 7px;
+  position: relative;
+  right: 5px;
+}
+.header-bottom .header-bottom-right-list ul li:nth-child(n)::before {
+  border-right: 1px dotted rgba(255, 255, 255, 0.5);
+  content: "";
+  height: 15px;
+  margin-top: 7px;
+  position: relative;
+  right: 5px;
+}
+.header-bottom .header-bottom-right-list ul li a {
+  color: white;
+  text-decoration: none;
+}
+.header-bottom .header-bottom-right-list ul li a:hover {
+  box-shadow: 0 3px 0 #ef2636;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-bottom: none;
+}
+.header-bottom .header-bottom-right-list ul li button {
+  font-family: "Museo Sans 700";
+  font-size: 12px;
+  margin-left: 3px !important;
+  border-radius: 18px;
+  margin: 12px;
+  font-weight: 700;
+  padding: 8px 15px;
+  background-color: rgba(35, 43, 56, 0.25);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 0 #000;
+}
+.header-bottom .header-bottom-right-list ul li button span {
+  color: white;
+}
+.header-bottom .header-bottom-right-list ul li button i {
+  margin-left: 3px;
+  color: white;
+}
+/* section */
+main .mini-booker-link {
+  border-bottom: 3px solid transparent;
+  font-family: "Museo Sans 700", sans-serif;
+  font-size: 14px;
+  padding: 5px;
+}
+main section {
+  background-image: url("https://cdn.turkishairlines.com/m/3c9fb6f3e9aefa19/original/1400x600-bookerv2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  padding: 30px 0;
+}
+main section .section-top {
+  text-align: center;
+  font-size: 38px;
+  font-family: "Museo Sans 100";
+  color: white;
+}
+main section .section-top .neyi-kesfetmek-istersin {
+  margin-bottom: 20px;
+}
+main section .section-middle {
+  display: flex;
+  font-family: "Museo Sans 100";
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+main section .section-middle ul {
+  display: flex;
+}
+main section .section-middle ul li {
+  list-style: none;
+  position: relative;
+}
+main section .section-middle ul li:first-child a::after {
+  border-color: #e81932 transparent;
+  border-style: solid;
+  border-width: 6px 6px 0;
+  bottom: -3px;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  width: 0;
+  margin-left: -6px;
+}
+main section .section-middle ul li a {
+  text-decoration: none;
+  border-radius: 4px;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 15px;
+  width: auto;
+  color: #fff;
+  font-family: "Museo Sans 300" !important;
+  background-color: rgba(35, 43, 56, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin: 3px;
+}
+main section .section-middle ul li a.active {
+  background: #e81932;
+  border: 1px solid #e81932;
+}
+main section .section-middle ul li a h1 {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Museo Sans 300" !important;
+  line-height: 1.42857143;
+  font-weight: 500;
+}
+main section .section-middle ul li a h2 {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Museo Sans 300" !important;
+  line-height: 1.42857143;
+  font-weight: 500;
+}
+main section .section-btm {
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  padding: 10px 2em;
+  background-color: rgba(35, 43, 55, 0.6);
+  margin: 10px 17%;
+}
+main section .section-btm .section-btm-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+main section .section-btm .section-btm-top .section-btm-top-left form {
+  margin: 0px 10px;
+  padding: 5px 5px;
+}
+main section .section-btm .section-btm-top .section-btm-top-left form #gidis {
+  border-bottom: 3px solid #e81932;
+}
+main section .section-btm .section-btm-top .section-btm-top-left form > label {
+  color: #fff;
+}
+main section .section-btm .section-btm-top .section-btm-top-left form input,
+main section .section-btm .section-btm-top .section-btm-top-left form label {
+  margin: 0 5px;
+}
+main section .section-btm .section-btm-top .section-btm-top-left form input:hover,
+main section .section-btm .section-btm-top .section-btm-top-left form label:hover {
+  border-bottom: 3px solid #e81932;
+}
+main section .section-btm .section-btm-top .section-btm-top-right {
+  display: flex;
+}
+main section .section-btm .section-btm-top .section-btm-top-right a {
+  color: #fff;
+  text-decoration: none;
+}
+main section .section-btm .section-btm-top .section-btm-top-right a:hover {
+  text-decoration: none;
+}
+main section .section-btm .section-btm-middle {
+  display: flex;
+}
+main section .section-btm .section-btm-middle > div {
+  margin: 0 5px;
+}
+main section .section-btm .section-btm-middle .from-box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  width: 225px;
+}
+main section .section-btm .section-btm-middle .from-box .icon-wrapper {
+  display: flex;
+  margin: 0 5px;
+  padding: 0 5px;
+  font-size: 25px;
+}
+main section .section-btm .section-btm-middle .from-box .port-wrapper .nereden {
+  color: #2073e3;
+  font-size: 14px;
+  top: 9px;
+}
+main section .section-btm .section-btm-middle .from-box .port-wrapper .ankara input {
+  border: none;
+  width: 90%;
+  font-size: 24px;
+  font-family: "Museo Sans 700", sans-serif;
+  transition: opacity 0.1s ease;
+}
+main section .section-btm .section-btm-middle .from-box .port-wrapper .ankara input::placeholder {
+  color: #000;
+}
+main section .section-btm .section-btm-middle .from-box .port-wrapper .esenboga span:first-child {
+  max-width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #697886;
+}
+main section .section-btm .section-btm-middle .from-box .port-wrapper .esenboga span:nth-child(2) {
+  display: inline-block;
+  max-width: 25%;
+  vertical-align: top;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #697886;
+}
+main section .section-btm .section-btm-middle .top-box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  width: 225px;
+  height: 75px;
+  margin-left: 10px;
+}
+main section .section-btm .section-btm-middle .top-box .icon-wrapper {
+  margin: 0 5px;
+  padding: 0 5px;
+  font-size: 25px;
+}
+main section .section-btm .section-btm-middle .top-box .nereye input {
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Museo Sans 700", sans-serif;
+  transition: opacity 0.1s ease;
+}
+main section .section-btm .section-btm-middle .takvim-box {
+  display: flex;
+  background-color: #232b38;
+  color: #fff;
+  border: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+main section .section-btm .section-btm-middle .takvim-box span:first-child {
+  padding: 0 5px;
+  font-family: "Museo Sans 500", sans-serif;
+  font-size: 24px;
+}
+main section .section-btm .section-btm-middle .takvim-box span:last-child i {
+  padding: 0 5px;
+  color: #99a5b4;
+  height: 46px;
+  width: 44px;
+  font-size: 35px;
+}
+main section .section-btm .section-btm-middle .kabin-eco-sinif-box {
+  display: flex;
+  background-color: #232b38;
+  color: #fff;
+  border: none;
+}
+main section .section-btm .section-btm-middle .kabin-eco-sinif-box .first-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main section .section-btm .section-btm-middle .kabin-eco-sinif-box .first-row .kabin {
+  font-family: "Museo Sans 500", sans-serif;
+  color: #99a5b4;
+  font-weight: 400;
+  font-size: 14px;
+}
+main section .section-btm .section-btm-middle .kabin-eco-sinif-box .first-row .eco {
+  font-family: "Museo Sans 500", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  padding-top: 4px;
+}
+main section .section-btm .section-btm-middle .kabin-eco-sinif-box .first-row .sinif {
+  font-family: "Museo Sans 500", sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+main section .section-btm .section-btm-middle .kabin-eco-sinif-box .second-row i {
+  background-position: -406px -467px;
+  height: 35px;
+  margin: 35px 20px 0;
+  width: 11px;
+  background-image: url(../img/sprite/sprite-icons-w3.png);
+  background-repeat: no-repeat;
+  font-size: 36px;
+  color: #99a5b4;
+}
+main section .section-btm .section-btm-middle .kabin-eco-sinif-box .third-row span {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  position: relative;
+  right: 10px;
+  top: 10px;
+}
+main section .section-btm .section-btm-middle .sag-isaret-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #e81932 !important;
+}
+main section .section-btm .section-btm-middle .sag-isaret-box i {
+  font-size: 50px;
+  padding: 0 15px;
+  color: #ffffff;
+}
+main section .section-btm .section-btm-bottom {
+  padding-top: 10px;
+  padding-left: 5px;
+}
+main section .section-btm .section-btm-bottom span {
+  font-family: "Museo Sans 700", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+main section .section-btm .section-btm-bottom span:hover {
+  border-bottom: 3px solid #e81932;
+}
+main section .section-footer {
+  max-width: 500px;
+  height: 48px;
+  margin: 10px auto 0;
+  position: relative;
+}
+main section .section-footer:before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 50%;
+  background: #fff;
+  height: 2px;
+  position: absolute;
+  margin-top: -1px;
+}
+main section .section-footer .box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  left: 50px;
+}
+main section .section-footer .box .box1 {
+  z-index: 1;
+}
+main section .section-footer .box .box1 a {
+  text-decoration: none;
+  color: #fff;
+}
+main section .section-footer .box .box1 a:hover {
+  text-decoration: none;
+}
+main section .section-footer .box .box1 a > span {
+  display: inline-block;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #232b38;
+  border-radius: 100%;
+}
+main section .section-footer .box .box1 a div {
+  width: auto;
+  border: 0;
+  border-radius: 6%;
+  margin-top: 5px;
+  padding: 5px 6px;
+  margin-bottom: 5px;
+  background-color: #101a2a;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Museo Sans 300", sans-serif;
+  height: 40px;
+  width: 125px;
+}
+main section .section-footer .box .box2 {
+  z-index: 1;
+}
+main section .section-footer .box .box2 a {
+  text-decoration: none;
+  color: #fff;
+}
+main section .section-footer .box .box2 a:hover {
+  text-decoration: none;
+}
+main section .section-footer .box .box2 a > span {
+  display: inline-block;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #232b38;
+  border-radius: 100%;
+}
+main section .section-footer .box .box2 a div {
+  width: auto;
+  border: 0;
+  border-radius: 6%;
+  margin-top: 5px;
+  padding: 5px 6px;
+  margin-bottom: 5px;
+  background-color: #101a2a;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Museo Sans 300", sans-serif;
+}
+main section .section-footer .box .box3 {
+  z-index: 1;
+}
+main section .section-footer .box .box3 a {
+  text-decoration: none;
+  color: #fff;
+}
+main section .section-footer .box .box3 a:hover {
+  text-decoration: none;
+}
+main section .section-footer .box .box3 a > span {
+  display: inline-block;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #232b38;
+  border-radius: 100%;
+}
+main section .section-footer .box .box3 a div {
+  width: auto;
+  border: 0;
+  border-radius: 6%;
+  margin-top: 5px;
+  padding: 5px 6px;
+  margin-bottom: 5px;
+  background-color: #101a2a;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Museo Sans 300", sans-serif;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        if (true) {
+            // "if" block scope
+            var count = 5;
+            console.log(count); // 5
+        }
+        console.log(count); // 5  Sebebi var block scope değil. block dışında da çalşıyor.
+
+
+        if (true) {
+            // "if" block scope
+            let counts = 5;
+            console.log(counts); // 5
+        }
+        //console.log(counts); // counts is not defined. let block scope olduğu için olduğu block içinde çalışır. Dışında çalışmaz.
+
+        /* Block scope: Süslü parantezler { } arasında tanımlı olan scopedur. 
+        Bu bir if bloğu, for, while ya da herhangi bir keyword kullanmadan { } da olabilir. */
+
+        function name(params) {
+            let abc = 5;
+            console.log("scope içi abc değeri: " + abc); //scope içi abc değeri: 5 çıktısı verir.
+        }
+        name();
+        console.log("abc:", abc); //abc is not defined hatası verir.
+    </script>
+</body>
+
+</html>

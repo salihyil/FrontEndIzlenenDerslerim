@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fn() {
+            var x = 20;
+            console.log("merhaba");
+
+            //const let var 3 üde function block içinde tanımlanmışsa dışardan erişimi mümkün değildir.O bloga özeldir.
+        }
+        //console.log(x); // x e erişemiyicem cunku function block da tanımlanmıs
+
+        if (1 == 1) {
+
+            var y = 90;
+        }
+
+        console.log(y); // block scope içinde var ile  tanımlanan değere block dısından eriişilir.
+
+
+        if (1 == 1) {
+            let z = 90;
+        }
+
+        //console.log(z); const ve let e block scopedan erişemeyiz.
+
+
+        //kod blogunu özelleştirip bir scope halıne getirebilirim.
+        {
+            const f = 20;
+            let g = 90;
+        }
+
+
+        //console.log(f, g);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

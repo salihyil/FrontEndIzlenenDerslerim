@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let insan = {
+            ad: "ahmet",
+            soyad: "yılmaz",
+            yas: 30
+        }
+        console.log(insan.ad);
+
+        //fonksiyon olarak bir objenin member ı olabilir miyim ? evet
+
+        let insan2 = {
+            ad: "melih",
+            soyad: "yılmaz",
+            yas: 30,
+            fullName: function () {
+
+                return this.ad + " " + this.soyad;
+            },
+            deneme: this
+        }
+
+        console.log(insan2.fullName());
+        console.log(insan2.deneme);
+
+        //this nedir ?
+        //this-->context dir.
+
+        //bir fonksiyon bir objectin içinde ise o fonksiyonun context'i o objecti işaret eder.
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let sayi = 20;
+        sayi++;
+
+        console.log(sayi); //21
+
+
+        let sayi2 = 30;
+        ++sayi2;
+
+        console.log(sayi2); //21
+
+
+        let sayi3 = 90,
+            sayi4 = 80;
+
+        let islem = ++sayi3 * sayi4--;
+        //sayi 3 --> 2 işlemim kendimi artırmak ve bir carpmaya girmek
+        //sayi 3 --> oncelikli basımda ++ var kendimi artırmam lazım
+        //91* sayi4--;
+        //sayi4--> benim carpma ve cıkarma işlemim var ama -- 2 cil bir işlem.
+        // islem=  91*80
+
+        //sayi4--->79
+
+        console.log(islem, sayi4);
+
+
+        let sayi5 = 90;
+        console.log(sayi5++); //console 90 yazılır. sonrasında sayi5 kendini 1 artırır.
+
+
+        let sayi6 = 90;
+        console.log(++sayi6); // once sayı5 oncelikli olan artırımını yapar sonra kendını console loga bırakır
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let insan = {
+            ad: 'ahmet',
+            soyad: 'soylu',
+            yas: 30
+        };
+
+
+        // typeof(insan);//object 
+
+        console.log(insan.ad); //objemin ad property sine erişip kullandım (get)
+
+        insan.ad = "veli"; //objemin ad propertysine yeni değier set ettim (set)
+
+
+        //Object oluşturmak için aday olarak bekleyen bir fonksiyon yazdım.
+        //**Constructor --Yapıcı method..
+        function InsanObj() {
+            this.ad = "ahmet";
+            this.soyad = "soylu";
+            this.yas = 20;
+
+        }
+
+
+        //new ile bir fonksyion calısırtırılırsa ilgili fonsksıyon kullanılarak 1 adet object olusturulur.
+        let insan1 = new InsanObj();
+        let insan2 = new InsanObj();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>l

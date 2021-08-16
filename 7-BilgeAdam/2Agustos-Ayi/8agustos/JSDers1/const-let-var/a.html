@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script src="./a.js"></script>
+    <script>
+        var sayi = 1;
+        document.write("Döngüye Girildi<br> ");
+        while (sayi < 7) {
+            sayi = sayi + 1;
+            if (sayi == 3 || sayi == 6) {
+                continue;
+            }
+            document.write(sayi + "<br>");
+        }
+        document.write("Döngü Bitti!<br> ");
+
+    </script>
+</body>
+
+</html>

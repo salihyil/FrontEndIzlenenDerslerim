@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        //DRY--> DONT REPEAT YOUTSELF
+
+        //Tam sayılar (integer)
+        //Virgüllü sayılar (float)
+        let sayi = 1.6;
+
+
+        //1.1+0.5 1.6    -->1
+        //1.6 +0.5=2.4 -->
+
+        let controlSayi = sayi + 0.5;
+        let sonuc;
+
+
+        if (parseInt(sayi) == parseInt(controlSayi)) {
+
+            sonuc = parseInt(sayi);
+        } else {
+
+            sonuc = parseInt(controlSayi);
+            console.log(sonuc);
+        }
+
+        //sonuc =1
+
+        let sayi2 = 9.9;
+        let cnt = sayi2 + 0.5;
+        let snc;
+        if (parseInt(sayi2) == parseInt(cnt)) {
+
+            snc = parseInt(sayi2);
+        } else {
+
+            snc = parseInt(cnt);
+        }
+
+        //sonuc 2 =10
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

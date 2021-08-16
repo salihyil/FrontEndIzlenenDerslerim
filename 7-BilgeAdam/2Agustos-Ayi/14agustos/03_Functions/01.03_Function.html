@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Yuvarla(deger) {
+            let controlSayi = deger + 0.5; // 20.3 + 0.5 = 20.8
+            let sonuc;
+
+            if (parseInt(deger) == parseInt(controlSayi)) {
+
+                sonuc = parseInt(deger);
+            } else {
+
+                sonuc = parseInt(controlSayi);
+            }
+
+            return sonuc;
+
+        }
+
+        let sayi = Yuvarla(20.3);
+        console.log(sayi);
+
+        //sayi 20
+
+
+
+        let sayi2 = Yuvarla(21.8);
+        //sayi2 22
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

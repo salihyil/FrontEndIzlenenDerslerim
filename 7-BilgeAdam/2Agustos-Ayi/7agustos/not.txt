@@ -1,0 +1,33 @@
+1- Js giriş:
+ 
+2-Ecma TC39 https://github.com/tc39
+
+3-var function scope özelliği taşırken, let block scope özelliği taşımaktadır.
+
+4- let window'da gözükmedi.
+   -global ortamda: const, let: No / var: yes
+   -function scope: const, let, var: yes
+   -block scope: const, let: yes / var: no
+   -can be reassigned: const: no let: yes var: yes
+
+5- 1=="1" //true verir. Çünkü js'de string'i number olarak görebilir. 
+
+6- objectlerde && || karşılaştırması.
+let a = {
+    deger:"a"
+ }
+ let b = {
+    deger:"b"
+ }
+ 
+ console.log(a && b); //{ deger: 'b' } yazdırdı.
+
+
+let a = {
+    deger: "a"
+}
+let b = {
+    deger: "b"
+}
+
+console.log(a || b); //{ deger: 'a' } yazdırdı.

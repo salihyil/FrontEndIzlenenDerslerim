@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //ben bir fonksiyonu başka bir fonksiyona parametre olarak gönderebilirmiyim ?
+
+
+        function Islem1(islem2) {
+
+            let a = islem2(); //20
+
+            console.log(a + 2); //22
+
+        }
+
+        Islem1(function () {
+            return 20;
+        });
+
+        //
+        function Islem3(islem4) {
+
+            let a = islem4(); //90
+
+            console.log(a + 2); //92
+
+        }
+
+        let fn2 = function () {
+
+            return 90;
+        };
+
+        Islem3(fn2); //bir fonksyinu başka bir fonksyona parametre olarak gönderdim
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

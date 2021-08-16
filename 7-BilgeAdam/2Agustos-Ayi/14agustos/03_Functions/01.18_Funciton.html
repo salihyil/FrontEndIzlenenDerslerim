@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function topla1(a, b) {
+            return a + b;
+        }
+
+        let topla = (a, b) => a + b; // ilgili fonksıyon return yapacaksa süslü parantez 
+        //gerekmez.
+
+        let topla2 = (a, b) => {
+            return a + b
+        };
+
+        // dısardan deger almaz geriye değer dondurur
+        let fn = () => {
+            let x = 20;
+            if (x % 2 == 0) {
+                return "çift";
+            } else {
+                return "tek";
+            }
+        };
+
+        fn();
+
+        // dısardan değer alan geriye değier dondurmeyen bır yağpıda
+        let fn2 = (x) => {
+            if (x % 2 == 0) {
+                console.log("çift");
+            } else {
+                console.log("tek");
+            }
+        };
+
+        let sonucum = ((x) => {
+            if (x % 2 == 0) {
+                console.log("çift");
+            } else {
+                console.log("tek");
+            }
+        })(20);
+
+
+
+        //parametre almayan bir fonksiyon tanımladım. 
+        let islem = _ => console.log("selam");
+
+        islem();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // if -else if yapısı ile birbirine bağlı karar mekanızmaları oluştururuz.
+        //bu bağlı mekanızmadan herhangi bir block çalışırsa sonraki kosul kontrolleri atlanır.
+        let sayi = 5;
+
+        if (sayi == 1 || sayi == 2 || sayi == 3 || sayi == 4 || sayi == 5) {
+            console.log("Hafta içidir")
+
+        } else {
+            console.log("Hafta sonudur")
+        }
+
+
+        //if else-if ile aynı mantıkla calısır
+        switch (sayi) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                console.log("Hafta içidir.");
+                //
+                //kodu yazmaya devam edebilirm
+                break;
+            default: //hiç bir koşula girmemişse default calısır.
+                console.log("hafta içi değildir.");
+                break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

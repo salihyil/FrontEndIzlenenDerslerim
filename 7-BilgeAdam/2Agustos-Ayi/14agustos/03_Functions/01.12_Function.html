@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //***Değerlendirdiğimiz konu 1 fonksıyona parametre olarak delen başka bir değişkenin 
+        //fonksiyon içindeki değişimde etkinme durumu
+
+        //**Value type lar etkilenmez
+        function Fn(x) {
+            x = 30;
+        }
+
+        let x = 20;
+        //x bir number dır. Value tipindedir. Bir fonksiyona parametre oluyorsa kendisi o 
+        //fonksiyonun içine girmez.
+        //sadece değeri olan 20 i gonderir içerdeki hiçbie değişiklikten etkilenmez
+        Fn(x);
+
+        console.log(x); //20
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

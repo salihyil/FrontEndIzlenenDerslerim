@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // "use strict";--> strict mode da bazı yazım kurallarına hata alırız.
+
+
+        var sayi1 = 20; //değişen olsstur ilk değer ata
+
+        sayi1 = 30; //tekrar değer ata
+
+        console.log(sayi1); //o değeri consola yaz
+
+
+        sayi2 = 90; //strict mode da keyword olmadan tanımlama yapamam
+
+        console.log(sayi2); // tanımladığım değişkenler global objectin altına özellik olarak eklenir.
+        //istersem global object.degiskenadi şeklinde erişebilirim.
+
+        console.log(window.sayi2);
+
+
+        //console.log(sayi3);
+
+
+        let deger1 = 20;
+        deger1 = 30;
+        console.log(deger1);
+
+
+
+        const cdeger = 20;
+        // cdeger = 30; const ile tanımlanan değişken değiştirelemez. IMMUTABLE
+        console.log(cdeger);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

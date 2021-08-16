@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let maxW = window.innerWidth,
+            maxH = window.innerHeight,
+            maxKutuW = 50,
+            maxKutuH = 50;
+
+        setInterval(function() {
+
+            let rastgeleX = maxW * Math.random();
+            let rastgeleY = maxH * Math.random();
+            let kutuW = maxKutuW * Math.random();
+            let kutuH = maxKutuH * Math.random();
+
+            let r = parseInt((255 * Math.random())) + 1,
+                g = parseInt((255 * Math.random())) + 1,
+                b = parseInt((255 * Math.random())) + 1;
+
+            let dv = document.createElement("div");
+
+            dv.style.position = "fixed";
+            dv.style.width = kutuW + "px";
+            dv.style.height = kutuH + "px";
+            dv.style.left = rastgeleX + "px";
+            dv.style.top = rastgeleY + "px";
+            dv.style.backgroundColor = `rgb(${r},${g},${b})`;
+
+
+            // document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML + dv.outerHTML;
+
+            document.getElementsByTagName("body")[0].innerHTML += dv.outerHTML;
+
+            /* let kelime = "ahmet";
+             kelime = kelime + " Soylu";
+             kelime += " soylu";*/
+
+
+        }, 100);
+    </script>
+
+
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

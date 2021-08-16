@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let a = 20,
+            b = 30,
+            c = 90;
+
+
+        let kosul1 = b > a && c > 80;
+
+        // true  true --> true dur . herhangi bir taraf false ise false dur.
+
+        console.log(kosul1); //true
+
+
+        //herhangi biri true ise yeterlidir.
+
+        let kosul2 = b < a || c > 80;
+
+
+        let kusulF = f1() == 1 || f2(); // || --> ilk kısım true ise 2 ci kısma hıc bakılmaz
+        // | --> ilk kısım treue olsa bile 2 ci kısma bakılır.
+
+        function f1() {
+            console.log("f1 calisti");
+            return 1;
+        }
+
+        function f2() {
+            console.log("f2 calisti");
+            return 2;
+        }
+
+
+        // && --> ilk kısım false ise 2 ci kısma bakılmaz
+        // &  --> ilk kısım false ise 2 cci kısmada bakılır.
+
+
+
+        var settings = {
+            hasopacity: ''
+        };
+        var defaults = {
+            hasopacity: 'b'
+        }
+
+
+        // özellik bazında ilkinde varsa onu al yoksa 2 ciyi al
+        // && ise sonuncuyu baz alır
+        var lastSetting = settings || defaults;
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

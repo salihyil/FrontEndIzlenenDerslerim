@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //== eşitmi  !== eşit değil mi
+        //=== eşitmi+tip kontrol    !=== eşit değil mi+tip control
+
+        let a = 20; // a nın değeri 20
+        let b = 20;
+        let c = "20";
+
+
+
+        let esitmi = a == b; //anın değer b ye eşit mi. Geriye boolean bir donus yapar. Yani true || false  . tip kontrolü yok
+
+        console.log(esitmi);
+        console.log(a == b);
+
+
+        //COMMON TYPE CONVERSİON  (otomotik type dönüşümü sağlayan bir mekanızma)
+        console.log(a == c);
+
+
+        console.log(c * 2);
+
+        var d = -c;
+        console.log(typeof(c));
+        console.log(typeof(d));
+
+        let y = "m2";
+        console.log(y * 2); //NaN
+
+
+
+
+        let esitmi2 = a === b; //anın değer b ye eşit mi. Hem tip hemde değer olarak
+        console.log(esitmi2);
+
+
+
+        let esitmi3 = 3 != 4; // true
+
+
+        // a!==b  1!=="1" -->true   (tip kontrolü var. tipden dolayı eşit değillerdir.)
+        //a!=b    1!="1" --> false  (tip kontrolü yok değerler eşit olarak düşülür.)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

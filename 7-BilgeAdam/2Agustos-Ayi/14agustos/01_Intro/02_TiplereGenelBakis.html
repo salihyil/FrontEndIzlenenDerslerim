@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Primitve tipler : String number undefined boolean symbol
+        //Referans tipler: Object, function
+
+        //**Array bir tip değildir. Build-in gelen bir objectir. Dizi olarak değeşikenleri bir arada tutar. Bir indexer mantığı ile 
+        //o değerlere erişmemizi sağlar.
+
+
+        //undefined henüz değeri olmadan tanımlanan değişkenler için ara bir tiptir.
+
+        //null object lere atama yapabileceğimiz ara bir değerdir. !!bir tip değildir.
+
+
+        //değişken tanımla şekli
+        // var,let,const değikenadi=değeri;
+
+
+        //ilk değer ataması: Tanımlanan değişkene aynı anda değer atama işlemidir.
+        var sayi = 20;
+        var kelime = 'merhaba js';
+        var kelime2 = "merhaba js...";
+
+
+        var anahtar = true;
+        var anahtar2 = false;
+
+        //değişkenim adı:degersizDegisken değişkenim tipi : undefined  değişkenim değeri undefined
+        var degersizDegisken;
+        console.log("tipi: " + typeof(degersizDegisken));
+
+        console.log("deger: " + degersizDegisken);
+
+
+        //değişkenim adı:degersizDegisken değişkenim tipi : Number  değişkenim değeri 90
+        degersizDegisken = 90;
+        console.log("tipi: " + typeof(degersizDegisken));
+        console.log("deger: " + degersizDegisken);
+
+
+
+        var insan1_X = {
+            yas: 20,
+            ad: "ahmet",
+            soyad: "soylu"
+        };
+
+
+        console.log(typeof(insan1_x));
+
+
+        //null object ler için ara bir değerdir. Bu object tipinde olsun ama hiçdeğeri olmasın
+        var insan2_x = null;
+        console.log(typeof(insan2_x));
+
+
+        insan2_x = {
+            yas: 22,
+            ad: "ahmet2",
+            soyad: "soylu2"
+
+        }
+
+
+        var sayi1 = 20,
+            sayi2 = 20; // istersem var ile birden çok değişkeni aynı anda tanımlayabilirim.
+
+
+        //Object referans tip dir. Bu nedenle her oluşturulan object farklı bir adresi işaret eder.
+        //aynı adresi işaret etmesi için birbirine eşitlememiz gerekir. Aksi durumda 2 nesnenin içindeki değerler 
+        //aynı olsa bile bunlar birbirine eşit değildir.
+        var insan1 = {
+            yas: 45
+        };
+        var insan2 = {
+            yas: 10
+        };
+
+        // insan1 insan2 ye eşit değildir. Object oldugundan farklı referanslara sahiptir. Farklı adresleri işaret eder
+
+        //!!!!!!!!!!!!!!Referans tiplerde eşitlik aynı adresi işaret ettiğinde sağlanır.
+
+
+        // insan 2 nin işaret ettiği adres insan1 in işaret ettiği adrese gonderilir. ve 2 side aynı olur
+        insan2 = insan1; //  2 die 45
+
+
+        //insan1 in işaret ettiği adresteki değer değişti. İnsan2de bu adresi işaret ettiğinden 2 sininde yas değeri aynı olurç.
+        //Aslında 2 değer yoktur. 1 değer vardır onu işaret eden 2 adres vardır (referans tipi davranısı.)
+        insan1.yas = 90;
+        //insan2 yası kactır ==> 90
+        //insan1 de insan2 de aynı adresi işaret eder
+
+
+        function topla(a, b) {
+            return a + b;
+        }
+
+        console.log(typeof(topla));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

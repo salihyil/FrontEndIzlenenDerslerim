@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //function adi()
+        //function adi(param1,pram2......)
+        function Topla(x, y) {
+            let toplam = x + y;
+            console.log(toplam);
+        }
+
+        //void --> geriye değer döndürmeyen fonksiyonlar
+
+        Topla(30, 40); //bu fonksiyon dışardan aldığı parametrelerle içinde işlem yapıp geriye değer vermeyen bir fonksiyondur.
+
+        function Topla2(x, y) {
+            //Eğer bir fonksiyon geriye bir değer döndürecekse return keyword unu kullanır.
+            return x + y;
+        }
+
+        //topla2 fonksiyonu çalışır ve geriye  50 değerini döner
+        let toplamim = Topla2(20, 30);
+
+        console.log(50);
+
+
+        let yuvarlanmisSayi = Math.round(1.2); //round fonksiyonu dışardan değer alıp işlem yapıp geriye değer döndürür.
+        console.log(yuvarlanmisSayi);
+
+        console.log("Merhaba Fonksiyon");
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function Insan(ad, soyad, yas) {
+            this.ad = ad;
+            this.soyad = soyad;
+            this.yas = yas;
+
+            this.toString = function() { //[]
+                return this.ad + " " + this.soyad;
+            }
+
+            this.valueOf = function() {
+
+                return this.yas;
+            }
+        }
+
+        let i1 = new Insan("ahmet", "soylu", 30);
+        let i2 = new Insan("ahmet", "soylu", 20);
+
+
+        console.log(i1 + 2);
+
+
+        console.log(i1 < i2);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

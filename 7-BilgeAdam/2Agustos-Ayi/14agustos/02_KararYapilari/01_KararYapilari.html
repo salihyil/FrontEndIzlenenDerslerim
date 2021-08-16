@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let hesabim = 1200;
+        let gonderilecek = 4500;
+
+        //if   if-else    if/else if switch-case
+
+        //if(kosul)-->bir kosula baglı scope olusturmamızı sağlar. bu block sadece kosul dogru ıse calısır.
+        //kosul=sonucu true yada false olan herşey
+        if (gonderilecek <= hesabim) {
+            //kosul true ise bu block çalışır
+            alert("Yetersiz bakiye");
+        } else {
+
+            //kosul sağlanmıyorsa bu block calısır.
+            hesabim -= gonderilecek;
+            alert("işlem yapıldı");
+        }
+
+        //if blogu kendısınden hemen sonra gelen else ile birlikte çalışır. birbirinin zıttı olarak. ya if blogu ya else blogu çalışacaktır.
+        //kesinlikle 2 si birlikte calısamaz
+
+
+
+        //eğer if den yada elseden sonra 1 satır kodum varsa süslü koymasamda olur
+        let y = 90;
+        if (y % 2 == 0) {
+            console.log("ben 2 ile bölünürüm");
+        } else
+            console.log("ben 2 ile bölünmem");
+
+
+
+        if (y % 2 == 0)
+            console.log("ben 2 ile bölünürüm");
+        else
+            console.log("ben 2 ile bölünmem");
+
+
+        if (y % 2 == 0) console.log("ben 2 ile bölünürüm");
+        else console.log("ben 2 ile bölünmem");
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

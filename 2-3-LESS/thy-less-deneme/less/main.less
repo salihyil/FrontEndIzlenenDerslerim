@@ -1,0 +1,575 @@
+@import "colors.less";
+@import "fonts.less";
+@import "reset.less";
+
+body {
+  font-family: "Museo Sans 500";
+}
+
+.header-top {
+  background-color: #colors[header-top];
+}
+.header-top {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding: 0 15px 0 0;
+  }
+  li {
+    position: relative;
+    list-style: none;
+    padding: 5px 8px;
+    font-size: 11px;
+
+    &::after {
+      content: "";
+      border-right: 1px dotted #fff;
+      position: absolute;
+      left: -1px;
+      height: 50%;
+      top: 25%;
+    }
+    a {
+      text-decoration: none;
+    }
+    i {
+      color: white;
+      padding: 0 5px;
+    }
+    span {
+      color: #colors[header-span];
+      padding: 0 2px;
+      &:hover {
+        color: #colors[header-span-hover];
+      }
+    }
+  }
+}
+.header-bottom {
+  display: flex;
+  background-color: #232b38;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #colors[header-bottom];
+
+  .thy-logo {
+    img {
+      margin: 5px;
+      height: 50px;
+    }
+  }
+  .header-bottom-right-list {
+    ul {
+      display: flex;
+      font-family: "Museo Sans 700";
+      font-size: 14px;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      li {
+        margin: 0 4px;
+        list-style: none;
+        &:not(:first-child(1)) {
+          border-right: none;
+          content: "";
+          height: 15px;
+          margin-top: 7px;
+          position: relative;
+          right: 5px;
+        }
+        &:nth-child(n)::before {
+          border-right: 1px dotted rgba(255, 255, 255, 0.5);
+          content: "";
+          height: 15px;
+          margin-top: 7px;
+          position: relative;
+          right: 5px;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            box-shadow: 0 3px 0 rgb(239 38 54);
+            background-color: rgba(0, 0, 0, 0.25);
+            border-bottom: none;
+          }
+        }
+        button {
+          font-family: "Museo Sans 700";
+          font-size: 12px;
+          margin-left: 3px !important;
+          border-radius: 18px;
+          margin: 12px;
+          font-weight: 700;
+          padding: 8px 15px;
+          background-color: rgba(35, 43, 56, 0.25);
+          color: #fff;
+          border-color: rgba(255, 255, 255, 0.5);
+          text-shadow: 0 1px 0 #000;
+          span {
+            color: white;
+          }
+          i {
+            margin-left: 3px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* section */
+main {
+  .mini-booker-link {
+    border-bottom: 3px solid transparent;
+    font-family: "Museo Sans 700", sans-serif;
+    font-size: 14px;
+    padding: 5px;
+  }
+  section {
+    background-image: url("https://cdn.turkishairlines.com/m/3c9fb6f3e9aefa19/original/1400x600-bookerv2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    padding: 30px 0;
+
+    .section-top {
+      text-align: center;
+      font-size: 38px;
+      font-family: "Museo Sans 100";
+      color: white;
+      .neyi-kesfetmek-istersin {
+        margin-bottom: 20px;
+      }
+    }
+
+    .section-middle {
+      display: flex;
+      font-family: "Museo Sans 100";
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          position: relative;
+          &:first-child {
+            a::after {
+              border-color: #e81932 transparent;
+              border-style: solid;
+              border-width: 6px 6px 0;
+              bottom: -3px;
+              content: "";
+              display: block;
+              left: 50%;
+              position: absolute;
+              width: 0;
+              margin-left: -6px;
+            }
+          }
+          a {
+            &.active {
+              background: #e81932;
+              border: 1px solid #e81932;
+            }
+            text-decoration: none;
+            border-radius: 4px;
+            vertical-align: middle;
+            display: inline-block;
+            font-size: 15px;
+            width: auto;
+            color: #fff;
+            font-family: "Museo Sans 300" !important;
+            background-color: rgba(35, 43, 56, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            margin: 3px;
+            h1 {
+              text-decoration: none;
+              font-size: 15px;
+              font-family: "Museo Sans 300" !important;
+              line-height: 1.42857143;
+              font-weight: 500;
+            }
+            h2 {
+              text-decoration: none;
+              font-size: 15px;
+              font-family: "Museo Sans 300" !important;
+              line-height: 1.42857143;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .section-btm {
+      font-family: "Museo Sans 700";
+      font-size: 14px;
+      padding: 10px 2em;
+      background-color: rgba(35, 43, 55, 0.6);
+      margin: 10px 17%;
+      .section-btm-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        .section-btm-top-left {
+          form {
+            margin: 0px 10px;
+            padding: 5px 5px;
+            #gidis {
+              border-bottom: 3px solid #e81932;
+            }
+            & > label {
+              color: #fff;
+            }
+            input,
+            label {
+              margin: 0 5px;
+              &:hover {
+                border-bottom: 3px solid #e81932;
+              }
+            }
+          }
+        }
+        .section-btm-top-right {
+          display: flex;
+          a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .section-btm-middle {
+        & > div {
+          margin: 0 5px;
+        }
+        display: flex;
+        .from-box {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          align-items: center;
+          background-color: #fff;
+          width: 225px;
+          .icon-wrapper {
+            display: flex;
+            margin: 0 5px;
+            padding: 0 5px;
+            font-size: 25px;
+          }
+          .port-wrapper {
+            .nereden {
+              color: #2073e3;
+              font-size: 14px;
+              top: 9px;
+            }
+            .ankara {
+              input {
+                border: none;
+                width: 90%;
+                font-size: 24px;
+                font-family: "Museo Sans 700", sans-serif;
+                transition: opacity 0.1s ease;
+                &::placeholder {
+                  color: #000;
+                }
+              }
+            }
+            .esenboga {
+              span {
+                &:first-child {
+                  max-width: 70%;
+                  display: inline-block;
+                  vertical-align: top;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  color: #697886;
+                }
+                &:nth-child(2) {
+                  display: inline-block;
+                  max-width: 25%;
+                  vertical-align: top;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  color: #697886;
+                }
+              }
+            }
+          }
+        }
+        .top-box {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          align-items: center;
+          background-color: #fff;
+          width: 225px;
+          height: 75px;
+          margin-left: 10px;
+          .icon-wrapper {
+            margin: 0 5px;
+            padding: 0 5px;
+            font-size: 25px;
+          }
+          .nereye {
+            input {
+              border: none;
+              width: 100%;
+              font-size: 20px;
+              font-family: "Museo Sans 700", sans-serif;
+              transition: opacity 0.1s ease;
+            }
+          }
+        }
+        .takvim-box {
+          display: flex;
+          background-color: #232b38;
+          color: #fff;
+          border: none;
+          align-items: center;
+          justify-content: space-around;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          span:first-child {
+            padding: 0 5px;
+            font-family: "Museo Sans 500", sans-serif;
+            font-size: 24px;
+          }
+          span:last-child {
+            i {
+              padding: 0 5px;
+              color: #99a5b4;
+              height: 46px;
+              width: 44px;
+              font-size: 35px;
+            }
+          }
+        }
+        .kabin-eco-sinif-box {
+          display: flex;
+          background-color: #232b38;
+          color: #fff;
+          border: none;
+          .first-row {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            .kabin {
+              font-family: "Museo Sans 500", sans-serif;
+              color: #99a5b4;
+              font-weight: 400;
+              font-size: 14px;
+            }
+            .eco {
+              font-family: "Museo Sans 500", sans-serif;
+              color: #fff;
+              font-size: 30px;
+              padding-top: 4px;
+            }
+            .sinif {
+              font-family: "Museo Sans 500", sans-serif;
+              color: #fff;
+              font-size: 14px;
+            }
+          }
+          .second-row {
+            i {
+              background-position: -406px -467px;
+              height: 35px;
+              margin: 35px 20px 0;
+              width: 11px;
+              background-image: url(../img/sprite/sprite-icons-w3.png);
+              background-repeat: no-repeat;
+              font-size: 36px;
+              color: #99a5b4;
+            }
+          }
+          .third-row {
+            span {
+              color: #fff;
+              font-size: 24px;
+              line-height: 1;
+              position: relative;
+              right: 10px;
+              top: 10px;
+            }
+          }
+        }
+        .sag-isaret-box {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          background-color: #e81932 !important;
+          i {
+            font-size: 50px;
+            padding: 0 15px;
+            color: #ffffff;
+          }
+        }
+      }
+      .section-btm-bottom {
+        padding-top: 10px;
+        padding-left: 5px;
+        span {
+          font-family: "Museo Sans 700", sans-serif;
+          color: white;
+          font-size: 14px;
+          &:hover {
+            border-bottom: 3px solid #e81932;
+          }
+        }
+      }
+    }
+    .section-footer {
+      max-width: 500px;
+      height: 48px;
+      margin: 10px auto 0;
+      position: relative;
+
+      &:before {
+        content: "";
+        left: 0;
+        right: 0;
+        top: 50%;
+        background: #fff;
+        height: 2px;
+        position: absolute;
+        margin-top: -1px;
+      }
+      .box {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+        left: 50px;
+        .box1 {
+          z-index: 1;
+          a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+              text-decoration: none;
+            }
+            & > span {
+              display: inline-block;
+              padding: 12px;
+              font-size: 16px;
+              font-weight: 700;
+              color: #fff;
+              line-height: 1;
+              vertical-align: baseline;
+              white-space: nowrap;
+              text-align: center;
+              background-color: #232b38;
+              border-radius: 100%;
+            }
+            div {
+              width: auto;
+              border: 0;
+              border-radius: 6%;
+              margin-top: 5px;
+              padding: 5px 6px;
+              margin-bottom: 5px;
+              background-color: #101a2a;
+              color: #fff;
+              font-size: 12px;
+              font-family: "Museo Sans 300", sans-serif;
+              height: 40px;
+              width: 125px;
+            }
+          }
+        }
+        .box2 {
+          z-index: 1;
+          a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+              text-decoration: none;
+            }
+            & > span {
+              display: inline-block;
+              padding: 12px;
+              font-size: 16px;
+              font-weight: 700;
+              color: #fff;
+              line-height: 1;
+              vertical-align: baseline;
+              white-space: nowrap;
+              text-align: center;
+              background-color: #232b38;
+              border-radius: 100%;
+            }
+            div {
+              width: auto;
+              border: 0;
+              border-radius: 6%;
+              margin-top: 5px;
+              padding: 5px 6px;
+              margin-bottom: 5px;
+              background-color: #101a2a;
+              color: #fff;
+              font-size: 12px;
+              font-family: "Museo Sans 300", sans-serif;
+            }
+          }
+        }
+        .box3 {
+          z-index: 1;
+          a {
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+              text-decoration: none;
+            }
+            & > span {
+              display: inline-block;
+              padding: 12px;
+              font-size: 16px;
+              font-weight: 700;
+              color: #fff;
+              line-height: 1;
+              vertical-align: baseline;
+              white-space: nowrap;
+              text-align: center;
+              background-color: #232b38;
+              border-radius: 100%;
+            }
+            div {
+              width: auto;
+              border: 0;
+              border-radius: 6%;
+              margin-top: 5px;
+              padding: 5px 6px;
+              margin-bottom: 5px;
+              background-color: #101a2a;
+              color: #fff;
+              font-size: 12px;
+              font-family: "Museo Sans 300", sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}
